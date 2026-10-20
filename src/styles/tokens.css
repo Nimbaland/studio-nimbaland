@@ -1,0 +1,126 @@
+/* ==========================================================================
+   STUDIO.NIMBALAND — Design Tokens
+   Quelle: Design System 01 (Arbeitsentwurf, 20.10.2026)
+
+   ⚠ PALETTE IST VORLÄUFIG. Alle Farben werden NUR hier definiert.
+   Für eine andere Studio-Palette nur die Werte im Block "Primitive" ändern.
+   ========================================================================== */
+
+:root {
+  /* ---- Primitive (vorläufig, Freigabe ausstehend) ---------------------- */
+  --graphite-900: #16191d;
+  --graphite-800: #1f2328;
+  --warm-white-50: #f5f4ef;
+  --warm-white-100: #ebeae4;
+  /* Akzent = Logo-Farbe (bestätigt 20.10.2026; vorher #d8ff31) */
+  --acid-lime-400: #c5d92d;
+  --slate-500: #8b9399;
+  /* Ergänzung zur Spec: Slate #8B9399 erreicht auf Warm White nur ~2.9:1.
+     Für Text auf hellem Grund daher eine dunklere Slate-Stufe (≥ 5.5:1). */
+  --slate-700: #5a6167;
+  --white: #ffffff;
+
+  /* ---- Semantik (Spec §2) ---------------------------------------------- */
+  --color-bg: var(--graphite-900);
+  --color-surface: var(--warm-white-50);
+  --color-accent: var(--acid-lime-400);
+  --color-muted: var(--slate-500);
+  --color-text-on-dark: var(--white);
+  --color-text-on-light: var(--graphite-900);
+  --color-border-on-dark: #43494c;
+  --color-border-on-light: #d8d9d5;
+  --color-focus: var(--acid-lime-400);
+
+  /* ---- Typografie (aktualisiert 20.10.2026, ersetzt Spec §3) ----------
+     Playfair Display: Hero + Headlines (Italic für Akzente) · Manrope: Navigation + Text
+     IBM Plex Mono: Eyebrows / Labels. Alle self-hosted (src/fonts).      */
+  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-body: var(--font-manrope), system-ui, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* fluid: Mobile-Minimum → 88px bei 1024px → 112px bei 1440px */
+  --text-hero: clamp(3rem, 1.6rem + 5.4vw, 6.75rem);           /* 48 → 88–108 */
+  --text-display: clamp(2.75rem, 1.5rem + 4.6vw, 5.5rem);      /* Unterseiten-H1 44 → 88 */
+  --text-h1: clamp(2.5rem, 1.3rem + 4.2vw, 5rem);              /* große CTAs 40 → 80 */
+  --text-h2: clamp(2.25rem, 1.04rem + 3.85vw, 4.5rem);         /* Section Headings 36 → 56–72 */
+  --text-h3: clamp(1.625rem, 1.4rem + 0.7vw, 2rem);            /* 26 → 32 */
+  --text-lead: clamp(1.125rem, 1rem + 0.4vw, 1.25rem);         /* 18 → 20 */
+  --text-body: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);        /* 16 → 18 */
+  --text-nav: clamp(0.75rem, 0.7rem + 0.2vw, 0.875rem);        /* 12 → 14 */
+  --text-label: clamp(0.6875rem, 0.66rem + 0.1vw, 0.75rem);    /* 11 → 12 */
+  --text-caption: 0.875rem;
+
+  --leading-hero: 1.02;
+  --leading-display: 1.06;
+  --leading-h1: 1.08;
+  --leading-h2: 1.1;
+  --leading-h3: 1.25;
+  --leading-lead: 1.5;
+  --leading-body: 1.65;
+  --leading-caption: 1.45;
+  --tracking-display: -0.01em;
+  --tracking-label: 0.1em;
+
+  --measure: 66ch;
+
+  /* ---- Spacing & Layout (Spec §5) -------------------------------------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-section: clamp(var(--space-16), 4rem + 6vw, 10rem);
+
+  --container-max: 1440px;
+  --gutter: 20px;          /* mobile */
+  --grid-columns: 4;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+
+  /* ---- Motion (Spec §8) ------------------------------------------------ */
+  --dur-button: 150ms;
+  --dur-nav: 200ms;
+  --dur-card: 250ms;
+  --dur-reveal: 560ms;
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@media (min-width: 768px) {
+  :root { --gutter: 32px; --grid-columns: 8; }
+}
+@media (min-width: 1024px) {
+  :root { --gutter: clamp(48px, 4.4vw, 64px); --grid-columns: 12; }
+}
+
+/* --------------------------------------------------------------------------
+   Tonalität pro Sektion: Komponenten nutzen nur --fg / --bg / --muted …
+   und funktionieren so automatisch auf dunklem und hellem Grund.
+   -------------------------------------------------------------------------- */
+.tone-dark {
+  --bg: var(--color-bg);
+  --fg: var(--color-text-on-dark);
+  --muted: var(--color-muted);
+  --border: var(--color-border-on-dark);
+  --focus: var(--color-focus);
+  --placeholder-bg: var(--graphite-800);
+  background: var(--bg);
+  color: var(--fg);
+}
+.tone-light {
+  --bg: var(--color-surface);
+  --fg: var(--color-text-on-light);
+  --muted: var(--slate-700);
+  --border: var(--color-border-on-light);
+  /* Lime ist auf hellem Grund als Fokusring zu kontrastarm → Graphite. */
+  --focus: var(--graphite-900);
+  --placeholder-bg: var(--warm-white-100);
+  background: var(--bg);
+  color: var(--fg);
+}
