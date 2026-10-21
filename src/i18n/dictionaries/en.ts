@@ -39,7 +39,7 @@ const en: Dictionary = {
     titleAccent: "change",
     statement: "Good design doesn't just look different. It changes how brands are perceived.",
     intro:
-      "I'm Nimalan Suntharalingam, an independent creative director and brand designer based in Düsseldorf. With Studio.Nimbaland, I bring strategic thinking, visual identity and digital design together into brands with character.",
+      "I'm Nimalan [ Nimba ] Suntharalingam – an independent creative director and brand designer from Düsseldorf. With Studio.Nimbaland, I bring strategy, identity and digital design together into brands people recognise before they see the logo.",
     tagline: "From the first idea to the finished experience. Conceptually strong. Visually distinct. Digitally considered.",
     location: ["Based", "in", "Düsseldorf"],
     recentWork: "Recent Work",

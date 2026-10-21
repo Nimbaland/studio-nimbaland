@@ -39,7 +39,7 @@ const de = {
     titleAccent: "change",
     statement: "Gute Gestaltung sieht nicht nur anders aus. Sie verändert, wie Marken wahrgenommen werden.",
     intro:
-      "Ich bin Nimalan Suntharalingam, unabhängiger Creative Director und Brand Designer aus Düsseldorf. Mit Studio.Nimbaland verbinde ich strategisches Denken, visuelle Identität und digitale Gestaltung zu Markenauftritten mit Charakter.",
+      "Ich bin Nimalan [ Nimba ] Suntharalingam – unabhängiger Creative Director und Brand Designer aus Düsseldorf. Mit Studio.Nimbaland verbinde ich Strategie, Identität und digitales Design zu Marken, die man erkennt, bevor man das Logo sieht.",
     tagline: "Von der ersten Idee bis zum fertigen Erlebnis. Konzeptionell stark. Visuell eigenständig. Digital durchdacht.",
     location: ["Based", "in", "Düsseldorf"],
     recentWork: "Recent Work",
