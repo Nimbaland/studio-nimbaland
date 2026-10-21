@@ -56,6 +56,9 @@ Alle Leitsätze und Kundenfreigaben sind laut Nimalan erteilt (20.10.2026).
 
 | Logo Design (veröffentlicht, 7 Logos) | .ai-Dateien ohne PDF-Inhalt – bitte als PDF/SVG/PNG exportieren: Zillertaler Flugschule, Bartenders Night Out, Shylo Mylo, Hase, First German Property Management, Cleancircle, Wholistic Health, Kita Steimker, Untitled Artwork, Barsnacks; höher aufgelöste Cannabis-Social-Club- und TrafficHabibi-Dateien; Jahre/Kunden |
 
+| Tervica (überarbeitet) | Zuordnung bestätigen: Version B = Hauptmarke (Karten-Sticker), Version A = zweites Produkt (Rundsticker)? |
+| Bales Smart Home | – (Karussells „Smart vs. Normal“ + „Ein Tag“, Wärmepumpen-Post entfernt) |
+
 ## Texte
 
 - [ ] Englische Übersetzung der Fließtexte von einer Person mit Muttersprache gegenlesen lassen.

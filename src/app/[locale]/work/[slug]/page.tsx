@@ -51,8 +51,19 @@ export default async function CaseStudyPage({ params }: Props) {
   ];
   const hasChapters = chapters.some((ch) => ch.body);
 
+  const themeStyle = project.theme
+    ? ({
+        "--color-bg": project.theme.bg,
+        "--color-text-on-dark": project.theme.fg,
+        "--color-muted": project.theme.muted,
+        "--color-border-on-dark": project.theme.border,
+        "--color-accent": project.theme.accent,
+        "--placeholder-bg": project.theme.border,
+      } as React.CSSProperties)
+    : undefined;
+
   return (
-    <article>
+    <article style={themeStyle} className={project.theme ? "case--themed" : undefined}>
       <header className="tone-dark">
         <div className="container-site pt-12 pb-12 lg:pt-16">
           <Breadcrumb

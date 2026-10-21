@@ -1,6 +1,8 @@
 import type { PortfolioProject } from "./types";
 
-// Quelle: Nimalans Projektordner "Tervica" (Rebranding-Pitch Q2 2026, finale Logo-Versionen A/B).
+// Quelle: Nimalans Projektordner "Tervica" (Rebranding-Pitch Q2 2026), "Tervica Finale Pitch" (04/2026),
+// finale Logos Version A + B (SVG), Druckdaten der Produkte, Fotos der bisherigen Produkte.
+// Annahme: Version B = Hauptmarke, Version A = zweites Produkt (Rundsticker) – bestätigen.
 const project: PortfolioProject = {
   slug: "tervica",
   title: "Tervica",
@@ -23,33 +25,39 @@ const project: PortfolioProject = {
     en: "The logo dated from 2012: the wave as a signature of movement and the bronze–silver contrast still worked, but gradients and gloss didn't scale, small sizes fell apart and there was no digital system logic.",
   },
   approach: {
-    de: "Ein Rebrand als Schärfung, nicht als Neuerfindung. Vier Leitprinzipien – premium statt prunkvoll, System statt Einzelstück, eigen statt modisch, digital-native – steuerten vier Farbwelten und fünf Logokonzepte, die alle dieselbe DNA in einer anderen Tonlage weiterdenken.",
-    en: "A rebrand as sharpening, not reinvention. Four principles — premium not showy, system not one-off, distinctive not trendy, digital-native — guided four colour worlds and five logo concepts, each carrying the same DNA in a different tone.",
+    de: "Ein Rebrand als Schärfung, nicht als Neuerfindung. Aus mehreren Farbwelten setzte sich Amethyst durch – die einzige Farbe, die alle drei Versprechen der Marke trägt: Tiefe, Klarheit und Differenzierung. Daraus entstanden vier Stimmen derselben Welle, von standhaft bis zart: Amethyst & Anchor, Amethyst & Rose, Soft Amethyst und Rose Veil.",
+    en: "A rebrand as sharpening, not reinvention. Out of several colour worlds, amethyst won through — the only colour that carries all three brand promises: depth, clarity and differentiation. It produced four voices of the same wave, from steadfast to delicate: Amethyst & Anchor, Amethyst & Rose, Soft Amethyst and Rose Veil.",
   },
   solution: {
-    de: "Die Empfehlung: „Wave + Sphere“ in der Farbwelt „Midnight Luxury“ – die Welle bekommt einen Kern, Bronze wird zu Gold auf Mitternachtsblau. Eine Evolution statt Revolution, vom Favicon bis zur Fassade einsetzbar. In der Ausarbeitung entstanden zwei finale Logo-Versionen.",
-    en: "The recommendation: “Wave + Sphere” in the “Midnight Luxury” colour world — the wave gains a core, bronze becomes gold on midnight blue. Evolution rather than revolution, usable from favicon to façade. The refinement produced two final logo versions.",
+    de: "Nicht eine Stimme, ein Chor: Amethyst & Anchor wird zur Hauptmarke, die übrigen Varianten tragen Kampagnen, Atmosphäre und Sub-Linien. Zwei finale Logos gingen in die Produktion – Version B für die Hauptmarke, Version A für ein zweites Produkt. Auf den Kuppel-Stickern ersetzen sie das Logo von 2012, die konzentrischen Ringe der Produkte bleiben.",
+    en: "Not one voice but a choir: Amethyst & Anchor becomes the primary brand, the other variants carry campaigns, atmosphere and sub-lines. Two final logos went into production — version B for the main brand, version A for a second product. On the domed stickers they replace the 2012 logo, while the products' concentric rings remain.",
   },
   coverImage: {
     src: "/projects/tervica/cover.webp",
-    alt: { de: "Titelfolie des Rebranding-Pitches: „Tervica, neu übersetzt.“", en: "Title slide of the rebranding pitch: “Tervica, neu übersetzt.”" },
+    alt: { de: "Kuppel-Sticker im neuen Tervica-Logo: Rundsticker und Karten-Sticker", en: "Domed stickers in the new Tervica logo: round sticker and card sticker" },
     aspect: "16/9",
     width: 2400,
     height: 1350,
   },
   gallery: [
-    { src: "/projects/tervica/gallery-01.webp", alt: { de: "Analyse des bisherigen Logos aus 2012", en: "Analysis of the previous logo from 2012" }, caption: { de: "Status quo", en: "Status quo" }, aspect: "16/9", width: 2400, height: 1350 },
-    { src: "/projects/tervica/gallery-02.webp", alt: { de: "Vier Farbwelten im Überblick", en: "Overview of four colour worlds" }, caption: { de: "Vier Farbwelten", en: "Four colour worlds" }, aspect: "16/9", width: 2400, height: 1350 },
-    { src: "/projects/tervica/gallery-03.webp", alt: { de: "Farbwelt Midnight Luxury mit Nacht, Tiefblau, Gold, Hellgold und Elfenbein", en: "Midnight Luxury colour world with night, deep blue, gold, light gold and ivory" }, caption: { de: "Empfohlene Farbwelt", en: "Recommended colour world" }, aspect: "16/9", width: 2400, height: 1350 },
-    { src: "/projects/tervica/gallery-04.webp", alt: { de: "Fünf Logokonzepte: Wave + Sphere, Triple Wave, Line Wave, Radial Sonar, Framed Mark", en: "Five logo concepts: Wave + Sphere, Triple Wave, Line Wave, Radial Sonar, Framed Mark" }, caption: { de: "Fünf Konzepte", en: "Five concepts" }, aspect: "16/9", width: 2400, height: 1350 },
-    { src: "/projects/tervica/gallery-05.webp", alt: { de: "Empfehlung Wave + Sphere in Midnight Luxury", en: "Recommendation: Wave + Sphere in Midnight Luxury" }, caption: { de: "Die Empfehlung", en: "The recommendation" }, aspect: "16/9", width: 2400, height: 1350 },
-    { src: "/projects/tervica/gallery-06.webp", alt: { de: "Logo-Varianten in allen Farbwelten", en: "Logo variants across all colour worlds" }, caption: { de: "Logo-Varianten", en: "Logo variants" }, aspect: "16/9", width: 2400, height: 1350 },
-    { src: "/projects/tervica/gallery-07.webp", alt: { de: "Zwei finale Logo-Versionen: Kupfer-Silber und Violett", en: "Two final logo versions: copper–silver and violet" }, caption: { de: "Finale Versionen A und B", en: "Final versions A and B" }, aspect: "16/9", width: 2400, height: 1350 },
+    { src: "/projects/tervica/vorher.webp", span: "full", alt: { de: "Bisherige Produkte: Kuppel-Sticker mit dem Logo von 2012", en: "Previous products: domed stickers with the 2012 logo" }, caption: { de: "Ausgangslage: die Produkte mit dem alten Logo", en: "Starting point: the products with the old logo" }, aspect: "16/9", width: 2400, height: 1350 },
+    { src: "/projects/tervica/pitch-01.webp", span: "full", alt: { de: "Titelfolie: Vier Stimmen. Eine Marke.", en: "Title slide: Four voices. One brand." }, caption: { de: "Finale Präsentation, April 2026", en: "Final presentation, April 2026" }, aspect: "16/9", width: 2400, height: 1350 },
+    { src: "/projects/tervica/pitch-02.webp", span: "half", alt: { de: "Warum Amethyst: Tiefe, Klarheit, Differenzierung", en: "Why amethyst: depth, clarity, differentiation" }, caption: { de: "Eine Farbe, die trägt", en: "One colour that carries" }, aspect: "16/9", width: 2400, height: 1350 },
+    { src: "/projects/tervica/pitch-03.webp", span: "half", alt: { de: "Die vier finalen Logo-Varianten", en: "The four final logo variants" }, caption: { de: "Vier Persönlichkeiten der gleichen Welle", en: "Four personalities of the same wave" }, aspect: "16/9", width: 2400, height: 1350 },
+    { src: "/projects/tervica/pitch-04.webp", span: "half", alt: { de: "Variante 01: Amethyst & Anchor", en: "Variant 01: Amethyst & Anchor" }, caption: { de: "01 · Amethyst & Anchor", en: "01 · Amethyst & Anchor" }, aspect: "16/9", width: 2400, height: 1350 },
+    { src: "/projects/tervica/pitch-05.webp", span: "half", alt: { de: "Variante 02: Amethyst & Rose", en: "Variant 02: Amethyst & Rose" }, caption: { de: "02 · Amethyst & Rose", en: "02 · Amethyst & Rose" }, aspect: "16/9", width: 2400, height: 1350 },
+    { src: "/projects/tervica/pitch-06.webp", span: "half", alt: { de: "Variante 03: Soft Amethyst", en: "Variant 03: Soft Amethyst" }, caption: { de: "03 · Soft Amethyst", en: "03 · Soft Amethyst" }, aspect: "16/9", width: 2400, height: 1350 },
+    { src: "/projects/tervica/pitch-07.webp", span: "half", alt: { de: "Variante 04: Rose Veil", en: "Variant 04: Rose Veil" }, caption: { de: "04 · Rose Veil", en: "04 · Rose Veil" }, aspect: "16/9", width: 2400, height: 1350 },
+    { src: "/projects/tervica/pitch-08.webp", span: "full", alt: { de: "Empfehlung: Nicht eine Stimme. Ein Chor.", en: "Recommendation: Not one voice. A choir." }, caption: { de: "Die Empfehlung", en: "The recommendation" }, aspect: "16/9", width: 2400, height: 1350 },
+    { src: "/projects/tervica/logos.webp", span: "full", alt: { de: "Die beiden finalen Logos, Version B in Amethyst und Version A in Rost, Ocker und Stahlblau", en: "The two final logos, version B in amethyst and version A in rust, ochre and steel blue" }, caption: { de: "Finale Logos · Version B und A", en: "Final logos · versions B and A" }, aspect: "16/9", width: 2400, height: 1350 },
+    { src: "/projects/tervica/druckdaten.webp", span: "full", alt: { de: "Druckdaten: Rundsticker mit Version A und Karten-Sticker mit Version B", en: "Print files: round sticker with version A and card sticker with version B" }, caption: { de: "Druckdaten der Produkte, 2D", en: "Product print files, 2D" }, aspect: "16/9", width: 2400, height: 1350 },
+    { src: "/projects/tervica/stickerbogen.webp", span: "full", alt: { de: "Stickerbogen mit sechs Kuppel-Stickern im neuen Logo", en: "Sticker sheet with six domed stickers in the new logo" }, caption: { de: "Mockup: Stickerbogen", en: "Mockup: sticker sheet" }, aspect: "16/9", width: 2400, height: 1350 },
   ],
+  theme: { bg: "#1d1226", fg: "#f4eff8", muted: "#b7a5c6", border: "#3d2d4b", accent: "#c9aad0" },
   featured: true,
   published: true,
   order: 2,
-  backlog: [],
+  backlog: ["Zuordnung bestätigen: Version B Hauptmarke, Version A zweites Produkt (Rundsticker)?"],
 };
 
 export default project;

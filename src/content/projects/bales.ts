@@ -2,6 +2,7 @@ import type { PortfolioProject } from "./types";
 
 // Bales Smart Home Services (2026). Quelle: Projektordner "Bales Smart Home"
 // (Logo, Kampagnenkonzept, Instagram-Content-Serie).
+// Karussells laut Nimalan (21.10.2026): „Smart vs. Normal“ (6) und „Ein Tag“ (8); Wärmepumpen-Post entfernt (falsch).
 const project: PortfolioProject = {
   slug: "bales-smart-home",
   title: "Bales Smart Home Services",
@@ -28,8 +29,8 @@ const project: PortfolioProject = {
     en: "Starting from the logo — a wordmark with a house and signal waves — a seven-step campaign concept followed: goals and KPIs, personas, the core message “A home that thinks ahead”, visual identity (premium, minimal, editorial), a channel mix of Instagram, Meta Ads and Google Business, a content plan and measurement.",
   },
   solution: {
-    de: "Eine Instagram-Content-Serie aus Karussell-Posts, die Smart Home über Alltagsmomente erklärt – vom kalten Morgen bis zum Abend, an dem kein Schalter mehr gesucht wird.",
-    en: "An Instagram content series of carousel posts that explains smart home through everyday moments — from a cold morning to an evening without hunting for a switch.",
+    de: "Instagram-Karussells, die Smart Home über Alltagsmomente erklären: „Smart vs. Normal“ stellt zwei identische Häuser gegenüber, „Ein Tag“ begleitet einen Tag von 06:30 bis 23:00, an dem kein Schalter berührt wird. Jede Serie endet mit einer Frage an die Community.",
+    en: "Instagram carousels that explain smart home through everyday moments: “Smart vs. normal” compares two identical houses, “One day” follows a day from 06:30 to 23:00 without touching a switch. Each series ends with a question to the community.",
   },
   coverImage: {
     src: "/projects/bales-smart-home/cover.webp",
@@ -43,7 +44,8 @@ const project: PortfolioProject = {
     { src: "/projects/bales-smart-home/gallery-02.webp", alt: { de: "Ziele der Kampagne: Impressions, Follower, Beratungsanfragen", en: "Campaign goals: impressions, followers, consultation requests" }, caption: { de: "Ziel und KPIs", en: "Goals and KPIs" }, aspect: "16/9", width: 2401, height: 1350 },
     { src: "/projects/bales-smart-home/gallery-03.webp", alt: { de: "Visual Identity: Farben, Typografie, Bildsprache", en: "Visual identity: colours, typography, imagery" }, caption: { de: "Visual Identity", en: "Visual identity" }, aspect: "16/9", width: 2401, height: 1350 },
     { src: "/projects/bales-smart-home/gallery-04.webp", alt: { de: "Kanal-Mix: Instagram, Meta Ads, Google Business", en: "Channel mix: Instagram, Meta Ads, Google Business" }, caption: { de: "Kanäle", en: "Channels" }, aspect: "16/9", width: 2401, height: 1350 },
-    { src: "/projects/bales-smart-home/gallery-05.webp", alt: { de: "Acht Slides aus der Instagram-Content-Serie", en: "Eight slides from the Instagram content series" }, caption: { de: "Instagram-Content-Serie", en: "Instagram content series" }, aspect: "2288/1444", width: 2288, height: 1444 },
+    { src: "/projects/bales-smart-home/carousel-smart-vs-normal.webp", span: "full", alt: { de: "Karussell-Post „Smart vs. Normal“ im Smartphone-Mockup, daneben alle sechs Slides", en: "Carousel post “Smart vs. normal” in a smartphone mockup, next to all six slides" }, caption: { de: "Instagram-Karussell · Smart vs. Normal", en: "Instagram carousel · Smart vs. normal" }, aspect: "16/9", width: 2400, height: 1350 },
+    { src: "/projects/bales-smart-home/carousel-ein-tag.webp", span: "full", alt: { de: "Karussell-Post „Ein Tag“ im Smartphone-Mockup, daneben alle acht Slides", en: "Carousel post “One day” in a smartphone mockup, next to all eight slides" }, caption: { de: "Instagram-Karussell · Ein Tag", en: "Instagram carousel · One day" }, aspect: "16/9", width: 2400, height: 1350 },
   ],
   featured: true,
   published: true,
