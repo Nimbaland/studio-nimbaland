@@ -63,14 +63,6 @@ const project: PortfolioProject = {
       height: 1350,
     },
     {
-      src: "/projects/mkg-koeln-west/gallery-03.webp",
-      alt: { de: "Praxiseingang mit Beschriftung „MKG Köln West Implantologie“", en: "Practice entrance with “MKG Köln West Implantologie” lettering" },
-      caption: { de: "Am Standort", en: "On location" },
-      aspect: "4/3",
-      width: 1600,
-      height: 1198,
-    },
-    {
       src: "/projects/mkg-koeln-west/gallery-04.webp",
       alt: { de: "Überweisungsformular im Corporate Design", en: "Referral form in the corporate design" },
       caption: { de: "Überweisungsformular", en: "Referral form" },
