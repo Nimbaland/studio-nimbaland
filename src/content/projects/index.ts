@@ -27,11 +27,17 @@ import emmler from "./emmler-lofts";
  */
 const all: PortfolioProject[] = [mkg, tervica, kratzert, physiofit, tinaSood, circleUp, variari, bales, lebensbuch, waiturn, grid, flamingo, brick, solitaire, emmler];
 
-/** Projekte, die auf der Website sichtbar sind (veröffentlicht – plus Entwürfe im Dev-Modus). */
+/** Jüngstes Jahr aus Angaben wie "2026" oder "2018–2019" (ohne Jahr: ganz hinten). */
+export function projectYear(p: PortfolioProject): number {
+  const years = (p.year ?? "").match(/\d{4}/g);
+  return years ? Math.max(...years.map(Number)) : 0;
+}
+
+/** Projekte, die auf der Website sichtbar sind – die neuesten zuerst, bei gleichem Jahr nach `order`. */
 export function getProjects(): PortfolioProject[] {
   return all
     .filter((p) => p.published || showDrafts)
-    .sort((a, b) => a.order - b.order);
+    .sort((a, b) => projectYear(b) - projectYear(a) || a.order - b.order);
 }
 
 export function getFeaturedProjects(limit = 6): PortfolioProject[] {

@@ -1,7 +1,7 @@
 import { href, type Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries/de";
 import { services } from "@/content/services";
-import { getProject } from "@/content/projects";
+import { getProjects } from "@/content/projects";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ServicesAccordion, type ServiceExample } from "./ServicesAccordion";
 
@@ -18,12 +18,15 @@ const stepIcons = [
 ];
 
 export function Expertise({ locale, dict, deliverablesLabel }: { locale: Locale; dict: Dictionary["expertise"]; deliverablesLabel: string }) {
+  // Pro Leistung genau ein Beispiel: das neueste veröffentlichte Projekt, das thematisch passt
+  const projects = getProjects().filter((p) => p.published && p.coverImage.src);
   const examples: Record<string, ServiceExample[]> = {};
+  const used = new Set<string>();
   for (const s of services) {
-    examples[s.id] = (s.examples ?? [])
-      .map((slug) => getProject(slug))
-      .filter((p): p is NonNullable<typeof p> => !!p && !!p.coverImage.src)
-      .map((p) => ({ href: href(locale, `/work/${p.slug}`), title: p.title, src: p.coverImage.src as string, alt: p.coverImage.alt[locale] }));
+    // neuestes passendes Projekt, das noch nicht bei einer anderen Leistung steht
+    const hit = s.match && projects.find((p) => !used.has(p.slug) && s.match!.test([...p.services.de, ...p.services.en, ...p.category.de, ...p.role.en].join(" ")));
+    if (hit) used.add(hit.slug);
+    examples[s.id] = hit ? [{ href: href(locale, `/work/${hit.slug}`), title: hit.title, src: hit.coverImage.src as string, alt: hit.coverImage.alt[locale] }] : [];
   }
 
   return (
@@ -32,7 +35,7 @@ export function Expertise({ locale, dict, deliverablesLabel }: { locale: Locale;
         <SectionHeading id="expertise-title" eyebrow={dict.eyebrow} title={dict.sectionTitle} titleLang="en" intro={[dict.intro, dict.introMore]} />
 
         <div className="mt-14 lg:mt-20">
-          <ServicesAccordion services={services} locale={locale} deliverablesLabel={deliverablesLabel} examples={examples} exampleLabel={dict.exampleLabel} />
+          <ServicesAccordion services={services.map(({ match: _m, ...rest }) => rest)} locale={locale} deliverablesLabel={deliverablesLabel} examples={examples} exampleLabel={dict.exampleLabel} />
         </div>
 
         <div className="mt-16 lg:mt-24">
@@ -40,10 +43,7 @@ export function Expertise({ locale, dict, deliverablesLabel }: { locale: Locale;
           <ol className="process-steps">
             {dict.process.map((step, i) => (
               <li key={step.title} className="process-step">
-                <div className="flex items-center justify-between">
-                  <span className="process-step__icon">{stepIcons[i]}</span>
-                  <span className="t-label process-step__num">0{i + 1}</span>
-                </div>
+                <span className="process-step__icon">{stepIcons[i]}</span>
                 <p className="t-h3 mt-6">{step.title}</p>
                 <p className="t-muted mt-3">{step.body}</p>
               </li>

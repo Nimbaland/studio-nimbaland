@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import type { Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { pageMetadata } from "@/lib/metadata";
-import { getFeaturedProjects, getProject } from "@/content/projects";
+import { getProjects, getProject } from "@/content/projects";
 import { site } from "@/content/site";
 import { Hero } from "@/components/sections/Hero";
 import { SelectedWork } from "@/components/sections/SelectedWork";
@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function HomePage({ params }: Props) {
   const { locale } = await params;
   const dict = getDictionary(locale);
-  const projects = getFeaturedProjects(4);
+  const projects = getProjects();
 
   return (
     <>

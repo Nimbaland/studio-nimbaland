@@ -12,8 +12,8 @@ export type Service = {
   homeSummary: Localized;
   description: Localized;
   deliverables: string[];
-  /** Projektbeispiele (Slugs) für das Akkordeon auf der Startseite */
-  examples?: string[];
+  /** Stichworte: Das neueste veröffentlichte Projekt, dessen Leistungen dazu passen, wird als Beispiel gezeigt. */
+  match?: RegExp;
 };
 
 export const services: Service[] = [
@@ -30,7 +30,7 @@ export const services: Service[] = [
       en: "A strong brand needs more than a good logo. I develop positioning, visual identities and design systems that build recognition and work for the long term.",
     },
     deliverables: ["Brand Strategy", "Visual Identity", "Rebranding", "Corporate Design", "Design Systems", "Brand Guidelines"],
-    examples: ["circle-up", "tervica"],
+    match: /brand|identity|identität|logo|rebrand/i,
   },
   {
     id: "creative-art-direction",
@@ -45,7 +45,7 @@ export const services: Service[] = [
       en: "I translate ideas into visual concepts with a clear point of view. From the guiding creative idea to consistent execution across media.",
     },
     deliverables: ["Creative Concepts", "Art Direction", "Campaign Visuals", "Editorial Design", "Visual Storytelling"],
-    examples: ["the-grid-bar", "brick-no-10"],
+    match: /art direction|creative|editorial|campaign|kampagne/i,
   },
   {
     id: "digital-design-ux-ui",
@@ -60,7 +60,7 @@ export const services: Service[] = [
       en: "Digital experiences need to be clear, functional and visually convincing. I design websites and interfaces that connect brand identity with user needs.",
     },
     deliverables: ["Web Design", "UX/UI Design", "Digital Experiences", "Prototyping", "Responsive Design"],
-    examples: ["tina-sood", "flamingo-swift"],
+    match: /web|ux|ui design|digital|app/i,
   },
   {
     id: "ai-visual-engineering",
@@ -75,6 +75,6 @@ export const services: Service[] = [
       en: "New technologies open up new creative possibilities. I combine generative AI with art direction, design understanding and a deliberate approach to visual quality.",
     },
     deliverables: ["AI Visual Concepts", "Generative Imagery", "AI-assisted Creative Workflows", "Visual Prototyping"],
-    examples: [],
+    match: /\bai\b|ki-|generative|visual engineering/i,
   },
 ];

@@ -57,7 +57,7 @@ export const site = {
   portrait: "/brand/portrait.webp" as string | null, // Porträt in hoher Auflösung (1200×1774)
 
   /** "Recent Work" im Hero. Fällt auf das erste Featured-Projekt zurück, solange das Projekt noch fehlt. */
-  recentWorkSlug: "frauenzimmer-wolfsburg",
+  recentWorkSlug: "tina-sood",
 };
 
 export const showDrafts =

@@ -25,7 +25,7 @@ export function SelectedWork({ locale, dict, projects }: { locale: Locale; dict:
       </div>
 
       {projects.length > 0 ? (
-        <ProjectSlider count={projects.length} hint={dict.scrollHint}>
+        <ProjectSlider count={projects.length} hint={dict.scrollHint} prevLabel={dict.prevProject} nextLabel={dict.nextProject}>
           {projects.map((p, i) => (
             <li key={p.slug} className="slide">
               <article className="project-card">
