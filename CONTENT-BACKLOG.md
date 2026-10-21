@@ -63,7 +63,7 @@ Alle Leitsätze und Kundenfreigaben sind laut Nimalan erteilt (20.10.2026).
 
 ## Texte
 
-- [ ] Englische Übersetzung der Fließtexte von einer Person mit Muttersprache gegenlesen lassen.
+- [x] Englische Übersetzung der Fließtexte von einer Person mit Muttersprache gegenlesen lassen. (erledigt laut Nimalan, 21.10.2026)
 - [ ] Ausführliche Case-Study-Texte je Projekt (Ausgangslage, Vorgehen, Lösung).
 
 

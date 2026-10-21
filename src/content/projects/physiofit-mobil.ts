@@ -33,6 +33,7 @@ const project: PortfolioProject = {
     height: 1350,
   },
   gallery: [
+    { src: "/projects/physiofit-mobil/flyer-poster.webp", video: "/projects/physiofit-mobil/flyer.mp4", span: "full", alt: { de: "Video: der Flyer wird gewendet, die Kamera fährt über Logo und Leistungen", en: "Video: the flyer turns over while the camera moves across logo and services" }, caption: { de: "Flyer · Video", en: "Flyer · video" }, aspect: "16/9", width: 1600, height: 900 },
     { src: "/projects/physiofit-mobil/gallery-01.webp", alt: { de: "Flyer-Außenseite mit Logo und Behandlungsfoto", en: "Flyer outside with logo and treatment photo" }, caption: { de: "Flyer, außen", en: "Flyer, outside" }, aspect: "3/2", width: 2400, height: 1600 },
     { src: "/projects/physiofit-mobil/gallery-02.webp", alt: { de: "Flyer-Innenseite mit Leistungsübersicht", en: "Flyer inside with service overview" }, caption: { de: "Flyer, innen", en: "Flyer, inside" }, aspect: "3/2", width: 2400, height: 1600 },
     { src: "/projects/physiofit-mobil/gallery-03.webp", alt: { de: "Preisliste als Einleger", en: "Price list insert" }, caption: { de: "Preisliste", en: "Price list" }, aspect: "3/2", width: 2400, height: 1600 },

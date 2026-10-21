@@ -32,7 +32,7 @@ const project: PortfolioProject = {
   },
   coverImage: {
     src: "/projects/aurum-herbs/cover.webp",
-    alt: { de: "Aurum-Herbs-Logo in Weiß auf Midnight Blue", en: "Aurum Herbs logo in white on midnight blue" },
+    alt: { de: "Aurum-Herbs-Logo in Weiß auf Digger's Gold", en: "Aurum Herbs logo in white on digger's gold" },
     aspect: "16/9",
     width: 2400,
     height: 1350,
