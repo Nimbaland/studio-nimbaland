@@ -202,7 +202,7 @@ const en: Dictionary = {
   },
 
   legal: {
-    draftNotice: "Placeholder: this legal text must be filled with verified, real information before publication.",
+    draftNotice: "Note: the provider details are approved. Further mandatory details (e.g. person responsible for content, VAT ID if applicable) will be added before launch.",
   },
   footer: {
     tagline: "Independent Creative Studio",

@@ -65,3 +65,10 @@ Alle Leitsätze und Kundenfreigaben sind laut Nimalan erteilt (20.10.2026).
 
 - [ ] Englische Übersetzung der Fließtexte von einer Person mit Muttersprache gegenlesen lassen.
 - [ ] Ausführliche Case-Study-Texte je Projekt (Ausgangslage, Vorgehen, Lösung).
+
+
+## Freigaben 21.10.2026
+- Palette final freigegeben.
+- Social Links bestätigt: LinkedIn (linkedin.com/in/nimbaland), Instagram (instagram.com/nimbaland.studios).
+- Studio-Adresse: Studio.Nimbaland, Lindenstraße 68, 40233 Düsseldorf – in Footer, Kontaktseite und Impressum.
+- Impressum: restliche Pflichtangaben (Verantwortlicher i. S. d. § 18 MStV, ggf. USt-ID) und Datenschutztext noch offen.

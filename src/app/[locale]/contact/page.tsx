@@ -52,6 +52,11 @@ export default async function ContactPage({ params }: Props) {
             <ul className="rule-list" lang="en">
               {c.meta.map((m) => <li key={m} className="t-label py-4">{m}</li>)}
             </ul>
+            <address className="not-italic leading-relaxed">
+              {site.contact.address.name}<br />
+              {site.contact.address.street}<br />
+              {site.contact.address.city}
+            </address>
             {site.social.length > 0 && (
               <div>
                 <p className="t-label t-muted">{c.socialTitle}</p>

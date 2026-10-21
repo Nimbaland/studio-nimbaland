@@ -22,6 +22,11 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           {site.contact.email && (
             <a href={`mailto:${site.contact.email}`} className="text-link link-standalone font-display text-[clamp(1.5rem,1.2rem+1vw,2.25rem)]">{site.contact.email}</a>
           )}
+          <address className="mt-6 not-italic leading-relaxed">
+            {site.contact.address.name}<br />
+            {site.contact.address.street}<br />
+            {site.contact.address.city}
+          </address>
           <p className="t-label t-muted mt-6" lang="en">{dict.footer.tagline}</p>
         </div>
 

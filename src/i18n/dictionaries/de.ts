@@ -208,7 +208,7 @@ const de = {
   },
 
   legal: {
-    draftNotice: "Platzhalter: Dieser Rechtstext muss vor Veröffentlichung mit geprüften, echten Angaben gefüllt werden.",
+    draftNotice: "Hinweis: Die Anbieterangaben sind freigegeben. Weitere Pflichtangaben (z. B. Verantwortlicher für Inhalte, ggf. USt-ID) werden vor dem Launch ergänzt.",
   },
   footer: {
     tagline: "Independent Creative Studio",

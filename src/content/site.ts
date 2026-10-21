@@ -19,7 +19,7 @@ export const site = {
      * (kein nachgebautes Logo).  → LOGO_ASSET_REQUIRED
      */
     // Original-Wortmarke (Asset_1). Die helle Variante ist dieselbe Datei mit weißer
-    // statt schwarzer Schrift – Farbvariante vor Launch bitte freigeben.
+    // statt schwarzer Schrift. Palette final freigegeben (21.10.2026).
     logoOnDark: "/brand/studio-nimbaland-logo-light.svg" as string | null,
     logoOnLight: "/brand/studio-nimbaland-logo-dark.svg" as string | null,
     /** Seitenverhältnis der Wortmarke laut viewBox (498.39 × 79). */
@@ -32,12 +32,11 @@ export const site = {
   contact: {
     /** Freigegebene Kontaktadresse (von Nimalan im Kontakttext angegeben, 20.10.2026). */
     email: "nimalan@posteo.de" as string | null,
+    /** Studio-Adresse, von Nimalan freigegeben (21.10.2026). */
+    address: { name: "Studio.Nimbaland", street: "Lindenstraße 68", city: "40233 Düsseldorf", country: "Deutschland" },
   },
 
-  /**
-   * Profile aus deinen bisherigen Angaben.
-   * ⚠ Vor Launch bestätigen, dass diese auf der Website erscheinen sollen.
-   */
+  /** Social-Profile – von Nimalan bestätigt (21.10.2026). */
   social: [
     { label: "LinkedIn", url: "https://www.linkedin.com/in/nimbaland" },
     { label: "Instagram", url: "https://www.instagram.com/nimbaland.studios" },
