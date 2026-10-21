@@ -26,10 +26,12 @@ export function ServiceList({ services, locale, variant = "home", deliverablesLa
           <div className="col-span-full lg:col-span-6 lg:col-start-7">
             <p className={home ? "measure" : "t-lead measure"}>{t(home ? s.homeSummary : s.description, locale)}</p>
             {!home && (
-              <p className="mt-5 measure">
-                <span className="t-label t-muted mr-2">{deliverablesLabel}:</span>
-                <span lang="en">{s.deliverables.join(", ")}</span>
-              </p>
+              <div className="mt-6">
+                <p className="t-label t-muted mb-3">{deliverablesLabel}</p>
+                <ul className="svc-chips" lang="en">
+                  {s.deliverables.map((d) => <li key={d} className="svc-chip">{d}</li>)}
+                </ul>
+              </div>
             )}
           </div>
         </li>

@@ -627,7 +627,7 @@ html.lenis, html.lenis body { height: auto; }
   .svc__examples { display: grid; gap: 1rem; grid-template-columns: 1fr 1fr; }
   .svc__example { display: block; text-decoration: none; color: inherit; grid-column: 1 / -1; }
   .svc__example--small { grid-column: auto; }
-  .svc__media { position: relative; display: block; aspect-ratio: 16 / 9; overflow: hidden; background: var(--graphite-800); outline: 10px solid #8e9ba6; outline-offset: -10px; }
+  .svc__media { position: relative; display: block; aspect-ratio: 16 / 9; overflow: hidden; background: var(--graphite-800); outline: 6px solid var(--color-accent); outline-offset: -6px; }
   .svc__media img { transition: transform .6s var(--ease-out); }
   .svc__example:hover .svc__media img { transform: scale(1.04); }
   .svc__example--small .svc__media { outline-width: 6px; outline-offset: -6px; }
@@ -755,3 +755,10 @@ html.lenis, html.lenis body { height: auto; }
   .media-stack > * { display: block; }
 }
 @layer components { .media-stack > * + * { margin-top: -1px; } }
+
+/* Leistungen als Boxen – überall gleich, in der Signalfarbe */
+@layer components {
+  .svc-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .svc-chip { border: 1.5px solid var(--color-accent); color: var(--color-accent); padding: 0.45rem 0.9rem; font-size: 0.875rem; font-weight: 600; letter-spacing: 0.01em; line-height: 1.2; transition: background-color .2s ease, color .2s ease; }
+  .svc-chip:hover { background: var(--color-accent); color: var(--graphite-900); }
+}

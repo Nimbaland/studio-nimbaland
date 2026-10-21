@@ -38,6 +38,15 @@ const project: PortfolioProject = {
   },
   gallery: [
     {
+      src: "/projects/mkg-koeln-west/icons.webp",
+      span: "full",
+      alt: { de: "Acht Behandlungs-Icons in Blau: Botox, Kosmetik, Lasern, Stirn, plastische Gesichtschirurgie, Gesicht und Ästhetik, Haut- und Dermatochirurgie, Oral- und Kieferchirurgie", en: "Eight treatment icons in blue: botox, cosmetics, laser, forehead, facial plastic surgery, face and aesthetics, skin and dermatosurgery, oral and maxillofacial surgery" },
+      caption: { de: "Behandlungs-Icons", en: "Treatment icons" },
+      aspect: "16/9",
+      width: 2400,
+      height: 1350,
+    },
+    {
       src: "/projects/mkg-koeln-west/gallery-01.webp",
       alt: { de: "Geschäftspapier sowie Visitenkarte mit Terminplaner, Vorder- und Rückseite", en: "Letterhead and business card with appointment planner, front and back" },
       caption: { de: "Geschäftsausstattung", en: "Stationery" },

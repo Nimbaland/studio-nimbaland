@@ -31,7 +31,7 @@ const project: PortfolioProject = {
   },
   coverImage: {
     src: "/projects/circle-up/cover.webp",
-    alt: { de: "Titelfolie des Pitch Decks: Circle-Up-Logo in Neon-Gelb auf Schwarz", en: "Pitch deck cover: Circle Up logo in neon yellow on black" },
+    alt: { de: "Titelfolie des Pitch Decks: Läufergruppe in Schwarz-Weiß mit Circle-Up-Logo in Neon-Gelb", en: "Pitch deck cover: group of runners in black and white with the Circle Up logo in neon yellow" },
     aspect: "16/9",
     width: 2400,
     height: 1350,
@@ -41,6 +41,9 @@ const project: PortfolioProject = {
     { src: "/projects/circle-up/cards.webp", span: "full", alt: { de: "Karten und Sticker mit dem Circle-Up-Logo in Schwarz, Neon-Gelb und Weiß", en: "Cards and stickers with the Circle Up logo in black, neon yellow and white" }, caption: { de: "Logo-Mockup · Karten und Sticker", en: "Logo mockup · cards and stickers" }, aspect: "16/9", width: 2400, height: 1350 },
     { src: "/projects/circle-up/gallery-01.webp", span: "half", alt: { de: "Vier Logo-Varianten auf Schwarz, Neon-Gelb und Grau", en: "Four logo variants on black, neon yellow and grey" }, caption: { de: "Logo-Varianten", en: "Logo variants" }, aspect: "16/9", width: 2400, height: 1350 },
     { src: "/projects/circle-up/gallery-03.webp", span: "half", alt: { de: "Drei App-Screens: Profil, Running Club, Trainingspartner", en: "Three app screens: profile, running club, training partners" }, caption: { de: "App-Screens aus dem Pitch Deck", en: "App screens from the pitch deck" }, aspect: "16/9", width: 2400, height: 1350 },
+    { src: "/projects/circle-up/instagram-phones.webp", span: "full", alt: { de: "Instagram-Story-Vorlagen von Circle Up auf drei Smartphones", en: "Circle Up Instagram story templates on three smartphones" }, caption: { de: "Instagram-Vorlagen · Mockup", en: "Instagram templates · mockup" }, aspect: "16/9", width: 2400, height: 1350 },
+    { src: "/projects/circle-up/instagram-stories-poster.webp", video: "/projects/circle-up/instagram-stories.mp4", span: "half", alt: { de: "Video: alle Story-Vorlagen laufen nacheinander auf einem Smartphone durch", en: "Video: all story templates play one after another on a smartphone" }, caption: { de: "Instagram-Stories · Video", en: "Instagram stories · video" }, aspect: "16/9", width: 1600, height: 900 },
+    { src: "/projects/circle-up/instagram-grid.webp", span: "half", alt: { de: "Übersicht aller 14 Story-Vorlagen: verschiedene Sportarten in Schwarz-Weiß mit Logo in Neon-Gelb, Weiß oder Schwarz", en: "Overview of all 14 story templates: different sports in black and white with the logo in neon yellow, white or black" }, caption: { de: "14 Story-Vorlagen", en: "14 story templates" }, aspect: "16/9", width: 2400, height: 1350 },
     { src: "/projects/circle-up/pitch-deck-poster.webp", video: "/projects/circle-up/pitch-deck.mp4", span: "full", alt: { de: "Video: das Investoren-Pitch-Deck Folie für Folie auf einem Laptop", en: "Video: the investor pitch deck slide by slide on a laptop" }, caption: { de: "Pitch Deck für Investoren · Video", en: "Investor pitch deck · video" }, aspect: "16/9", width: 1600, height: 900 },
   ],
   featured: true,
