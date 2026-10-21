@@ -119,7 +119,14 @@ export default async function CaseStudyPage({ params }: Props) {
 
           {project.gallery.length > 0 && (
             <section aria-label={c.gallery} className="col-span-full">
-              <MediaGallery images={project.gallery} locale={locale} />
+              <MediaGallery images={project.gallery} locale={locale} layout={project.galleryLayout} />
+              {project.document && (
+                <p className="mt-10">
+                  <a href={project.document.href} target="_blank" rel="noopener" className="btn btn--primary">
+                    {t(project.document.label, locale)}
+                  </a>
+                </p>
+              )}
             </section>
           )}
         </div>

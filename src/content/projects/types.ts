@@ -24,6 +24,10 @@ export type ProjectImage = {
   aspect?: string;
   width?: number;
   height?: number;
+  /** Optional: MP4-Video statt Standbild (src dient dann als Poster). */
+  video?: string;
+  /** Layout in der Galerie: "full" = volle Breite, "half" = halbe Breite. Sonst automatisch. */
+  span?: "full" | "half";
 };
 
 export type PortfolioProject = {
@@ -47,6 +51,10 @@ export type PortfolioProject = {
   outcomes?: Localized<string[]>; // only verified results
   coverImage: ProjectImage;       // real approved asset
   gallery: ProjectImage[];
+  /** "stack": Bilder lückenlos untereinander (z. B. eine durchgehende Präsentation). */
+  galleryLayout?: "grid" | "stack";
+  /** Optionaler Download, z. B. die vollständige Case-Study als PDF. */
+  document?: { href: string; label: Localized };
   featured: boolean;
   published: boolean;             // false until approved
   /** Reihenfolge in Listen (kleiner = weiter oben). */

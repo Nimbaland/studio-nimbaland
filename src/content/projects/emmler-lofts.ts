@@ -22,6 +22,7 @@ const project: PortfolioProject = {
   },
   coverImage: { src: "/projects/emmler-lofts/cover.webp", alt: { de: "Titelfolie Emmler Lofts mit Farbbändern und Fassadenfoto", en: "Emmler Lofts title slide with colour bands and façade photo" }, aspect: "16/9", width: 2400, height: 1350 },
   gallery: [
+    { src: "/projects/emmler-lofts/pages-poster.webp", video: "/projects/emmler-lofts/pages.mp4", span: "full", alt: { de: "Video: Alle 62 Seiten des Exposés nacheinander durchgeblättert", en: "Video: All 62 pages of the brochure paged through one by one" }, caption: { de: "Alle 62 Seiten des Exposés · Video", en: "All 62 pages of the brochure · video" }, aspect: "16/9", width: 1600, height: 900 },
     { src: "/projects/emmler-lofts/gallery-01.webp", alt: { de: "Kapitelfolie Executive Summary und Folie Emmler Lofts", en: "Executive summary chapter slide and Emmler Lofts slide" }, caption: { de: "Kapitel und Objekt", en: "Chapter and property" }, aspect: "16/9", width: 2400, height: 1350 },
     { src: "/projects/emmler-lofts/gallery-02.webp", alt: { de: "Marktfolie mit Diagramm und Objektfolie", en: "Market slide with chart and property slide" }, caption: { de: "Markt und Objekt", en: "Market and property" }, aspect: "16/9", width: 2400, height: 1350 },
     { src: "/projects/emmler-lofts/gallery-03.webp", alt: { de: "Kapitelfolien Objekt und Vergleichstransaktionen", en: "Chapter slides Property and Comparable transactions" }, caption: { de: "Kapitelfolien", en: "Chapter slides" }, aspect: "16/9", width: 2400, height: 1350 },

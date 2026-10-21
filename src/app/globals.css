@@ -748,3 +748,9 @@ html.lenis, html.lenis body { height: auto; }
   .slider__arrow svg { width: 1.4rem; height: 1.4rem; stroke-width: 2; }
   .slider__arrow:disabled { opacity: .35; border-color: rgba(255,255,255,.3); color: var(--fg); }
 }
+
+/* Lückenloser Bildstapel (durchgehende Präsentation, z. B. Case-Study-PDF) */
+@layer components {
+  .media-stack { display: flex; flex-direction: column; gap: 0; }
+  .media-stack > * { display: block; }
+}

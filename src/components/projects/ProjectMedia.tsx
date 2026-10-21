@@ -10,24 +10,38 @@ type Props = {
   priority?: boolean;
   /** Erzwingt ein Seitenverhältnis (sonst das des Bildes). */
   aspect?: string;
+  /** false = ohne Scroll-Reveal (z. B. lückenlose Bildstapel). */
+  reveal?: boolean;
 };
 
-/** Echtes Projektbild – oder ein klar beschrifteter Platzhalter, solange es fehlt. */
-export function ProjectMedia({ image, locale, sizes, priority, aspect }: Props) {
+/** Echtes Projektbild oder -video – oder ein klar beschrifteter Platzhalter, solange es fehlt. */
+export function ProjectMedia({ image, locale, sizes, priority, aspect, reveal = true }: Props) {
   const ratio = aspect ?? image.aspect ?? "4/3";
   if (!image.src) {
     return <AssetPlaceholder code="ASSET_REQUIRED" path={image.expected} aspect={ratio} label={t(image.alt, locale)} />;
   }
+  const cls = `${reveal ? "media-figure " : ""}relative w-full overflow-hidden`;
+  if (image.video) {
+    return (
+      <div className={cls} style={{ aspectRatio: ratio }}>
+        <video
+          className="absolute inset-0 h-full w-full object-cover"
+          src={image.video}
+          poster={image.src}
+          autoPlay
+          muted
+          loop
+          playsInline
+          controls
+          preload="metadata"
+          aria-label={t(image.alt, locale)}
+        />
+      </div>
+    );
+  }
   return (
-    <div className="media-figure relative w-full overflow-hidden" style={{ aspectRatio: ratio }}>
-      <Image
-        src={image.src}
-        alt={t(image.alt, locale)}
-        fill
-        sizes={sizes}
-        priority={priority}
-        className="object-cover"
-      />
+    <div className={cls} style={{ aspectRatio: ratio }}>
+      <Image src={image.src} alt={t(image.alt, locale)} fill sizes={sizes} priority={priority} className="object-cover" />
     </div>
   );
 }

@@ -39,17 +39,17 @@ Nimbaland ist als Projektdatei vorbereitet, aber nicht in der Auswahl. Porträt 
 | Tervica (veröffentlicht) | – |
 | Bales Smart Home Services (veröffentlicht) | Cover-SVG mit Schrift „Gravita GEO“ als Pfade exportieren |
 | Physiofit-Mobil (veröffentlicht) | – (Tippfehler für die Website korrigiert; Originaldateien unverändert) |
-| Das Lebensbuch · Britta Küper (veröffentlicht) | – |
-| Variari Food Boutique | – |
+| Das Lebensbuch · Britta Küper (veröffentlicht) | – (3D-Mockups Schachtel + Sticker ergänzt) |
+| Variari Food Boutique | – (alle Website-Fotos, Handouts entfernt) |
 | Tina Sood Ergotherapie (veröffentlicht) | Hero-Screenshot zeigt Bild-Platzhalter „Praxisszene“ – Praxisfoto nachreichen |
 | The Grid Bar (veröffentlicht) | Barsnacks als PDF exportieren |
-| FlaminGo Swift (veröffentlicht) | Bildrechte der Stockfotos prüfen |
-| Brick No 10 · Colliers (veröffentlicht) | Rolle Naming/Logo bestätigen |
-| Solitaire · Colliers (veröffentlicht) | – |
-| Emmler Lofts · Colliers (veröffentlicht) | – |
+| FlaminGo Swift (veröffentlicht) | Bildrechte der Stockfotos prüfen (Case Study komplett als durchgehende Seite + PDF-Download) |
+| Brick No 10 · Colliers (veröffentlicht) | Rolle Naming/Logo bestätigen (Video aller Seiten ergänzt) |
+| Solitaire · Colliers (veröffentlicht) | – (Video aller Seiten) |
+| Emmler Lofts · Colliers (veröffentlicht) | – (Video aller Seiten) |
 | Circle Up (veröffentlicht) | – |
 | Waiturn (Entwurf) | Kunde oder eigenes Produkt? Jahr, Rolle, Live-URL; mobile Navigation im Design bricht um |
-| Frauenzimmer Wolfsburg (fehlt) | claudeusercontent-Link zur Kundenpräsentation – wird danach automatisch „Recent Work“ im Hero |
+| Frauen-Zimmer Wolfsburg (veröffentlicht) | Datum bestätigen (aktuell 10/2026), Auftrag oder freies Konzept?, echte Fotos statt Platzhalter |
 | Kratzert Gruppe (Entwurf) | Cover + Galerie, Case-Texte |
 
 Alle Leitsätze und Kundenfreigaben sind laut Nimalan erteilt (20.10.2026).

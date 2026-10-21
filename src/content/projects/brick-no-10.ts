@@ -23,6 +23,7 @@ const project: PortfolioProject = {
   },
   coverImage: { src: "/projects/brick-no-10/cover.webp", alt: { de: "Doppelseite mit Agenda und freigestelltem Backsteingebäude", en: "Spread with agenda and cut-out brick building" }, aspect: "16/9", width: 2400, height: 1350 },
   gallery: [
+    { src: "/projects/brick-no-10/pages-poster.webp", video: "/projects/brick-no-10/pages.mp4", span: "full", alt: { de: "Video: Alle Seiten als Doppelseiten nacheinander durchgeblättert", en: "Video: All pages as spreads paged through one by one" }, caption: { de: "Alle Seiten als Doppelseiten · Video", en: "All pages as spreads · video" }, aspect: "16/9", width: 1600, height: 900 },
     { src: "/projects/brick-no-10/gallery-01.webp", alt: { de: "Doppelseite Lage: Luftbild von Hamburg mit Markierungen", en: "Location spread: aerial photo of Hamburg with markings" }, caption: { de: "Lage", en: "Location" }, aspect: "16/9", width: 2400, height: 1350 },
     { src: "/projects/brick-no-10/gallery-02.webp", alt: { de: "Doppelseite Kontorhausviertel mit beleuchtetem Gebäude", en: "Kontorhaus district spread with illuminated building" }, caption: { de: "Kontorhausviertel", en: "Kontorhaus district" }, aspect: "16/9", width: 2400, height: 1350 },
     { src: "/projects/brick-no-10/gallery-03.webp", alt: { de: "Titel mit Objektmarke Brick No 10", en: "Cover with the Brick No 10 property brand" }, caption: { de: "Titel", en: "Cover" }, aspect: "16/9", width: 2400, height: 1350 },

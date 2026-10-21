@@ -15,6 +15,7 @@ import flamingo from "./flamingo-swift";
 import brick from "./brick-no-10";
 import solitaire from "./solitaire";
 import emmler from "./emmler-lofts";
+import frauenzimmer from "./frauenzimmer-wolfsburg";
 // Nimbaland (eigene Marke) ist vorbereitet, aber aktuell nicht in der Auswahl:
 // import nimbaland from "./nimbaland";
 
@@ -25,7 +26,7 @@ import emmler from "./emmler-lofts";
  *  3. Hier importieren und in `all` eintragen
  *  4. Nach Freigabe `published: true` setzen
  */
-const all: PortfolioProject[] = [mkg, tervica, kratzert, physiofit, tinaSood, circleUp, variari, bales, lebensbuch, waiturn, grid, flamingo, brick, solitaire, emmler];
+const all: PortfolioProject[] = [mkg, tervica, kratzert, physiofit, tinaSood, circleUp, variari, bales, lebensbuch, waiturn, grid, flamingo, brick, solitaire, emmler, frauenzimmer];
 
 /** Jüngstes Jahr aus Angaben wie "2026" oder "2018–2019" (ohne Jahr: ganz hinten). */
 export function projectYear(p: PortfolioProject): number {
