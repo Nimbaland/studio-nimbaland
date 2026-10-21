@@ -59,6 +59,8 @@ Alle Leitsätze und Kundenfreigaben sind laut Nimalan erteilt (20.10.2026).
 | Tervica (überarbeitet) | Zuordnung bestätigen: Version B = Hauptmarke (Karten-Sticker), Version A = zweites Produkt (Rundsticker)? |
 | Bales Smart Home | – (Karussells „Smart vs. Normal“ + „Ein Tag“, Wärmepumpen-Post entfernt) |
 
+| Aurum Herbs (veröffentlicht) | Website-Schrift bestätigen (Vorschlag Jost), Live-URL |
+
 ## Texte
 
 - [ ] Englische Übersetzung der Fließtexte von einer Person mit Muttersprache gegenlesen lassen.
