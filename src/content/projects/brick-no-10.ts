@@ -9,6 +9,7 @@ const project: PortfolioProject = {
   tagline: { de: "Where Hanseatic tradition meets the digital future.", en: "Where Hanseatic tradition meets the digital future." },
   client: "Colliers International",
   year: "2019",
+  date: "2019-07",
   category: { de: ["Editorial", "Real Estate", "Pitch"], en: ["Editorial", "Real estate", "Pitch"] },
   role: { de: ["Art Direction", "Editorial Design", "Naming & Logo"], en: ["Art direction", "Editorial design", "Naming & logo"] },
   services: { de: ["Art Direction", "Editorial Design", "Pitch Design"], en: ["Art Direction", "Editorial Design", "Pitch Design"] },

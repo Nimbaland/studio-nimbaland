@@ -8,6 +8,7 @@ const project: PortfolioProject = {
   tagline: { de: "Unlock the road, share the load.", en: "Unlock the road, share the load." },
   client: "Sustainability Competition · SDG 9",
   year: "2023",
+  date: "2023-06",
   category: { de: ["UX/UI", "App-Konzept"], en: ["UX/UI", "App concept"] },
   role: { de: ["Konzept", "UX Design", "UI Design"], en: ["Concept", "UX design", "UI design"] },
   services: {

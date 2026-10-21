@@ -8,6 +8,7 @@ const project: PortfolioProject = {
   slug: "waiturn",
   title: "Waiturn",
   tagline: { de: "Order for the waiting room.", en: "Order for the waiting room." },
+  date: "2026-01",
   category: { de: ["Digital", "Landingpage"], en: ["Digital", "Landing page"] },
   role: { de: ["Screen Design", "UX/UI"], en: ["Screen design", "UX/UI"] },
   services: {

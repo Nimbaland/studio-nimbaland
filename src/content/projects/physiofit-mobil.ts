@@ -10,6 +10,7 @@ const project: PortfolioProject = {
   tagline: { de: "Therapy that comes to you.", en: "Therapy that comes to you." },
   client: "Inga Zander · Physiofit-Mobil",
   year: "2025",
+  date: "2025-09",
   category: { de: ["Branding", "Print"], en: ["Branding", "Print"] },
   role: { de: ["Logo", "Corporate Design", "Print"], en: ["Logo", "Corporate design", "Print"] },
   services: {

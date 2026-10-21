@@ -8,6 +8,7 @@ const project: PortfolioProject = {
   tagline: { de: "A prime office, presented like one.", en: "A prime office, presented like one." },
   client: "Colliers International",
   year: "2019",
+  date: "2019-08",
   category: { de: ["Präsentation", "Real Estate"], en: ["Presentation", "Real estate"] },
   role: { de: ["Art Direction", "Presentation Design"], en: ["Art direction", "Presentation design"] },
   services: { de: ["Art Direction", "Presentation Design", "Pitch Design"], en: ["Art Direction", "Presentation Design", "Pitch Design"] },

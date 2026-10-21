@@ -6,6 +6,7 @@ const project: PortfolioProject = {
   title: "Kratzert Gruppe",
   tagline: { de: "Building a stronger brand presence.", en: "Building a stronger brand presence." },
   client: "Kratzert Gruppe",
+  date: "2025-11",
   category: { de: ["Corporate Design", "Website"], en: ["Corporate design", "Website"] },
   role: { de: ["Brand & Design Manager"], en: ["Brand & Design Manager"] },
   services: { de: ["Brand Development", "Creative Direction", "Corporate Design", "Web Design"], en: ["Brand Development", "Creative Direction", "Corporate Design", "Web Design"] },

@@ -8,6 +8,7 @@ const project: PortfolioProject = {
   tagline: { de: "Berlin energy for a sales pitch.", en: "Berlin energy for a sales pitch." },
   client: "Colliers International",
   year: "2020",
+  date: "2020-05",
   category: { de: ["Präsentation", "Real Estate"], en: ["Presentation", "Real estate"] },
   role: { de: ["Art Direction", "Presentation Design"], en: ["Art direction", "Presentation design"] },
   services: { de: ["Art Direction", "Presentation Design", "Pitch Design"], en: ["Art Direction", "Presentation Design", "Pitch Design"] },

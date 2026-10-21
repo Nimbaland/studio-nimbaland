@@ -33,11 +33,16 @@ export function projectYear(p: PortfolioProject): number {
   return years ? Math.max(...years.map(Number)) : 0;
 }
 
-/** Projekte, die auf der Website sichtbar sind – die neuesten zuerst, bei gleichem Jahr nach `order`. */
+/** Sortierschlüssel: "JJJJ-MM" aus `date`, sonst das jüngste Jahr. */
+function chrono(p: PortfolioProject): string {
+  return p.date ?? `${projectYear(p)}-00`;
+}
+
+/** Projekte, die auf der Website sichtbar sind – chronologisch, die neuesten zuerst. */
 export function getProjects(): PortfolioProject[] {
   return all
     .filter((p) => p.published || showDrafts)
-    .sort((a, b) => projectYear(b) - projectYear(a) || a.order - b.order);
+    .sort((a, b) => chrono(b).localeCompare(chrono(a)) || a.order - b.order);
 }
 
 export function getFeaturedProjects(limit = 6): PortfolioProject[] {

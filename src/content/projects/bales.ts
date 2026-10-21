@@ -8,6 +8,7 @@ const project: PortfolioProject = {
   tagline: { de: "Making smart living feel intuitive.", en: "Making smart living feel intuitive." },
   client: "Bales Smart Home Services",
   year: "2026",
+  date: "2026-03",
   category: { de: ["Corporate Identity", "Kampagne", "Social Media"], en: ["Corporate identity", "Campaign", "Social media"] },
   role: { de: ["Brand Identity", "Kampagnenkonzept", "Art Direction"], en: ["Brand identity", "Campaign concept", "Art direction"] },
   services: {

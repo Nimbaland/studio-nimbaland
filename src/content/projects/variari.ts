@@ -10,6 +10,7 @@ const project: PortfolioProject = {
   client: "Variari Food Boutique",
   liveUrl: "https://www.variari.com/",
   year: "2019–2020",
+  date: "2020-05",
   category: { de: ["Rebranding", "Creative Direction", "Print"], en: ["Rebranding", "Creative direction", "Print"] },
   role: { de: ["Creative Director", "Logo-Rebranding", "Bildkonzept", "Print"], en: ["Creative director", "Logo rebrand", "Photo concept", "Print"] },
   services: {

@@ -7,6 +7,7 @@ const project: PortfolioProject = {
   tagline: { de: "Rethinking identity.", en: "Rethinking identity." },
   client: "Tervica",
   year: "2026",
+  date: "2026-05",
   category: { de: ["Rebranding", "Markenstrategie"], en: ["Rebranding", "Brand strategy"] },
   role: { de: ["Brand Strategy", "Visual Identity", "Pitch"], en: ["Brand strategy", "Visual identity", "Pitch"] },
   services: {

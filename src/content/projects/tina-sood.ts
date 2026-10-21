@@ -9,6 +9,7 @@ const project: PortfolioProject = {
   tagline: { de: "Making care feel close.", en: "Making care feel close." },
   client: "Tina Sood · Ganzheitliche Ergotherapie",
   year: "2026",
+  date: "2026-06",
   liveUrl: "https://ergotherapie-sood.de/",
   category: { de: ["Branding", "Website"], en: ["Branding", "Website"] },
   role: {

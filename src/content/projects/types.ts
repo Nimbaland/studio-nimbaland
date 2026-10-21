@@ -33,6 +33,8 @@ export type PortfolioProject = {
   tagline?: Localized;
   client?: string;
   year?: string;
+  /** Fertigstellung als "JJJJ-MM" – steuert die chronologische Reihenfolge (neueste zuerst). */
+  date?: string;
   /** Link zur Live-Website des Projekts (falls vorhanden). */
   liveUrl?: string;
   category: Localized<string[]>;

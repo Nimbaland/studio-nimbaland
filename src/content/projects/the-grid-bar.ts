@@ -11,6 +11,7 @@ const project: PortfolioProject = {
   tagline: { de: "A bar menu worth reading.", en: "A bar menu worth reading." },
   client: "The Grid Bar, Köln",
   year: "2018–2019",
+  date: "2019-11",
   category: { de: ["Print", "Editorial", "Gastronomie"], en: ["Print", "Editorial", "Hospitality"] },
   role: { de: ["Editorial Design", "Print Design"], en: ["Editorial design", "Print design"] },
   services: {

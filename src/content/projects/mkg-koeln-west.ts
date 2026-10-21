@@ -10,6 +10,7 @@ const project: PortfolioProject = {
   client: "MKG Köln West",
   liveUrl: "https://www.mkg-koeln-west.de/",
   year: "2020–2021",
+  date: "2021-06",
   category: { de: ["Branding", "Außendarstellung", "Website"], en: ["Branding", "Signage", "Website"] },
   role: { de: ["Branding", "Art Direction", "Webdesign"], en: ["Branding", "Art direction", "Web design"] },
   services: {

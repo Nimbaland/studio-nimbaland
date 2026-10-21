@@ -9,6 +9,7 @@ const project: PortfolioProject = {
   tagline: { de: "A box full of memories.", en: "A box full of memories." },
   client: "Britta Küper · Lebensbuch",
   year: "2025",
+  date: "2025-10",
   category: { de: ["Packaging", "Print"], en: ["Packaging", "Print"] },
   role: {
     de: ["Verpackungsdesign", "Stanzform", "Print"],

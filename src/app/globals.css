@@ -738,3 +738,13 @@ html.lenis, html.lenis body { height: auto; }
   .process-step__icon { width: 5.5rem; height: 5.5rem; border: 1px solid rgba(255,255,255,.4); }
   .process-step__icon svg { width: 2.75rem; height: 2.75rem; stroke-width: 1.2; }
 }
+
+/* Slider im fixierten Modus: Leiste mit Pfeilen immer unter dem Header sichtbar, Karten passen in die Bildschirmhöhe */
+@layer components {
+  .slider.is-pinned { justify-content: flex-start; padding-top: calc(var(--header-h, 76px) + 1.25rem); }
+  .slider.is-pinned .slider__bar { padding-bottom: 1.5rem; position: relative; z-index: 2; }
+  @media (min-width: 1024px) { .slider.is-pinned .slide { flex-basis: min(50vw, 820px, calc((100vh - var(--header-h, 76px) - 21rem) * 16 / 9)); } }
+  .slider__arrow { width: 3.5rem; height: 3.5rem; border: 1.5px solid var(--color-accent); background: var(--graphite-800); color: var(--color-accent); }
+  .slider__arrow svg { width: 1.4rem; height: 1.4rem; stroke-width: 2; }
+  .slider__arrow:disabled { opacity: .35; border-color: rgba(255,255,255,.3); color: var(--fg); }
+}

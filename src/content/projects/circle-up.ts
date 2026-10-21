@@ -10,6 +10,7 @@ const project: PortfolioProject = {
   tagline: { de: "Train. Connect. Succeed.", en: "Train. Connect. Succeed." },
   client: "Circle Up",
   year: "2025",
+  date: "2025-12",
   category: { de: ["Branding", "Konzept", "Pitch"], en: ["Branding", "Concept", "Pitch"] },
   role: { de: ["Logo Design", "Konzeption", "Pitch Deck"], en: ["Logo design", "Concept", "Pitch deck"] },
   services: {
