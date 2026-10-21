@@ -754,3 +754,4 @@ html.lenis, html.lenis body { height: auto; }
   .media-stack { display: flex; flex-direction: column; gap: 0; }
   .media-stack > * { display: block; }
 }
+@layer components { .media-stack > * + * { margin-top: -1px; } }

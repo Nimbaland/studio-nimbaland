@@ -2,6 +2,7 @@ import type { PortfolioProject } from "./types";
 
 // FlaminGo Swift – UX/UI-Case-Study einer Mobility-App (Sustainability Competition, SDG 9), Juni 2023.
 // Quelle: Nimalans Case-Study-PDF "2024_FlaminGoSwift_App_Nimalan_Suntharalingam".
+// Laut Nimalan: PDF unverändert lassen (komplette Präsentation) – nur Header-Bild neu.
 const project: PortfolioProject = {
   slug: "flamingo-swift",
   title: "FlaminGo Swift",
@@ -33,19 +34,34 @@ const project: PortfolioProject = {
   },
   coverImage: {
     src: "/projects/flamingo-swift/cover.webp",
-    alt: { de: "App-Startseite von FlaminGo Swift neben einem Straßenfoto", en: "FlaminGo Swift app home screen next to a road photo" },
+    alt: { de: "FlaminGo-Swift-Logo neben drei App-Screens: Offer a ride, Startseite, DropOff Partner", en: "FlaminGo Swift logo next to three app screens: offer a ride, home, DropOff partner" },
     aspect: "16/9",
     width: 2400,
     height: 1350,
   },
   gallery: [
-    { src: "/projects/flamingo-swift/gallery-01.webp", alt: { de: "Logo FlaminGo Swift mit Claim „Unlock the Road, Share the Load“", en: "FlaminGo Swift logo with claim “Unlock the Road, Share the Load”" }, caption: { de: "Marke", en: "Brand" }, aspect: "16/9", width: 2400, height: 1350 },
-    { src: "/projects/flamingo-swift/gallery-02.webp", alt: { de: "Wettbewerbsaufgabe und Design-Prozess", en: "Competition brief and design process" }, caption: { de: "Aufgabe und Prozess", en: "Brief and process" }, aspect: "16/9", width: 2400, height: 1350 },
-    { src: "/projects/flamingo-swift/gallery-03.webp", alt: { de: "Stylescape: Farbpalette der App", en: "Stylescape: app colour palette" }, caption: { de: "Stylescape, Farben", en: "Stylescape, colours" }, aspect: "16/9", width: 2400, height: 1350 },
-    { src: "/projects/flamingo-swift/gallery-04.webp", alt: { de: "Persona Nils Nilsson", en: "Persona Nils Nilsson" }, caption: { de: "Persona", en: "Persona" }, aspect: "16/9", width: 2400, height: 1350 },
-    { src: "/projects/flamingo-swift/gallery-05.webp", alt: { de: "Screens für den Kurierversand mit Paketgrößen und Kameramessung", en: "Courier screens with parcel sizes and camera measurement" }, caption: { de: "Kurierversand", en: "Courier delivery" }, aspect: "16/9", width: 2400, height: 1350 },
-    { src: "/projects/flamingo-swift/gallery-06.webp", alt: { de: "App in der Hand und Startseite mit Book a ride", en: "App in hand and home screen with Book a ride" }, caption: { de: "Book a ride / Offer a ride", en: "Book a ride / Offer a ride" }, aspect: "16/9", width: 2400, height: 1350 },
+    { src: "/projects/flamingo-swift/seg-00.webp", alt: { de: "Case Study FlaminGo Swift, Abschnitt 1 von 16", en: "FlaminGo Swift case study, section 1 of 16" }, aspect: "1920/2400", width: 1920, height: 2400 },
+    { src: "/projects/flamingo-swift/seg-01.webp", alt: { de: "Case Study FlaminGo Swift, Abschnitt 2 von 16", en: "FlaminGo Swift case study, section 2 of 16" }, aspect: "1920/2400", width: 1920, height: 2400 },
+    { src: "/projects/flamingo-swift/seg-02.webp", alt: { de: "Case Study FlaminGo Swift, Abschnitt 3 von 16", en: "FlaminGo Swift case study, section 3 of 16" }, aspect: "1920/2400", width: 1920, height: 2400 },
+    { src: "/projects/flamingo-swift/seg-03.webp", alt: { de: "Case Study FlaminGo Swift, Abschnitt 4 von 16", en: "FlaminGo Swift case study, section 4 of 16" }, aspect: "1920/2400", width: 1920, height: 2400 },
+    { src: "/projects/flamingo-swift/seg-04.webp", alt: { de: "Case Study FlaminGo Swift, Abschnitt 5 von 16", en: "FlaminGo Swift case study, section 5 of 16" }, aspect: "1920/2400", width: 1920, height: 2400 },
+    { src: "/projects/flamingo-swift/seg-05.webp", alt: { de: "Case Study FlaminGo Swift, Abschnitt 6 von 16", en: "FlaminGo Swift case study, section 6 of 16" }, aspect: "1920/2400", width: 1920, height: 2400 },
+    { src: "/projects/flamingo-swift/seg-06.webp", alt: { de: "Case Study FlaminGo Swift, Abschnitt 7 von 16", en: "FlaminGo Swift case study, section 7 of 16" }, aspect: "1920/2400", width: 1920, height: 2400 },
+    { src: "/projects/flamingo-swift/seg-07.webp", alt: { de: "Case Study FlaminGo Swift, Abschnitt 8 von 16", en: "FlaminGo Swift case study, section 8 of 16" }, aspect: "1920/2400", width: 1920, height: 2400 },
+    { src: "/projects/flamingo-swift/seg-08.webp", alt: { de: "Case Study FlaminGo Swift, Abschnitt 9 von 16", en: "FlaminGo Swift case study, section 9 of 16" }, aspect: "1920/2400", width: 1920, height: 2400 },
+    { src: "/projects/flamingo-swift/seg-09.webp", alt: { de: "Case Study FlaminGo Swift, Abschnitt 10 von 16", en: "FlaminGo Swift case study, section 10 of 16" }, aspect: "1920/2400", width: 1920, height: 2400 },
+    { src: "/projects/flamingo-swift/seg-10.webp", alt: { de: "Case Study FlaminGo Swift, Abschnitt 11 von 16", en: "FlaminGo Swift case study, section 11 of 16" }, aspect: "1920/2400", width: 1920, height: 2400 },
+    { src: "/projects/flamingo-swift/seg-11.webp", alt: { de: "Case Study FlaminGo Swift, Abschnitt 12 von 16", en: "FlaminGo Swift case study, section 12 of 16" }, aspect: "1920/2400", width: 1920, height: 2400 },
+    { src: "/projects/flamingo-swift/seg-12.webp", alt: { de: "Case Study FlaminGo Swift, Abschnitt 13 von 16", en: "FlaminGo Swift case study, section 13 of 16" }, aspect: "1920/2400", width: 1920, height: 2400 },
+    { src: "/projects/flamingo-swift/seg-13.webp", alt: { de: "Case Study FlaminGo Swift, Abschnitt 14 von 16", en: "FlaminGo Swift case study, section 14 of 16" }, aspect: "1920/2400", width: 1920, height: 2400 },
+    { src: "/projects/flamingo-swift/seg-14.webp", alt: { de: "Case Study FlaminGo Swift, Abschnitt 15 von 16", en: "FlaminGo Swift case study, section 15 of 16" }, aspect: "1920/2400", width: 1920, height: 2400 },
+    { src: "/projects/flamingo-swift/seg-15.webp", alt: { de: "Case Study FlaminGo Swift, Abschnitt 16 von 16", en: "FlaminGo Swift case study, section 16 of 16" }, aspect: "1920/1866", width: 1920, height: 1866 },
   ],
+  galleryLayout: "stack",
+  document: {
+    href: "/projects/flamingo-swift/FlaminGoSwift_Case_Study_Nimalan_Suntharalingam.pdf",
+    label: { de: "Case Study als PDF öffnen", en: "Open case study as PDF" },
+  },
   featured: true,
   published: true,
   order: 10,
