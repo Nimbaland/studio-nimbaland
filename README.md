@@ -134,4 +134,7 @@ Ist nichts eingetragen, meldet das Formular ehrlich, dass es nicht verbunden ist
 
 ## Hosting
 
-Läuft auf jedem Node-Host. Empfehlung: Vercel (Repo verbinden, Umgebungsvariablen aus `.env.example` setzen).
+- Code: privates GitHub-Repo **Nimbaland/studio-nimbaland** (Branch `main`)
+- Vercel-Projekt **studio-nimbaland** – Test-URL: https://studio-nimbaland.vercel.app/de
+- Jeder Push auf `main` wird automatisch neu veröffentlicht.
+- Umgebungsvariablen aus `.env.example` im Vercel-Projekt setzen (vor dem Launch: `SITE_INDEXABLE`, `NEXT_PUBLIC_SITE_URL`, `CONTACT_WEBHOOK_URL`).
