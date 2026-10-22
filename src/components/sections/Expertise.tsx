@@ -16,7 +16,8 @@ export function Expertise({ locale, dict, deliverablesLabel }: { locale: Locale;
   const text = (p: (typeof projects)[number]) => [...p.services.de, ...p.services.en, ...p.category.de, ...p.role.en].join(" ");
   // AI-Projekte zuerst: alle AI-Visual-Engineering-Arbeiten (max. 2) gehören zu diesem Bereich
   const ai = services.find((s) => s.id === "ai-visual-engineering");
-  const aiHits = ai?.match ? projects.filter((p) => ai.match!.test(text(p))).slice(0, 2) : [];
+  const aiPool = getProjects().filter((p) => p.published && p.coverImage.src);
+  const aiHits = ai?.match ? aiPool.filter((p) => ai.match!.test(text(p))).slice(0, 2) : [];
   aiHits.forEach((p) => used.add(p.slug));
   for (const s of services) {
     const hits = s === ai ? aiHits : (() => {
@@ -38,7 +39,7 @@ export function Expertise({ locale, dict, deliverablesLabel }: { locale: Locale;
         </div>
 
         <div className="section-cta">
-          <p className="t-lead">{dict.ctaText}</p>
+          <p className="section-cta__text">{dict.ctaText}</p>
           <ButtonLink href="#contact" lang="en">{dict.cta}</ButtonLink>
         </div>
       </div>

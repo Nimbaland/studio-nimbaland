@@ -33,6 +33,11 @@ const project: PortfolioProject = {
     de: "Kampagnenbilder für Feed und Story und ein Reel, für das derselbe Prompt in Kling, Seedance und happyhorse verglichen wurde. Den Song dazu habe ich geschrieben und mit Suno umgesetzt. Die wichtigste Erkenntnis: KI liefert die Richtung und spart Fotoshooting und Set-Design – Vektorarbeit, Typo-Prüfung und die Auswahl, was zur Marke passt, bleiben Handarbeit.",
     en: "Campaign images for feed and story, plus a reel for which the same prompt was compared in Kling, Seedance and happyhorse. I wrote the song for it and produced it with Suno. The key learning: AI sets the direction and replaces a photo shoot and set design – vector work, type checks and deciding what fits the brand remain handcraft.",
   },
+  story: {
+    challenge: { de: "Eine komplette Supplement-Marke samt Instagram-Kampagne – in 12 Stunden, mit KI.", en: "A complete supplement brand plus Instagram campaign – in 12 hours, with AI." },
+    idea: { de: "Ein Moodboard und zwei Personas als feste Referenz für jeden Prompt – damit Produkt, Etikett und Bildsprache in allen Motiven gleich bleiben.", en: "One moodboard and two personas as the fixed reference for every prompt – so product, label and imagery stay the same across all motifs." },
+    decision: { de: "KI liefert die Richtung, die Hand den Feinschliff: Logo als Vektor nachgebaut, Typo geprüft, Reel mit eigenem Song.", en: "AI sets the direction, the hand does the finish: logo rebuilt as vectors, type checked, reel with my own song." },
+  },
   coverImage: {
     src: "/projects/lumiq/cover.webp",
     alt: { de: "LUMIQ-Kampagne: zwei Instagram-Stories auf Smartphones und ein Feed-Post mit dem Kraftpapier-Beutel", en: "LUMIQ campaign: two Instagram stories on smartphones and a feed post with the kraft paper pouch" },

@@ -55,8 +55,8 @@ export default async function HomePage({ params }: Props) {
           </p>
         </div>
       </section>
-      <SelectedWork locale={locale} dict={dict.work} projects={featured} total={projects.filter((p) => p.published).length} />
       <CtaMarquee href="#contact" label={dict.marquee.label} items={dict.marquee.items} />
+      <SelectedWork locale={locale} dict={dict.work} projects={featured} total={projects.filter((p) => p.published).length} />
       <Expertise locale={locale} dict={dict.expertise} deliverablesLabel={dict.services.deliverables} />
       <AboutPreview locale={locale} dict={dict.aboutPreview} portraitAlt={dict.about.portraitAlt} />
       <HomeContact locale={locale} dict={dict} />

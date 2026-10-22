@@ -51,13 +51,13 @@ const de = {
     title: "Sound familiar?",
     intro: "Die meisten Projekte beginnen nicht mit einem Briefing, sondern mit einem Gefühl: Da geht mehr.",
     proof: "So habe ich es gelöst",
-    outro: "Wie das konkret aussieht, zeige ich dir an fünf Projekten.",
+    outro: "Wie das konkret aussieht, zeige ich dir an sechs Projekten.",
   },
   work: {
     eyebrow: "Work, Up Close / 02",
     sectionTitle: "Work, up close.",
     sectionIntro: [
-      "Fünf Projekte – jeweils mit der Frage am Anfang, der Idee dahinter und der Entscheidung, die den Unterschied gemacht hat.",
+      "Sechs Projekte – jeweils mit der Frage am Anfang, der Idee dahinter und der Entscheidung, die den Unterschied gemacht hat.",
     ],
     allWork: "All Projects",
     viewProject: "View Case Study",

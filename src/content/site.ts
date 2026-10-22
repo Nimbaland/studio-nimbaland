@@ -59,7 +59,7 @@ export const site = {
   recentWorkSlug: "lumiq",
 
   /** Startseite „Work, up close“: Projekte mit Kurzgeschichte (story), in dieser Reihenfolge. */
-  homeWork: ["frauenzimmer-wolfsburg", "tervica", "circle-up", "das-lebensbuch", "the-grid-bar"],
+  homeWork: ["lumiq", "frauenzimmer-wolfsburg", "tervica", "circle-up", "das-lebensbuch", "the-grid-bar"],
 
   /** Startseite „Sound familiar?“: Situationen von Kundinnen und Kunden, jeweils mit einem Projekt als Beleg. */
   recognition: [

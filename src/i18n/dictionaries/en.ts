@@ -50,13 +50,13 @@ const en: Dictionary = {
     title: "Sound familiar?",
     intro: "Most projects don't start with a brief, but with a feeling: there's more in this.",
     proof: "How I solved it",
-    outro: "Here's what that looks like in five projects.",
+    outro: "Here's what that looks like in six projects.",
   },
   work: {
     eyebrow: "Work, Up Close / 02",
     sectionTitle: "Work, up close.",
     sectionIntro: [
-      "Five projects – each with the question at the start, the idea behind it and the decision that made the difference.",
+      "Six projects – each with the question at the start, the idea behind it and the decision that made the difference.",
     ],
     allWork: "All Projects",
     viewProject: "View Case Study",
