@@ -3,7 +3,7 @@ import type { PortfolioProject } from "./types";
 // LUMIQ – Abschlussprojekt der IHK-zertifizierten Weiterbildung „AI Content Creator“ bei SuperCode (Juli 2026).
 // Teamprojekt von Bianca, Steffi & Nimba. Quelle: Prozessdokumentation „LUMIQ-Workflow“ (13 Folien),
 // Logo (SVG), Kampagnenmotive (Story 9:16, Feed 1:1 und 4:5) und Reel/Story-Video (v2).
-// Mockups: eigene Kompositionen aus den Kampagnenmotiven.
+// Mockups: eigene Kompositionen aus den Kampagnenmotiven. Song zum Reel laut Nimalan von ihm geschrieben, mit Suno umgesetzt.
 const project: PortfolioProject = {
   slug: "lumiq",
   title: "LUMIQ",
@@ -12,7 +12,7 @@ const project: PortfolioProject = {
   year: "2026",
   date: "2026-07",
   category: { de: ["AI Visual Engineering", "Branding", "Kampagne"], en: ["AI visual engineering", "Branding", "Campaign"] },
-  role: { de: ["Konzept", "AI Visual Engineering", "Logo", "Kampagne"], en: ["Concept", "AI visual engineering", "Logo", "Campaign"] },
+  role: { de: ["Konzept", "AI Visual Engineering", "Logo", "Kampagne", "Song"], en: ["Concept", "AI visual engineering", "Logo", "Campaign", "Song"] },
   services: {
     de: ["AI Visual Engineering", "Brand Identity", "Campaign Visuals"],
     en: ["AI Visual Engineering", "Brand Identity", "Campaign Visuals"],
@@ -30,8 +30,8 @@ const project: PortfolioProject = {
     en: "Eight phases, four tool groups: brand name (“Lumen” + “IQ”) and story with ChatGPT, two buyer personas as character references, a moodboard as the style reference for every image prompt. Logo directions with Nano Banana 2, then rebuilt as vectors in Illustrator. The label with GPT Image – the only model that set several text blocks without errors.",
   },
   solution: {
-    de: "Kampagnenbilder für Feed und Story und ein Reel, für das derselbe Prompt in Kling, Seedance und happyhorse verglichen wurde. Die wichtigste Erkenntnis: KI liefert die Richtung und spart Fotoshooting und Set-Design – Vektorarbeit, Typo-Prüfung und die Auswahl, was zur Marke passt, bleiben Handarbeit.",
-    en: "Campaign images for feed and story, plus a reel for which the same prompt was compared in Kling, Seedance and happyhorse. The key learning: AI sets the direction and replaces a photo shoot and set design – vector work, type checks and deciding what fits the brand remain handcraft.",
+    de: "Kampagnenbilder für Feed und Story und ein Reel, für das derselbe Prompt in Kling, Seedance und happyhorse verglichen wurde. Den Song dazu habe ich geschrieben und mit Suno umgesetzt. Die wichtigste Erkenntnis: KI liefert die Richtung und spart Fotoshooting und Set-Design – Vektorarbeit, Typo-Prüfung und die Auswahl, was zur Marke passt, bleiben Handarbeit.",
+    en: "Campaign images for feed and story, plus a reel for which the same prompt was compared in Kling, Seedance and happyhorse. I wrote the song for it and produced it with Suno. The key learning: AI sets the direction and replaces a photo shoot and set design – vector work, type checks and deciding what fits the brand remain handcraft.",
   },
   coverImage: {
     src: "/projects/lumiq/cover.webp",
@@ -41,7 +41,7 @@ const project: PortfolioProject = {
     height: 1350,
   },
   gallery: [
-    { src: "/projects/lumiq/reel-poster.webp", video: "/projects/lumiq/reel.mp4", span: "full", alt: { de: "Video: das LUMIQ-Reel auf einem Smartphone, daneben zwei Feed-Posts", en: "Video: the LUMIQ reel on a smartphone, next to two feed posts" }, caption: { de: "Reel / Story 9:16 · Image-to-Video", en: "Reel / story 9:16 · image-to-video" }, aspect: "16/9", width: 1600, height: 900 },
+    { src: "/projects/lumiq/reel-poster.webp", video: "/projects/lumiq/reel.mp4", span: "full", alt: { de: "Video: das LUMIQ-Reel auf einem Smartphone, daneben zwei Feed-Posts", en: "Video: the LUMIQ reel on a smartphone, next to two feed posts" }, caption: { de: "Reel / Story 9:16 · Image-to-Video · Song: eigener Text, umgesetzt mit Suno", en: "Reel / story 9:16 · image-to-video · song: own lyrics, produced with Suno" }, aspect: "16/9", width: 1600, height: 900 },
     { src: "/projects/lumiq/posts.webp", span: "full", alt: { de: "Zwei Feed-Posts im Format 1:1 und 4:5", en: "Two feed posts in 1:1 and 4:5" }, caption: { de: "Feed-Posts 1:1 und 4:5", en: "Feed posts 1:1 and 4:5" }, aspect: "16/9", width: 2400, height: 1350 },
     { src: "/projects/lumiq/workflow-03.webp", span: "full", alt: { de: "Zeitstrahl: acht Phasen in 12 Stunden", en: "Timeline: eight phases in 12 hours" }, caption: { de: "Workflow: acht Phasen, 12 Stunden", en: "Workflow: eight phases, 12 hours" }, aspect: "16/9", width: 2400, height: 1350 },
     { src: "/projects/lumiq/workflow-07.webp", span: "half", alt: { de: "Logo-Entwicklung: KI-Richtung und Vektor-Feinschliff", en: "Logo development: AI direction and vector refinement" }, caption: { de: "Logo: KI-Richtung, Vektor von Hand", en: "Logo: AI direction, vector by hand" }, aspect: "16/9", width: 2400, height: 1350 },

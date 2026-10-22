@@ -26,6 +26,8 @@ export type ProjectImage = {
   height?: number;
   /** Optional: MP4-Video statt Standbild (src dient dann als Poster). */
   video?: string;
+  /** false = Video startet nicht automatisch (z. B. lange Videos mit Ton). */
+  autoplay?: boolean;
   /** Layout in der Galerie: "full" = volle Breite, "half" = halbe Breite. Sonst automatisch. */
   span?: "full" | "half";
 };

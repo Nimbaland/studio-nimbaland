@@ -3,6 +3,7 @@ import type { PortfolioProject } from "./types";
 // „Welcome to Nimbaland“ – KI-generiertes Musikvideo, eigenes Projekt (Mai–Juni 2026).
 // Quelle: Nimalans Ordner „Nimbaland Music Video“ (Clips aus Magnific, u. a. Kling und Seedance,
 // Song „Nimbaland – Welcome to Nimbaland“, finales Video) und der Songtext.
+// Laut Nimalan: Beat selbst produziert in Ableton, Vocals mit Suno Pro, Lyrics selbst geschrieben.
 // Auf der Website: 36-Sekunden-Teaser (Intro + Höhepunkt) aus den Einzelclips, nicht das ganze Video (481 MB).
 const project: PortfolioProject = {
   slug: "welcome-to-nimbaland",
@@ -12,14 +13,14 @@ const project: PortfolioProject = {
   year: "2026",
   date: "2026-06",
   category: { de: ["AI Visual Engineering", "Musikvideo"], en: ["AI visual engineering", "Music video"] },
-  role: { de: ["Idee", "Art Direction", "AI Visual Engineering", "Schnitt"], en: ["Concept", "Art direction", "AI visual engineering", "Edit"] },
+  role: { de: ["Songwriting", "Musikproduktion", "Art Direction", "AI Visual Engineering", "Schnitt"], en: ["Songwriting", "Music production", "Art direction", "AI visual engineering", "Edit"] },
   services: {
     de: ["AI Visual Engineering", "Art Direction", "Visual Storytelling"],
     en: ["AI Visual Engineering", "Art Direction", "Visual Storytelling"],
   },
   summary: {
-    de: "Ein Musikvideo, in dem tamilische Tempelkultur auf elektronische Nacht trifft – Bild für Bild mit generativer KI entwickelt, von den Tempeltoren um Mitternacht bis zum tanzenden Nataraja über der Menge.",
-    en: "A music video where Tamil temple culture meets electronic night – developed shot by shot with generative AI, from the temple doors at midnight to the dancing Nataraja above the crowd.",
+    de: "Song und Musikvideo aus einer Hand: Lyrics selbst geschrieben, Beat in Ableton produziert, Vocals mit Suno Pro – und dazu ein Video, in dem tamilische Tempelkultur auf elektronische Nacht trifft, Bild für Bild mit generativer KI entwickelt.",
+    en: "Song and music video from one hand: lyrics written myself, beat produced in Ableton, vocals with Suno Pro – and a video where Tamil temple culture meets electronic night, developed shot by shot with generative AI.",
   },
   challenge: {
     de: "Der Song erzählt von Ritualen, Göttern und Frequenzen: „The temple doors open at midnight. The drum does not ask permission.“ Die Bilder sollten diese Welt ernst nehmen – Gopuram, Kolam, Ganesha und Nataraja – und sie gleichzeitig in Licht, Bass und Bewegung übersetzen.",
@@ -30,8 +31,8 @@ const project: PortfolioProject = {
     en: "Every scene starts as a still and becomes a clip through a precisely described camera move: drone flights over a Ganesha island, the slow opening of temple doors, a beam of light intensifying. A recurring figure – me – leads through worlds of fire, cosmos and temple.",
   },
   solution: {
-    de: "Ein Video im Hochformat für Reels und Stories, geschnitten auf den Song. Hier als 36-Sekunden-Teaser aus Intro und Höhepunkt.",
-    en: "A vertical video for reels and stories, cut to the song. Shown here as a 36-second teaser from the intro and the climax.",
+    de: "Ein fünfminütiges Musikvideo im Hochformat, geschnitten auf den eigenen Song. Unten der 36-Sekunden-Teaser aus Intro und Höhepunkt – und das ganze Video.",
+    en: "A five-minute vertical music video, cut to my own song. Below: the 36-second teaser from the intro and climax – and the full video.",
   },
   coverImage: {
     src: "/projects/welcome-to-nimbaland/cover.webp",
@@ -47,7 +48,7 @@ const project: PortfolioProject = {
   featured: true,
   published: true,
   order: 3,
-  backlog: ["Wer hat den Song produziert / mit welchem Tool?", "Link zum vollständigen Video (YouTube/Instagram), falls online"],
+  backlog: ["Link zum vollständigen Video (YouTube/Instagram), falls online"],
 };
 
 export default project;

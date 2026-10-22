@@ -28,12 +28,12 @@ export function ProjectMedia({ image, locale, sizes, priority, aspect, reveal = 
           className="absolute inset-0 h-full w-full object-cover"
           src={image.video}
           poster={image.src}
-          autoPlay
-          muted
-          loop
+          autoPlay={image.autoplay !== false}
+          muted={image.autoplay !== false}
+          loop={image.autoplay !== false}
           playsInline
           controls
-          preload="metadata"
+          preload={image.autoplay === false ? "none" : "metadata"}
           aria-label={t(image.alt, locale)}
         />
       </div>
