@@ -56,7 +56,7 @@ export const site = {
   portrait: "/brand/portrait.webp" as string | null, // Porträt in hoher Auflösung (1200×1774)
 
   /** "Recent Work" im Hero. Fällt auf das erste Featured-Projekt zurück, solange das Projekt noch fehlt. */
-  recentWorkSlug: "tina-sood",
+  recentWorkSlug: "lumiq",
 
   /** Startseite „Work, up close“: Projekte mit Kurzgeschichte (story), in dieser Reihenfolge. */
   homeWork: ["frauenzimmer-wolfsburg", "tervica", "circle-up", "das-lebensbuch", "the-grid-bar"],

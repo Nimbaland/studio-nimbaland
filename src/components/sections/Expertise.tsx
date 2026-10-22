@@ -3,6 +3,7 @@ import type { Dictionary } from "@/i18n/dictionaries/de";
 import { services } from "@/content/services";
 import { getProjects } from "@/content/projects";
 import { site } from "@/content/site";
+import { ButtonLink } from "@/components/ui/Button";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ServicesAccordion, type ServiceExample } from "./ServicesAccordion";
 
@@ -33,9 +34,13 @@ export function Expertise({ locale, dict, deliverablesLabel }: { locale: Locale;
         <SectionHeading id="expertise-title" eyebrow={dict.eyebrow} title={dict.sectionTitle} titleLang="en" intro={[dict.intro, dict.introMore].filter(Boolean)} />
 
         <div className="mt-14 lg:mt-20">
-          <ServicesAccordion services={services.map(({ match: _m, ...rest }) => rest)} locale={locale} deliverablesLabel={deliverablesLabel} examples={examples} exampleLabel={dict.exampleLabel} />
+          <ServicesAccordion services={services.map(({ match: _m, ...rest }) => rest)} locale={locale} deliverablesLabel={deliverablesLabel} examples={examples} exampleLabel={dict.exampleLabel} focusLabel={dict.focusLabel} />
         </div>
 
+        <div className="section-cta">
+          <p className="t-lead">{dict.ctaText}</p>
+          <ButtonLink href="#contact" lang="en">{dict.cta}</ButtonLink>
+        </div>
       </div>
     </section>
   );

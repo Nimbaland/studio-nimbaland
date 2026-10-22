@@ -14,9 +14,27 @@ export type Service = {
   deliverables: string[];
   /** Stichworte: Das neueste veröffentlichte Projekt, dessen Leistungen dazu passen, wird als Beispiel gezeigt. */
   match?: RegExp;
+  /** Schwerpunkt: wird hervorgehoben und steht oben. */
+  featured?: boolean;
 };
 
 export const services: Service[] = [
+  {
+    id: "ai-visual-engineering",
+    featured: true,
+    homeTitle: "AI Visual Engineering",
+    title: "AI Visual Engineering",
+    homeSummary: {
+      de: "Generative KI als Erweiterung kreativer Möglichkeiten. Für neue Bildwelten, visuelle Konzepte und effiziente kreative Prozesse – immer mit einer klaren gestalterischen Idee.",
+      en: "Generative AI as an extension of creative possibilities. For new imagery, visual concepts and efficient creative processes — always driven by a clear design idea.",
+    },
+    description: {
+      de: "Neue Technologien eröffnen neue kreative Möglichkeiten. Ich verbinde generative KI mit Art Direction, Designverständnis und einem bewussten Umgang mit visueller Qualität.",
+      en: "New technologies open up new creative possibilities. I combine generative AI with art direction, design understanding and a deliberate approach to visual quality.",
+    },
+    deliverables: ["AI Visual Concepts", "Generative Imagery", "AI-assisted Creative Workflows", "Visual Prototyping"],
+    match: /\bai\b|ki-|generative|visual engineering/i,
+  },
   {
     id: "brand-strategy-identity",
     homeTitle: "Brand Strategy & Identity",
@@ -61,20 +79,5 @@ export const services: Service[] = [
     },
     deliverables: ["Web Design", "UX/UI Design", "Digital Experiences", "Prototyping", "Responsive Design"],
     match: /web|ux|ui design|digital|app/i,
-  },
-  {
-    id: "ai-visual-engineering",
-    homeTitle: "AI Visual Engineering",
-    title: "AI Visual Engineering",
-    homeSummary: {
-      de: "Generative KI als Erweiterung kreativer Möglichkeiten. Für neue Bildwelten, visuelle Konzepte und effiziente kreative Prozesse – immer mit einer klaren gestalterischen Idee.",
-      en: "Generative AI as an extension of creative possibilities. For new imagery, visual concepts and efficient creative processes — always driven by a clear design idea.",
-    },
-    description: {
-      de: "Neue Technologien eröffnen neue kreative Möglichkeiten. Ich verbinde generative KI mit Art Direction, Designverständnis und einem bewussten Umgang mit visueller Qualität.",
-      en: "New technologies open up new creative possibilities. I combine generative AI with art direction, design understanding and a deliberate approach to visual quality.",
-    },
-    deliverables: ["AI Visual Concepts", "Generative Imagery", "AI-assisted Creative Workflows", "Visual Prototyping"],
-    match: /\bai\b|ki-|generative|visual engineering/i,
   },
 ];

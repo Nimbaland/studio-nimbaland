@@ -38,7 +38,7 @@ const en: Dictionary = {
     titleAccent: "seen",
     statement: "",
     intro:
-      "I'm Nimba – creative director and founder of nimbaland.studio. I help companies, practices and founders shape what they offer so people understand it, feel it and recognise it: as a brand, a website or a visual world.",
+      "I'm Nimba – creative director and founder of nimbaland.studio. I help companies, practices and founders shape what they offer so people understand it, feel it and recognise it. My focus: AI Visual Engineering – AI-driven visual worlds, connected with brand and website.",
     tagline: "",
     location: ["Based", "in", "Düsseldorf"],
     recentWork: "Recent Work",
@@ -84,12 +84,19 @@ const en: Dictionary = {
     introMore: "",
     processTitle: "How I work",
     exampleLabel: "Project example",
+    focusLabel: "Main Focus",
+    ctaText: "Want to know which of this fits your project?",
+    cta: "Start a Project",
     process: [
       { title: "Understand", body: "Market, audience and what sets you apart." },
       { title: "Sharpen", body: "Positioning, core idea and tone of voice." },
       { title: "Design", body: "Identity, imagery and interfaces." },
       { title: "Deliver", body: "Rollout, website, campaign – down to the detail." },
     ],
+  },
+  marquee: {
+    label: "Start a project – write to me",
+    items: ["Got something good?", "Let's make it seen", "AI Visual Engineering", "Start a Project", "Brand · Web · Visuals"],
   },
   aboutPreview: {
     eyebrow: "The Person Behind It / 04",
@@ -104,6 +111,7 @@ const en: Dictionary = {
       { value: "66", label: "Clients since 2018" },
       { value: "AI", label: "Certified AI visual engineer" },
     ],
+    contactCta: "Let's Talk",
     cta: "More About Me",
   },
   contactCta: {

@@ -39,7 +39,7 @@ const de = {
     titleAccent: "seen",
     statement: "",
     intro:
-      "Ich bin Nimba – Creative Director und Gründer von nimbaland.studio. Ich helfe Unternehmen, Praxen und Gründer:innen, ihr Angebot so zu gestalten, dass Menschen es verstehen, fühlen und wiedererkennen: als Marke, Website oder Bildwelt.",
+      "Ich bin Nimba – Creative Director und Gründer von nimbaland.studio. Ich helfe Unternehmen, Praxen und Gründer:innen, ihr Angebot so zu gestalten, dass Menschen es verstehen, fühlen und wiedererkennen. Mein Schwerpunkt: AI Visual Engineering – KI-gestützte Bildwelten, verbunden mit Marke und Website.",
     tagline: "",
     location: ["Based", "in", "Düsseldorf"],
     recentWork: "Recent Work",
@@ -85,12 +85,19 @@ const de = {
     introMore: "",
     processTitle: "How I work",
     exampleLabel: "Projektbeispiel",
+    focusLabel: "Main Focus",
+    ctaText: "Du willst wissen, was davon zu deinem Projekt passt?",
+    cta: "Start a Project",
     process: [
       { title: "Verstehen", body: "Markt, Zielgruppe und das, was dich ausmacht." },
       { title: "Schärfen", body: "Positionierung, Kernidee und Tonalität." },
       { title: "Gestalten", body: "Identität, Bildwelt und Interfaces." },
       { title: "Umsetzen", body: "Rollout, Website, Kampagne – bis ins Detail." },
     ],
+  },
+  marquee: {
+    label: "Projekt starten – schreib mir",
+    items: ["Got something good?", "Let's make it seen", "AI Visual Engineering", "Start a Project", "Brand · Web · Visuals"],
   },
   aboutPreview: {
     eyebrow: "The Person Behind It / 04",
@@ -105,6 +112,7 @@ const de = {
       { value: "66", label: "Kund:innen seit 2018" },
       { value: "AI", label: "Zertifizierter AI Visual Engineer" },
     ],
+    contactCta: "Let's Talk",
     cta: "More About Me",
   },
   contactCta: {

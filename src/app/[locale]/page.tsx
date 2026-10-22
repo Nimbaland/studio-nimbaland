@@ -9,6 +9,7 @@ import { Recognition } from "@/components/sections/Recognition";
 import { SelectedWork } from "@/components/sections/SelectedWork";
 import { Expertise } from "@/components/sections/Expertise";
 import { AboutPreview } from "@/components/sections/AboutPreview";
+import { CtaMarquee } from "@/components/sections/CtaMarquee";
 import { HomeContact } from "@/components/sections/HomeContact";
 
 type Props = { params: Promise<{ locale: Locale }> };
@@ -55,6 +56,7 @@ export default async function HomePage({ params }: Props) {
         </div>
       </section>
       <SelectedWork locale={locale} dict={dict.work} projects={featured} total={projects.filter((p) => p.published).length} />
+      <CtaMarquee href="#contact" label={dict.marquee.label} items={dict.marquee.items} />
       <Expertise locale={locale} dict={dict.expertise} deliverablesLabel={dict.services.deliverables} />
       <AboutPreview locale={locale} dict={dict.aboutPreview} portraitAlt={dict.about.portraitAlt} />
       <HomeContact locale={locale} dict={dict} />

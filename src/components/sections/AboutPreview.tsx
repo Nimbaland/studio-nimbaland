@@ -42,7 +42,7 @@ export function AboutPreview({ locale, dict, portraitAlt }: { locale: Locale; di
               </div>
             ))}
           </dl>
-          <div className="mt-10"><ButtonLink href={href(locale, "/about")} variant="secondary" lang="en">{dict.cta}</ButtonLink></div>
+          <div className="mt-10 flex flex-wrap gap-3"><ButtonLink href="#contact" lang="en">{dict.contactCta}</ButtonLink><ButtonLink href={href(locale, "/about")} variant="secondary" lang="en">{dict.cta}</ButtonLink></div>
         </div>
       </div>
     </section>

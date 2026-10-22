@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { CtaMarquee } from "@/components/sections/CtaMarquee";
 import { href, locales, t, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { pageMetadata } from "@/lib/metadata";
@@ -143,6 +144,7 @@ export default async function CaseStudyPage({ params }: Props) {
         </div>
       </div>
 
+      <CtaMarquee href={href(locale, "/contact")} label={d.marquee.label} items={d.marquee.items} />
       {next && (
         <nav aria-label={c.nextProject} className="tone-dark border-t border-line">
           <Link href={href(locale, `/work/${next.slug}`)} className="container-site group flex items-center justify-between gap-6 py-16 no-underline text-inherit">

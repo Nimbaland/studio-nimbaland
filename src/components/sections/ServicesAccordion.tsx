@@ -14,6 +14,7 @@ type Props = {
   deliverablesLabel: string;
   examples: Record<string, ServiceExample[]>;
   exampleLabel: string;
+  focusLabel?: string;
 };
 
 /**
@@ -21,7 +22,7 @@ type Props = {
  * große Nummer + "// TITEL", links die Leistungen als große "/ ITEM"-Liste,
  * rechts ein Projektbeispiel, darunter die Beschreibung in Mono-Versalien.
  */
-export function ServicesAccordion({ services, locale, deliverablesLabel, examples, exampleLabel }: Props) {
+export function ServicesAccordion({ services, locale, deliverablesLabel, examples, exampleLabel, focusLabel }: Props) {
   const [open, setOpen] = useState(0);
   const base = useId();
 
@@ -33,11 +34,11 @@ export function ServicesAccordion({ services, locale, deliverablesLabel, example
         const btnId = `${base}-btn-${i}`;
         const ex = examples[s.id] ?? [];
         return (
-          <li key={s.id} className={`accordion__item${isOpen ? " is-open" : ""}`}>
+          <li key={s.id} className={`accordion__item${isOpen ? " is-open" : ""}${s.featured ? " is-featured" : ""}`}>
             <h3 className="m-0">
               <button id={btnId} type="button" className="accordion__trigger" aria-expanded={isOpen} aria-controls={panelId} onClick={() => setOpen(isOpen ? -1 : i)}>
                 <span className="accordion__num t-label t-muted tabular-nums">00-{i + 1}</span>
-                <span className="accordion__title" lang="en">{s.homeTitle}</span>
+                <span className="accordion__title" lang="en">{s.homeTitle}{s.featured && focusLabel && <span className="accordion__badge">{focusLabel}</span>}</span>
                 <span className="accordion__icon" aria-hidden="true" />
               </button>
             </h3>
