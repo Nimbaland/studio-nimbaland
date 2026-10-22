@@ -57,6 +57,8 @@ export const site = {
 
   /** "Recent Work" im Hero. Fällt auf das erste Featured-Projekt zurück, solange das Projekt noch fehlt. */
   recentWorkSlug: "lumiq",
+  /** Stehen in „Selected work“ ganz vorn, unabhängig vom Datum. */
+  pinnedWork: ["lumiq"] as string[],
 
   /** Startseite „Work, up close“: Projekte mit Kurzgeschichte (story), in dieser Reihenfolge. */
   homeWork: ["lumiq", "frauenzimmer-wolfsburg", "tervica", "circle-up", "das-lebensbuch", "the-grid-bar"],

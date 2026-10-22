@@ -1,4 +1,4 @@
-import { showDrafts } from "@/content/site";
+import { showDrafts, site } from "@/content/site";
 import type { PortfolioProject } from "./types";
 import kratzert from "./kratzert";
 import circleUp from "./circle-up";
@@ -44,11 +44,17 @@ function chrono(p: PortfolioProject): string {
   return p.date ?? `${projectYear(p)}-00`;
 }
 
+/** Angepinnte Projekte (site.pinnedWork) stehen vor allen anderen, in der dort festgelegten Reihenfolge. */
+function pin(p: PortfolioProject): number {
+  const i = site.pinnedWork.indexOf(p.slug);
+  return i === -1 ? Infinity : i;
+}
+
 /** Projekte, die auf der Website sichtbar sind – chronologisch, die neuesten zuerst. */
 export function getProjects(): PortfolioProject[] {
   return all
     .filter((p) => p.published || showDrafts)
-    .sort((a, b) => chrono(b).localeCompare(chrono(a)) || a.order - b.order);
+    .sort((a, b) => pin(a) - pin(b) || chrono(b).localeCompare(chrono(a)) || a.order - b.order);
 }
 
 export function getFeaturedProjects(limit = 6): PortfolioProject[] {
