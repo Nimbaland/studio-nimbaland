@@ -11,7 +11,7 @@ const project: PortfolioProject = {
   client: "Abschlussprojekt SuperCode · Team mit Bianca und Steffi",
   year: "2026",
   date: "2026-07",
-  category: { de: ["AI Visual Engineering", "Branding", "Kampagne"], en: ["AI visual engineering", "Branding", "Campaign"] },
+  category: { de: ["AI Visual Engineering", "Kampagne"], en: ["AI visual engineering", "Campaign"] },
   role: { de: ["Konzept", "AI Visual Engineering", "Logo", "Kampagne", "Song"], en: ["Concept", "AI visual engineering", "Logo", "Campaign", "Song"] },
   services: {
     de: ["AI Visual Engineering", "Brand Identity", "Campaign Visuals"],

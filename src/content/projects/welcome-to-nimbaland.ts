@@ -15,8 +15,8 @@ const project: PortfolioProject = {
   category: { de: ["AI Visual Engineering", "Musikvideo"], en: ["AI visual engineering", "Music video"] },
   role: { de: ["Songwriting", "Musikproduktion", "Art Direction", "AI Visual Engineering", "Schnitt"], en: ["Songwriting", "Music production", "Art direction", "AI visual engineering", "Edit"] },
   services: {
-    de: ["AI Visual Engineering", "Art Direction", "Visual Storytelling"],
-    en: ["AI Visual Engineering", "Art Direction", "Visual Storytelling"],
+    de: ["AI Visual Engineering", "Visual Storytelling"],
+    en: ["AI Visual Engineering", "Visual Storytelling"],
   },
   summary: {
     de: "Song und Musikvideo aus einer Hand: Lyrics selbst geschrieben, Beat in Ableton produziert, Vocals mit Suno Pro – und dazu ein Video, in dem tamilische Tempelkultur auf elektronische Nacht trifft, Bild für Bild mit generativer KI entwickelt.",
