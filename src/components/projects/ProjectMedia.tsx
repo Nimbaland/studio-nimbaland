@@ -25,7 +25,7 @@ export function ProjectMedia({ image, locale, sizes, priority, aspect, reveal = 
     return (
       <div className={cls} style={{ aspectRatio: ratio }}>
         <video
-          className="absolute inset-0 h-full w-full object-cover"
+          className={`absolute inset-0 h-full w-full ${image.autoplay === false ? "object-contain bg-black" : "object-cover"}`}
           src={image.video}
           poster={image.src}
           autoPlay={image.autoplay !== false}

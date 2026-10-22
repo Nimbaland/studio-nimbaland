@@ -43,12 +43,13 @@ const project: PortfolioProject = {
   },
   gallery: [
     { src: "/projects/welcome-to-nimbaland/teaser-poster.webp", video: "/projects/welcome-to-nimbaland/teaser.mp4", span: "full", alt: { de: "Video: 36-Sekunden-Teaser des Musikvideos mit Ton", en: "Video: 36-second teaser of the music video with sound" }, caption: { de: "Teaser · Intro und Höhepunkt · mit Ton", en: "Teaser · intro and climax · with sound" }, aspect: "16/9", width: 1600, height: 900 },
+    { src: "/projects/welcome-to-nimbaland/full-poster.webp", video: "/projects/welcome-to-nimbaland/full.mp4", autoplay: false, span: "full", alt: { de: "Video: das vollständige Musikvideo „Welcome to Nimbaland“, 5 Minuten, mit Ton", en: "Video: the full music video “Welcome to Nimbaland”, 5 minutes, with sound" }, caption: { de: "Das ganze Video · 5:00 · zum Abspielen klicken", en: "The full video · 5:00 · click to play" }, aspect: "16/9", width: 1600, height: 900 },
     { src: "/projects/welcome-to-nimbaland/stills.webp", span: "full", alt: { de: "Acht Szenen aus dem Video im Hochformat", en: "Eight vertical scenes from the video" }, caption: { de: "Szenen aus dem Video", en: "Scenes from the video" }, aspect: "2400/2122", width: 2400, height: 2122 },
   ],
   featured: true,
   published: true,
   order: 3,
-  backlog: ["Link zum vollständigen Video (YouTube/Instagram), falls online"],
+  backlog: [],
 };
 
 export default project;
