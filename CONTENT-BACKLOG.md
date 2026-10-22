@@ -61,6 +61,8 @@ Alle Leitsätze und Kundenfreigaben sind laut Nimalan erteilt (20.10.2026).
 
 | Aurum Herbs (veröffentlicht) | Website-Schrift bestätigen (Vorschlag Jost), Live-URL |
 
+| LUMIQ (AI-Projekt, veröffentlicht) | Eigenen Anteil im Team konkretisieren; Original-PDF der Prozessdoku nachliefern (aktuell aus PPTX gerendert) |
+
 ## Texte
 
 - [x] Englische Übersetzung der Fließtexte von einer Person mit Muttersprache gegenlesen lassen. (erledigt laut Nimalan, 21.10.2026)
