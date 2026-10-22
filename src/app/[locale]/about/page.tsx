@@ -39,7 +39,7 @@ export default async function AboutPage({ params }: Props) {
 
             <h2 className="t-h2 mt-16">{a.drivesTitle}</h2>
             <p className="t-lead measure mt-6">{a.drivesBody}</p>
-            <p className="measure mt-6">{a.studioNote}</p>
+            {a.studioNote && <p className="measure mt-6">{a.studioNote}</p>}
           </div>
         </div>
       </section>

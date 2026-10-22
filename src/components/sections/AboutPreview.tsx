@@ -25,13 +25,12 @@ export function AboutPreview({ locale, dict, portraitAlt }: { locale: Locale; di
           <h2 id="about-title" className="t-h2" lang="en">{dict.sectionTitle}</h2>
         </div>
 
-        <div className="col-span-full md:col-span-3 lg:col-span-3 lg:col-start-1 lg:mt-10">
+        <div className="col-span-full max-w-[16rem] md:col-span-3 md:max-w-none lg:col-span-3 lg:col-start-1 lg:mt-10">
           <Portrait alt={portraitAlt} />
         </div>
         <div className="col-span-full md:col-span-5 lg:col-span-8 lg:col-start-5 lg:mt-10">
-          <p className="t-h2 italic">{dict.lead}</p>
-          <div className="mt-10 grid gap-6 lg:grid-cols-2">
-            {dict.body.map((p, i) => <p key={i} className="t-muted">{p}</p>)}
+          <div className="flex flex-col gap-6">
+            {dict.body.map((p, i) => <p key={i} className="t-lead t-muted measure">{p}</p>)}
           </div>
           <div className="mt-10"><ButtonLink href={href(locale, "/about")} variant="secondary" lang="en">{dict.cta}</ButtonLink></div>
         </div>

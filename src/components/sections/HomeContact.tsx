@@ -14,7 +14,7 @@ export function HomeContact({ locale, dict }: { locale: Locale; dict: Dictionary
           <p className="t-label t-muted mb-6" lang="en">{c.eyebrow}</p>
           <h2 id="home-contact-title" className="t-h2" lang="en">{c.title}</h2>
           <p className="t-lead mt-8 measure">{c.body}</p>
-          <p className="t-lead t-muted mt-3">{c.prompt}</p>
+          {c.prompt && <p className="t-lead t-muted mt-3">{c.prompt}</p>}
           {site.contact.email && (
             <p className="mt-10">
               <a href={`mailto:${site.contact.email}`} className="text-link link-standalone font-display text-[clamp(1.5rem,1.2rem+1vw,2rem)]">{site.contact.email}</a>

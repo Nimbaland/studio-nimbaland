@@ -290,7 +290,7 @@ html.lenis, html.lenis body { height: auto; }
   @media (min-width: 1024px) {
     .hero__grid { grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--space-6); }
     .hero__disciplines { grid-column: 1 / span 5; }
-    .hero__intro { grid-column: 7 / span 6; }
+    .hero__intro { grid-column: 1 / span 7; }
   }
   .hero__disciplines {
     font-family: var(--font-mono);
@@ -766,4 +766,14 @@ html.lenis, html.lenis body { height: auto; }
   .legal h2 { margin-top: var(--space-8); }
   .legal h2:first-of-type { margin-top: 0; }
   .legal p, .legal li { line-height: 1.65; }
+}
+
+/* Kompaktere Darstellung auf dem Smartphone (Überarbeitung 22.10.2026) */
+@media (max-width: 767px) {
+  .process-steps { display: grid !important; grid-template-columns: 1fr 1fr; gap: 1.75rem 1.25rem; border: 0 !important; }
+  .process-step { border: 0 !important; padding: 0 !important; }
+  .process-step__icon { width: 3rem !important; height: 3rem !important; }
+  .process-step__icon svg { width: 1.5rem !important; height: 1.5rem !important; }
+  .process-step .t-h3 { margin-top: 0.9rem; font-size: 1.25rem; }
+  .section { padding-block: 4.5rem; }
 }

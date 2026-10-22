@@ -3,7 +3,6 @@ import Link from "next/link";
 import { href, t, type Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries/de";
 import { site } from "@/content/site";
-import { services } from "@/content/services";
 import type { PortfolioProject } from "@/content/projects";
 import { ButtonLink } from "@/components/ui/Button";
 import { ArrowUpRight } from "@/components/ui/Icons";
@@ -68,11 +67,8 @@ export function Hero({ locale, dict, recent }: Props) {
         </h1>
 
         <div className="hero__grid hero__fade">
-          <ul className="hero__disciplines" lang="en">
-            {services.map((s) => <li key={s.id}>/ {s.homeTitle}</li>)}
-          </ul>
           <div className="hero__intro">
-            <p className="t-muted measure">{dict.intro}</p>
+            <p className="t-lead measure">{dict.intro}</p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ButtonLink href={href(locale, "/work")} variant="primary" lang="en">{dict.primaryCta}</ButtonLink>
               <ButtonLink href={href(locale, "/contact")} variant="secondary" lang="en">{dict.secondaryCta}</ButtonLink>
@@ -81,9 +77,7 @@ export function Hero({ locale, dict, recent }: Props) {
         </div>
 
         <div className="hero__bottom hero__fade">
-          {site.contact.email && (
-            <a href={`mailto:${site.contact.email}`} className="text-link link-standalone font-semibold">{site.contact.email}</a>
-          )}
+          <span />
           {recent && (
             <Link href={href(locale, `/work/${recent.slug}`)} className="hero__recent group">
               <span className="t-label t-muted" lang="en">{dict.recentWork}</span>
