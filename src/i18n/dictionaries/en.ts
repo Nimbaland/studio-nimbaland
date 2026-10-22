@@ -103,7 +103,7 @@ const en: Dictionary = {
     sectionTitle: "Hi, I'm Nimba.",
     lead: "I don't believe in design by formula.",
     body: [
-      "For more than ten years I've been designing brands, campaigns and websites – as senior art director at Colliers International, as a designer at Savills, as art director for Bosch and Würth, and since 2018 with my own studio.",
+      "For more than ten years I've been designing brands, campaigns and websites – as brand & design manager at the Kratzert Group, as senior art director at Colliers International, as a designer at Savills, as art director for Bosch and Würth, and since 2018 with my own studio.",
       "Art, fashion and visual culture shape how I see. I use generative AI to make ideas visible earlier and explore more directions. What fits your brand in the end, we decide together – not the machine.",
     ],
     facts: [
