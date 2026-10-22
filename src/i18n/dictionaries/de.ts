@@ -104,7 +104,7 @@ const de = {
     sectionTitle: "Hi, I'm Nimba.",
     lead: "Ich glaube nicht an Gestaltung nach Schema F.",
     body: [
-      "Seit über zehn Jahren gestalte ich Marken, Kampagnen und Websites – als Brand & Design Manager bei der Kratzert Baumanagement GmbH, als Senior Art Director bei Colliers International, als Designer bei Savills, als Art Director für Bosch und Würth und seit 2018 mit meinem eigenen Studio.",
+      "Seit über zehn Jahren entwickle ich Marken, gestalte Kampagnen und bringe digitale Auftritte zum Leben. Meine Erfahrung reicht vom Brand & Design Management bei Kratzert über Senior Art Direction bei Colliers International und Design bei Savills bis zur Art Direction für Bosch und Würth. Seit 2018 führe ich außerdem mein eigenes Studio.",
       "Kunst, Mode und visuelle Kultur prägen meinen Blick. Generative KI nutze ich, um Ideen früher sichtbar zu machen und mehr Richtungen auszuprobieren. Was am Ende zu deiner Marke passt, entscheide ich mit dir – nicht die Maschine.",
     ],
     facts: [
