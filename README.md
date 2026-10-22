@@ -1,6 +1,6 @@
-# studio.nimbaland — Portfolio-Website
+# nimbaland.studio — Portfolio-Website
 
-Zweisprachige (DE/EN) Portfolio-Website für Studio.Nimbaland, gebaut nach **Design System 01** (Arbeitsentwurf vom 20.10.2026).
+Zweisprachige (DE/EN) Portfolio-Website für nimbaland.studio, gebaut nach **Design System 01** (Arbeitsentwurf vom 20.10.2026).
 Next.js 16 (App Router) · TypeScript · Tailwind CSS 4.
 Typografie: Playfair Display (Hero und Headlines, Italic für Akzente), Manrope (Navigation und Text), IBM Plex Mono (Labels).
 Alle Schriften liegen self-hosted in `src/fonts` bzw. `public/fonts` (OFL-Lizenzen in `src/fonts/licenses`), also kein Google-Fonts-Abruf (DSGVO).

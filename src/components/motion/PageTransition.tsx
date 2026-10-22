@@ -47,7 +47,7 @@ export function PageTransition({ label }: { label: string }) {
     <div className={`page-transition is-${phase}`} aria-hidden="true">
       {/* Original-Wortmarke (helle Variante, Punkt bleibt in Lime sichtbar) */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src="/brand/studio-nimbaland-logo-light.svg" alt={label} className="page-transition__label" width={498} height={79} />
+      <img src="/brand/nimbaland-studio-logo-light.svg" alt={label} className="page-transition__label" width={500} height={79} />
     </div>
   );
 }

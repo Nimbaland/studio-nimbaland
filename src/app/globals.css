@@ -115,7 +115,7 @@ html.lenis, html.lenis body { height: auto; }
   .t-muted { color: var(--muted); }
   .measure { max-width: var(--measure); }
 
-  /* Das wiederkehrende Studio-Detail: der Punkt aus "studio.nimbaland" */
+  /* Das wiederkehrende Studio-Detail: der Punkt aus "nimbaland.studio" */
   .stop { color: var(--color-accent); }
   .tone-light .stop { color: var(--fg); }
 

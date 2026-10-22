@@ -40,7 +40,7 @@ export async function POST(request: Request) {
     const res = await fetch(endpoint, {
       method: "POST",
       headers: { "Content-Type": "application/json", Accept: "application/json" },
-      body: JSON.stringify({ name, email, company, projectType, message, source: "studio.nimbaland", receivedAt: new Date().toISOString() }),
+      body: JSON.stringify({ name, email, company, projectType, message, source: "nimbaland.studio", receivedAt: new Date().toISOString() }),
     });
     if (!res.ok) return NextResponse.json({ error: "upstream" }, { status: 502 });
     return NextResponse.json({ ok: true });

@@ -6,8 +6,8 @@ import type { Dictionary } from "./de";
  */
 const en: Dictionary = {
   meta: {
-    siteName: "studio.nimbaland",
-    defaultTitle: "Studio.Nimbaland — Creative Direction for real change",
+    siteName: "nimbaland.studio",
+    defaultTitle: "nimbaland.studio — Creative Direction for real change",
     defaultDescription:
       "Nimalan Suntharalingam, independent creative director and brand designer based in Düsseldorf. Brand strategy, creative direction, digital design and AI visual engineering.",
   },
@@ -33,12 +33,12 @@ const en: Dictionary = {
   },
 
   hero: {
-    eyebrow: "Studio.Nimbaland / Düsseldorf",
+    eyebrow: "nimbaland.studio / Düsseldorf",
     titleLines: ["You have something good.", "Let's make it"],
     titleAccent: "seen",
     statement: "",
     intro:
-      "I'm Nimba – creative director and founder of Studio.Nimbaland. I help companies, practices and founders shape what they offer so people understand it, feel it and recognise it: as a brand, a website or a visual world.",
+      "I'm Nimba – creative director and founder of nimbaland.studio. I help companies, practices and founders shape what they offer so people understand it, feel it and recognise it: as a brand, a website or a visual world.",
     tagline: "",
     location: ["Based", "in", "Düsseldorf"],
     recentWork: "Recent Work",
@@ -125,7 +125,7 @@ const en: Dictionary = {
     pageTitle: "Behind the ideas.",
     name: "Nimalan Suntharalingam",
     role: "Independent Creative Director / Brand & Design / AI Visual Engineering",
-    intro: "I'm Nimalan – most people call me Nimba. Creative director, designer and founder of Studio.Nimbaland.",
+    intro: "I'm Nimalan – most people call me Nimba. Creative director, designer and founder of nimbaland.studio.",
     body: [
       "For me, good design starts with questions: What does a brand stand for? What story does it tell? What should stay with people?",
       "For more than ten years I've been turning these questions into brands, campaigns and websites – trained in communication design, shaped by agencies and in-house teams, much of it in real estate. Generative AI now lets me make ideas visible earlier and test more directions. Deciding what fits the brand is still handcraft.",

@@ -4,8 +4,8 @@
  * bzw. gar nicht angezeigt. Nichts hier erfinden – nur freigegebene Angaben eintragen.
  */
 export const site = {
-  name: "Studio.Nimbaland",
-  uiName: "studio.nimbaland",
+  name: "nimbaland.studio",
+  uiName: "nimbaland.studio",
   founder: "Nimalan Suntharalingam",
   city: "Düsseldorf",
 
@@ -20,10 +20,10 @@ export const site = {
      */
     // Original-Wortmarke (Asset_1). Die helle Variante ist dieselbe Datei mit weißer
     // statt schwarzer Schrift. Palette final freigegeben (21.10.2026).
-    logoOnDark: "/brand/studio-nimbaland-logo-light.svg" as string | null,
-    logoOnLight: "/brand/studio-nimbaland-logo-dark.svg" as string | null,
-    /** Seitenverhältnis der Wortmarke laut viewBox (498.39 × 79). */
-    logoRatio: 498.39 / 79,
+    logoOnDark: "/brand/nimbaland-studio-logo-light.svg" as string | null,
+    logoOnLight: "/brand/nimbaland-studio-logo-dark.svg" as string | null,
+    /** Seitenverhältnis der Wortmarke laut viewBox (499.92 × 79). */
+    logoRatio: 499.92 / 79,
     // Signet-Varianten (Asset_2: dunkel, Asset_5: Verlauf) – Asset_2 dient als Favicon.
     symbol: "/brand/studio-nimbaland-symbol-dark.svg" as string | null,
     symbolGradient: "/brand/studio-nimbaland-symbol-gradient.svg" as string | null,
@@ -33,7 +33,7 @@ export const site = {
     /** Freigegebene Kontaktadresse (von Nimalan im Kontakttext angegeben, 20.10.2026). */
     email: "nimalan@posteo.de" as string | null,
     /** Studio-Adresse, von Nimalan freigegeben (21.10.2026). */
-    address: { name: "Studio.Nimbaland", street: "Lindenstraße 68", city: "40233 Düsseldorf", country: "Deutschland" },
+    address: { name: "nimbaland.studio", street: "Lindenstraße 68", city: "40233 Düsseldorf", country: "Deutschland" },
   },
 
   /** Social-Profile – von Nimalan bestätigt (21.10.2026). */

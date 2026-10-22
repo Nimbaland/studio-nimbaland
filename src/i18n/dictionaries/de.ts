@@ -5,8 +5,8 @@
  */
 const de = {
   meta: {
-    siteName: "studio.nimbaland",
-    defaultTitle: "Studio.Nimbaland — Creative Direction for real change",
+    siteName: "nimbaland.studio",
+    defaultTitle: "nimbaland.studio — Creative Direction for real change",
     defaultDescription:
       "Nimalan Suntharalingam, unabhängiger Creative Director und Brand Designer aus Düsseldorf. Brand Strategy, Creative Direction, Digital Design und AI Visual Engineering.",
   },
@@ -33,13 +33,13 @@ const de = {
 
   /* ---------- 01 / Homepage ---------- */
   hero: {
-    eyebrow: "Studio.Nimbaland / Düsseldorf",
+    eyebrow: "nimbaland.studio / Düsseldorf",
     titleLines: ["You have something good.", "Let's make it"],
     /** Akzentwort am Ende der letzten Zeile, in Italic */
     titleAccent: "seen",
     statement: "",
     intro:
-      "Ich bin Nimba – Creative Director und Gründer von Studio.Nimbaland. Ich helfe Unternehmen, Praxen und Gründer:innen, ihr Angebot so zu gestalten, dass Menschen es verstehen, fühlen und wiedererkennen: als Marke, Website oder Bildwelt.",
+      "Ich bin Nimba – Creative Director und Gründer von nimbaland.studio. Ich helfe Unternehmen, Praxen und Gründer:innen, ihr Angebot so zu gestalten, dass Menschen es verstehen, fühlen und wiedererkennen: als Marke, Website oder Bildwelt.",
     tagline: "",
     location: ["Based", "in", "Düsseldorf"],
     recentWork: "Recent Work",
@@ -127,7 +127,7 @@ const de = {
     pageTitle: "Behind the ideas.",
     name: "Nimalan Suntharalingam",
     role: "Independent Creative Director / Brand & Design / AI Visual Engineering",
-    intro: "Ich bin Nimalan – die meisten nennen mich Nimba. Creative Director, Designer und Gründer von Studio.Nimbaland.",
+    intro: "Ich bin Nimalan – die meisten nennen mich Nimba. Creative Director, Designer und Gründer von nimbaland.studio.",
     body: [
       "Gute Gestaltung beginnt für mich mit Fragen: Wofür steht eine Marke? Welche Geschichte erzählt sie? Was soll bei den Menschen hängen bleiben?",
       "Seit über zehn Jahren übersetze ich diese Fragen in Marken, Kampagnen und Websites – im Kommunikationsdesign ausgebildet, in Agenturen und Inhouse-Teams geschult, vor allem im Immobilienumfeld. Mit generativer KI kann ich Ideen heute früher sichtbar machen und mehr Richtungen erproben. Die Entscheidung, was zur Marke passt, bleibt Handarbeit.",

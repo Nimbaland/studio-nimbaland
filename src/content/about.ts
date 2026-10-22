@@ -8,7 +8,7 @@ export const experience: Station[] = [
   {
     period: "2018 – now",
     role: { de: "Freiberuflicher Creative Director & Brand Designer", en: "Freelance Creative Director & Brand Designer" },
-    company: "Nimbaland Studio, Düsseldorf",
+    company: "nimbaland.studio, Düsseldorf",
     points: {
       de: ["Markenentwicklung, Corporate Design und Kampagnen für 66 Kunden aus allen Branchen", "Digitale Auftritte von UX/UI über Figma-Prototypen bis zur Umsetzung mit React und Next.js", "KI-gestützte Workflows für Bild-, Video- und Kampagnenproduktion"],
       en: ["Brand development, corporate design and campaigns for 66 clients across all industries", "Digital experiences from UX/UI and Figma prototypes to builds in React and Next.js", "AI-assisted workflows for image, video and campaign production"],
