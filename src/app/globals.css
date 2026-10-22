@@ -624,6 +624,10 @@ html.lenis, html.lenis body { height: auto; }
   .svc__list li { transition: color .25s ease, transform .35s var(--ease-out); }
   .svc__list li:hover { color: var(--color-accent); transform: translateX(0.35rem); }
   .svc__slash { color: var(--color-accent); margin-right: 0.15em; }
+  .svc__item { color: inherit; text-decoration: none; display: inline; }
+  .svc__item:hover, .svc__item:focus-visible { color: var(--color-accent); }
+  .svc__proof { display: inline-block; vertical-align: middle; margin-left: .7rem; font-family: var(--font-mono); font-weight: 400; font-size: 0.72rem; letter-spacing: .06em; color: var(--muted); text-transform: uppercase; transform: translateY(-.15em); transition: color .25s ease; }
+  .svc__item:hover .svc__proof, .svc__item:focus-visible .svc__proof { color: var(--color-accent); }
   .svc__examples { display: grid; gap: 1rem; grid-template-columns: 1fr 1fr; }
   .svc__example { display: block; text-decoration: none; color: inherit; grid-column: 1 / -1; }
   .svc__example--small { grid-column: auto; }
@@ -761,6 +765,8 @@ html.lenis, html.lenis body { height: auto; }
   .svc-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
   .svc-chip { border: 1.5px solid var(--color-accent); color: var(--color-accent); padding: 0.45rem 0.9rem; font-size: 0.875rem; font-weight: 600; letter-spacing: 0.01em; line-height: 1.2; transition: background-color .2s ease, color .2s ease; }
   .svc-chip:hover { background: var(--color-accent); color: var(--graphite-900); }
+  .svc-chip--link { display: inline-block; text-decoration: none; }
+  .svc-chip__proof { font-weight: 400; opacity: .75; }
 }
 @layer components {
   .legal h2 { margin-top: var(--space-8); }

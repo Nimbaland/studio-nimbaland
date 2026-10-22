@@ -16,11 +16,14 @@ export type Service = {
   match?: RegExp;
   /** Schwerpunkt: wird hervorgehoben und steht oben. */
   featured?: boolean;
+  /** Leistung → Projekt-Slug, das diese Leistung am besten zeigt (verlinkt in der Liste). */
+  proof?: Record<string, string>;
 };
 
 export const services: Service[] = [
   {
     id: "ai-visual-engineering",
+    proof: { "AI Visual Concepts": "lumiq", "Generative Imagery": "welcome-to-nimbaland", "AI-assisted Creative Workflows": "lumiq", "Visual Prototyping": "welcome-to-nimbaland" },
     featured: true,
     homeTitle: "AI Visual Engineering",
     title: "AI Visual Engineering",
@@ -37,6 +40,7 @@ export const services: Service[] = [
   },
   {
     id: "brand-strategy-identity",
+    proof: { "Brand Strategy": "tervica", "Visual Identity": "circle-up", "Rebranding": "variari", "Corporate Design": "mkg-koeln-west", "Design Systems": "aurum-herbs", "Brand Guidelines": "aurum-herbs" },
     homeTitle: "Brand Strategy & Identity",
     title: "Brand Strategy & Identity",
     homeSummary: {
@@ -52,6 +56,7 @@ export const services: Service[] = [
   },
   {
     id: "creative-art-direction",
+    proof: { "Creative Concepts": "circle-up", "Art Direction": "bales-smart-home", "Campaign Visuals": "lumiq", "Editorial Design": "the-grid-bar", "Visual Storytelling": "welcome-to-nimbaland" },
     homeTitle: "Creative & Art Direction",
     title: "Creative & Art Direction",
     homeSummary: {
@@ -67,6 +72,7 @@ export const services: Service[] = [
   },
   {
     id: "digital-design-ux-ui",
+    proof: { "Web Design": "tina-sood", "UX/UI Design": "flamingo-swift", "Digital Experiences": "frauenzimmer-wolfsburg", "Prototyping": "flamingo-swift", "Responsive Design": "frauenzimmer-wolfsburg" },
     homeTitle: "Digital Experiences",
     title: "Digital Design & UX/UI",
     homeSummary: {

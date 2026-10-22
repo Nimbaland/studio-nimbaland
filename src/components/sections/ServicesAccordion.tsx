@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useId, useState } from "react";
 import { t, type Locale } from "@/i18n/config";
 import type { Service } from "@/content/services";
+import type { ProofLink } from "@/lib/service-proof";
 
 export type ServiceExample = { href: string; title: string; src: string; alt: string };
 
@@ -15,6 +16,7 @@ type Props = {
   examples: Record<string, ServiceExample[]>;
   exampleLabel: string;
   focusLabel?: string;
+  proofs?: Record<string, Record<string, ProofLink>>;
 };
 
 /**
@@ -22,7 +24,7 @@ type Props = {
  * große Nummer + "// TITEL", links die Leistungen als große "/ ITEM"-Liste,
  * rechts ein Projektbeispiel, darunter die Beschreibung in Mono-Versalien.
  */
-export function ServicesAccordion({ services, locale, deliverablesLabel, examples, exampleLabel, focusLabel }: Props) {
+export function ServicesAccordion({ services, locale, deliverablesLabel, examples, exampleLabel, focusLabel, proofs = {} }: Props) {
   const [open, setOpen] = useState(0);
   const base = useId();
 
@@ -47,9 +49,21 @@ export function ServicesAccordion({ services, locale, deliverablesLabel, example
                 <div className="svc">
                   <div className="svc__body">
                     <ul className="svc__list" aria-label={deliverablesLabel} lang="en">
-                      {s.deliverables.map((d) => (
-                        <li key={d}><span className="svc__slash">/</span>{d}</li>
-                      ))}
+                      {s.deliverables.map((d) => {
+                        const pr = proofs[s.id]?.[d];
+                        return (
+                          <li key={d}>
+                            {pr ? (
+                              <Link href={pr.href} className="svc__item" tabIndex={isOpen ? 0 : -1}>
+                                <span className="svc__slash">/</span>{d}
+                                <span className="svc__proof">{pr.title} <span aria-hidden="true">↗</span></span>
+                              </Link>
+                            ) : (
+                              <><span className="svc__slash">/</span>{d}</>
+                            )}
+                          </li>
+                        );
+                      })}
                     </ul>
 
                     {ex.length > 0 && (

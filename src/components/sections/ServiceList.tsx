@@ -1,5 +1,7 @@
 import { t, type Locale } from "@/i18n/config";
+import Link from "next/link";
 import type { Service } from "@/content/services";
+import { resolveProof } from "@/lib/service-proof";
 
 type Props = {
   services: Service[];
@@ -29,7 +31,20 @@ export function ServiceList({ services, locale, variant = "home", deliverablesLa
               <div className="mt-6">
                 <p className="t-label t-muted mb-3">{deliverablesLabel}</p>
                 <ul className="svc-chips" lang="en">
-                  {s.deliverables.map((d) => <li key={d} className="svc-chip">{d}</li>)}
+                  {(() => {
+                    const pr = resolveProof(s, locale);
+                    return s.deliverables.map((d) => (
+                      <li key={d}>
+                        {pr[d] ? (
+                          <Link href={pr[d].href} className="svc-chip svc-chip--link" title={pr[d].title}>
+                            {d} <span className="svc-chip__proof">· {pr[d].title} ↗</span>
+                          </Link>
+                        ) : (
+                          <span className="svc-chip">{d}</span>
+                        )}
+                      </li>
+                    ));
+                  })()}
                 </ul>
               </div>
             )}
