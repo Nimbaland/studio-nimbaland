@@ -28,6 +28,11 @@ const project: PortfolioProject = {
     de: "Die Fragen, mit denen das Lebensbuch zum Erinnern einlädt, werden selbst zum Muster: Sie laufen als Fließtext über Seidenpapier und Schachtel-Innenseite, unterbrochen vom kleinen Buch-Signet. Außen bleibt die Schachtel ruhig in tiefem Blau, Sticker und Lesezeichen tragen das helle Markenblau.",
     en: "The questions that invite people to remember become the pattern itself: they run as continuous text across the tissue paper and the inside of the box, punctuated by the small book mark. Outside, the box stays calm in deep blue, while sticker and bookmark carry the bright brand blue.",
   },
+  story: {
+    challenge: { de: "Eine Verpackung für ein Buch, das ein ganzes Leben an Erinnerungen sammeln soll.", en: "Packaging for a book meant to collect a lifetime of memories." },
+    idea: { de: "Die Fragen des Buchs werden selbst zum Muster.", en: "The book’s questions become the pattern." },
+    decision: { de: "Außen ruhiges Tiefblau, innen laufen die Erinnerungsfragen über Schachtel und Seidenpapier.", en: "Calm deep blue outside; inside, the memory prompts run across the box and tissue paper." },
+  },
   coverImage: {
     src: "/projects/das-lebensbuch/cover.webp",
     alt: { de: "Geschlossene Lebensbuch-Schachtel mit Sticker auf Seidenpapier mit Erinnerungsfragen", en: "Closed Lebensbuch box with sticker on tissue paper printed with memory prompts" },

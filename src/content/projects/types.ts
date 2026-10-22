@@ -53,6 +53,8 @@ export type PortfolioProject = {
   gallery: ProjectImage[];
   /** "stack": Bilder lückenlos untereinander (z. B. eine durchgehende Präsentation). */
   galleryLayout?: "grid" | "stack";
+  /** Kurzgeschichte für die Startseite: Ausgangsfrage, Idee, gestalterische Entscheidung (nur belegte Inhalte). */
+  story?: { challenge: Localized; idea: Localized; decision: Localized };
   /** Optionale Farbwelt der Case-Study-Seite (überschreibt die dunklen Basistöne). */
   theme?: { bg: string; fg: string; muted: string; border: string; accent: string };
   /** Optionaler Download, z. B. die vollständige Case-Study als PDF. */

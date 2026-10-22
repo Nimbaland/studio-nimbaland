@@ -32,6 +32,11 @@ const project: PortfolioProject = {
     de: "Nicht eine Stimme, ein Chor: Amethyst & Anchor wird zur Hauptmarke, die übrigen Varianten tragen Kampagnen, Atmosphäre und Sub-Linien. Zwei finale Logos gingen in die Produktion – Version B für die Hauptmarke, Version A für ein zweites Produkt. Auf den Kuppel-Stickern ersetzen sie das Logo von 2012, die konzentrischen Ringe der Produkte bleiben.",
     en: "Not one voice but a choir: Amethyst & Anchor becomes the primary brand, the other variants carry campaigns, atmosphere and sub-lines. Two final logos went into production — version B for the main brand, version A for a second product. On the domed stickers they replace the 2012 logo, while the products' concentric rings remain.",
   },
+  story: {
+    challenge: { de: "Das Logo von 2012: Verläufe und Glanz skalierten nicht, in kleinen Größen zerfiel es.", en: "The 2012 logo: gradients and gloss didn’t scale, and it fell apart at small sizes." },
+    idea: { de: "Schärfen statt neu erfinden – die Welle bleibt.", en: "Sharpen, don’t reinvent – the wave stays." },
+    decision: { de: "Amethyst als einzige Farbe, die Tiefe, Klarheit und Eigenständigkeit trägt. Dazu vier Stimmen derselben Welle.", en: "Amethyst as the one colour carrying depth, clarity and distinctiveness. Plus four voices of the same wave." },
+  },
   coverImage: {
     src: "/projects/tervica/cover.webp",
     alt: { de: "Kuppel-Sticker im neuen Tervica-Logo: Rundsticker und Karten-Sticker", en: "Domed stickers in the new Tervica logo: round sticker and card sticker" },

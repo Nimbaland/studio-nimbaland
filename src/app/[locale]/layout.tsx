@@ -9,7 +9,6 @@ import { site } from "@/content/site";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { SmoothScroll } from "@/components/motion/SmoothScroll";
-import { Preloader, preloaderBootScript } from "@/components/motion/Preloader";
 import { Reveals } from "@/components/motion/Reveals";
 import { PageTransition } from "@/components/motion/PageTransition";
 
@@ -36,9 +35,6 @@ export default async function LocaleLayout({ children, params }: { children: Rea
   return (
     <html lang={locale} className={fontVariables} suppressHydrationWarning>
       <body>
-        {/* Läuft synchron beim Parsen, vor dem ersten Paint */}
-        <script dangerouslySetInnerHTML={{ __html: preloaderBootScript }} />
-        <Preloader label={site.name} />
         <SmoothScroll />
         <Reveals />
         <PageTransition label={site.name} />

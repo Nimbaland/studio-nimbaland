@@ -113,7 +113,7 @@ export function ContactForm({ dict, serviceOptions, privacyHref, fallbackEmail, 
       </fieldset>
 
       <FormField id={id("message")} label={f.message} hint={f.messageHint} error={errors.message}>
-        {(a) => <textarea {...a} name="message" required minLength={20} className="field__input" />}
+        {(a) => <textarea {...a} name="message" required minLength={20} rows={6} placeholder={f.messagePlaceholder} className="field__input" />}
       </FormField>
 
       {/* Honeypot: für Menschen unsichtbar, Bots füllen es aus */}

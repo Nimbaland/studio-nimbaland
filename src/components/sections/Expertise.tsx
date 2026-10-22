@@ -2,6 +2,7 @@ import { href, type Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries/de";
 import { services } from "@/content/services";
 import { getProjects } from "@/content/projects";
+import { site } from "@/content/site";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ServicesAccordion, type ServiceExample } from "./ServicesAccordion";
 
@@ -19,7 +20,7 @@ const stepIcons = [
 
 export function Expertise({ locale, dict, deliverablesLabel }: { locale: Locale; dict: Dictionary["expertise"]; deliverablesLabel: string }) {
   // Pro Leistung genau ein Beispiel: das neueste veröffentlichte Projekt, das thematisch passt
-  const projects = getProjects().filter((p) => p.published && p.coverImage.src);
+  const projects = getProjects().filter((p) => p.published && p.coverImage.src && !site.homeWork.includes(p.slug));
   const examples: Record<string, ServiceExample[]> = {};
   const used = new Set<string>();
   for (const s of services) {

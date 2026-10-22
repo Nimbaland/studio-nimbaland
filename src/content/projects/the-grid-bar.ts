@@ -26,6 +26,11 @@ const project: PortfolioProject = {
     de: "„The Square Paper“ gibt jedem Drink eine eigene Spalte: Name in gesperrten Versalien, ein kurzer Text mit Haltung, die Key Flavours und eine Glas-Ikone – klar wie ein Raster, passend zum Namen der Bar. Ein knallrotes Statement-Motiv bricht die Ruhe. Für Anlässe wurde das System erweitert: eine Silvester-Einladung in Gold und Weiß und ein Karneval-Einleger mit eigenem Drink, dem „Fastelovend“.",
     en: "“The Square Paper” gives every drink its own column: the name in spaced capitals, a short text with attitude, the key flavours and a glass icon — clear as a grid, true to the bar's name. A bright red statement page breaks the calm. For occasions the system was extended: a New Year's Eve invitation in gold and white, and a carnival insert with its own drink, the “Fastelovend”.",
   },
+  story: {
+    challenge: { de: "Eine Barkarte, die man liest – nicht nur überfliegt.", en: "A bar menu people read – not just skim." },
+    idea: { de: "Jeder Drink bekommt seine eigene kleine Geschichte.", en: "Every drink gets its own short story." },
+    decision: { de: "Ein quadratisches Raster, treu zum Namen der Bar, und eine knallrote Statement-Seite, die die Ruhe bricht.", en: "A square grid, true to the bar’s name, and a bright red statement page that breaks the calm." },
+  },
   coverImage: {
     src: "/projects/the-grid-bar/cover.webp",
     alt: { de: "Titel der Barkarte „The Square Paper“ und rote Statement-Seite", en: "Cover of the bar menu “The Square Paper” and red statement page" },

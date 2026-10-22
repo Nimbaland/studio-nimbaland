@@ -29,6 +29,11 @@ const project: PortfolioProject = {
     de: "Ein warmer, ruhiger Auftritt in Sand, Blau und Pink: oben das klare Versprechen „Ein geschützter Raum für alle Frauen“, direkt daneben die Telefonnummer und ein „Schnell verlassen“-Button für Sicherheit. Drei Wege zum Ankommen, vier Bereiche für die Gruppen, Stimmen aus dem Haus. Im Logo bleibt das Frauenzeichen, darunter legt sich ein Bogen als Geste des Haltens – er fängt das Zeichen auf und öffnet sich nach rechts.",
     en: "A warm, calm look in sand, blue and pink: at the top the clear promise “A protected space for all women”, right next to it the phone number and a “quick exit” button for safety. Three ways to get in touch, four areas for the groups, voices from the house. The logo keeps the female symbol, with an arc beneath it as a gesture of holding — it catches the symbol and opens to the right.",
   },
+  story: {
+    challenge: { de: "Wer hier Hilfe sucht, steht oft unter Druck. Die Seite muss in Sekunden zeigen, wie man ankommt.", en: "Who looks for help here is often under pressure. The site has to show within seconds how to get in touch." },
+    idea: { de: "Ein geschützter Raum – auch digital.", en: "A protected space – online too." },
+    decision: { de: "Telefonnummer und „Schnell verlassen“-Button stehen ganz oben. Im Logo fängt ein Bogen das Frauenzeichen auf.", en: "Phone number and a “quick exit” button sit right at the top. In the logo, an arc catches the female symbol." },
+  },
   coverImage: {
     src: "/projects/frauenzimmer-wolfsburg/cover.webp",
     alt: { de: "Startseite des Frauen-Zimmer-Redesigns im Browser", en: "Frauen-Zimmer redesign homepage in a browser" },

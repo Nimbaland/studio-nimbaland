@@ -8,7 +8,7 @@ import { useEffect } from "react";
  * und zoomen leicht heraus. Wird automatisch auf passende Elemente in <main> angewendet.
  * Ohne JavaScript oder bei "reduzierter Bewegung" bleibt alles sofort sichtbar.
  */
-const TEXT = "main :is(.t-display, .t-h1, .t-h2, .t-lead, .svc__desc):not(.hero *)";
+const TEXT = "main :is(.t-display, .t-h1, .t-h2, .t-lead, .svc__desc, .story__step, .recog__row, .fact, .next-steps li):not(.hero *)";
 const MEDIA = "main :is(.project-card__media, .media-figure, .svc__media, .portrait-frame, .slide__media):not(.hero *)";
 
 export function Reveals() {

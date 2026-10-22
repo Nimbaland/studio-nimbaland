@@ -55,7 +55,10 @@ export function Hero({ locale, dict, recent }: Props) {
           <span className="hero__line" aria-hidden="true"><Letters text={line1} offset={0} /></span>
           <span className="hero__line" aria-hidden="true">
             <Letters text={line2} offset={l1} />{" "}
-            <em className="hero__word"><Letters text={dict.titleAccent} offset={l1 + l2} /></em>
+            <em className="hero__word hero__accent">
+              <Letters text={dict.titleAccent} offset={l1 + l2} />
+              <svg className="hero__underline" viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 14 C 50 4, 120 3, 197 9" /></svg>
+            </em>
             <span className="hero__char stop" style={{ ["--i" as string]: l1 + l2 + dict.titleAccent.length + 2 }}>.</span>
             {site.portrait && (
               <span className="hero__portrait" style={{ ["--i" as string]: l1 + l2 + dict.titleAccent.length + 4 }}>
@@ -70,8 +73,8 @@ export function Hero({ locale, dict, recent }: Props) {
           <div className="hero__intro">
             <p className="t-lead measure">{dict.intro}</p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <ButtonLink href={href(locale, "/work")} variant="primary" lang="en">{dict.primaryCta}</ButtonLink>
-              <ButtonLink href={href(locale, "/contact")} variant="secondary" lang="en">{dict.secondaryCta}</ButtonLink>
+              <ButtonLink href="#work" variant="primary" lang="en">{dict.primaryCta}</ButtonLink>
+              <ButtonLink href="#contact" variant="secondary" lang="en">{dict.secondaryCta}</ButtonLink>
             </div>
           </div>
         </div>

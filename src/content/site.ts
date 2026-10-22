@@ -57,6 +57,17 @@ export const site = {
 
   /** "Recent Work" im Hero. Fällt auf das erste Featured-Projekt zurück, solange das Projekt noch fehlt. */
   recentWorkSlug: "tina-sood",
+
+  /** Startseite „Work, up close“: Projekte mit Kurzgeschichte (story), in dieser Reihenfolge. */
+  homeWork: ["frauenzimmer-wolfsburg", "tervica", "circle-up", "das-lebensbuch", "the-grid-bar"],
+
+  /** Startseite „Sound familiar?“: Situationen von Kundinnen und Kunden, jeweils mit einem Projekt als Beleg. */
+  recognition: [
+    { slug: "mkg-koeln-west", de: "Du eröffnest etwas Neues – und brauchst vom Logo bis zur Website alles auf einmal.", en: "You're opening something new – and need everything at once, from logo to website." },
+    { slug: "aurum-herbs", de: "Du hast mehrere Standorte und willst trotzdem wie eine Marke auftreten.", en: "You have several locations and still want to look like one brand." },
+    { slug: "bales-smart-home", de: "Deine Arbeit ist gut – aber zu wenige Menschen wissen davon.", en: "Your work is good – but too few people know about it." },
+    { slug: "tina-sood", de: "Menschen sollen dein Angebot auf einen Blick verstehen und dir vertrauen.", en: "People should understand your offer at a glance – and trust you." },
+  ],
 };
 
 export const showDrafts =

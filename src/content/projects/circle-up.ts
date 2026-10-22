@@ -29,6 +29,11 @@ const project: PortfolioProject = {
     de: "Das Zeichen ist ein offener Kreis, der sich zum „Q“ schließt – Bewegung, Runde und Gemeinschaft in einer Linie, in Neon-Gelb auf Schwarz. Das Pitch Deck führt Investoren von Vision und Problem über Marktvalidierung, Lösung und Monetarisierung bis zu Go-to-Market und Team – mit Schwarz-Weiß-Fotografie und dem Neon-Gelb als Signalfarbe.",
     en: "The mark is an open circle that closes into a “Q” — movement, lap and community in one line, in neon yellow on black. The pitch deck guides investors from vision and problem through market validation, solution and monetisation to go-to-market and team — with black-and-white photography and neon yellow as the signal colour.",
   },
+  story: {
+    challenge: { de: "Sport wird flexibler, aber einsamer. Wer viel arbeitet und reist, trainiert oft allein.", en: "Sport is getting more flexible, but lonelier. People who work and travel a lot often train alone." },
+    idea: { de: "Ein offener Kreis, der sich zum „Q“ schließt: Bewegung, Runde, Gemeinschaft.", en: "An open circle that closes into a “Q”: movement, lap, community." },
+    decision: { de: "Neon-Gelb auf Schwarz-Weiß-Fotografie – vom Logo über Instagram bis zum Investoren-Pitch.", en: "Neon yellow on black-and-white photography – from the logo to Instagram to the investor pitch." },
+  },
   coverImage: {
     src: "/projects/circle-up/cover.webp",
     alt: { de: "Titelfolie des Pitch Decks: Läufergruppe in Schwarz-Weiß mit Circle-Up-Logo in Neon-Gelb", en: "Pitch deck cover: group of runners in black and white with the Circle Up logo in neon yellow" },

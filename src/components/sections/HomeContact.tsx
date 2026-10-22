@@ -15,6 +15,14 @@ export function HomeContact({ locale, dict }: { locale: Locale; dict: Dictionary
           <h2 id="home-contact-title" className="t-h2" lang="en">{c.title}</h2>
           <p className="t-lead mt-8 measure">{c.body}</p>
           {c.prompt && <p className="t-lead t-muted mt-3">{c.prompt}</p>}
+          <div className="next-steps">
+            <p className="t-label t-muted">{c.stepsTitle}</p>
+            <ol>
+              {c.steps.map((s, i) => (
+                <li key={s}><span className="next-steps__num tabular-nums" aria-hidden="true">{i + 1}</span>{s}</li>
+              ))}
+            </ol>
+          </div>
           {site.contact.email && (
             <p className="mt-10">
               <a href={`mailto:${site.contact.email}`} className="text-link link-standalone font-display text-[clamp(1.5rem,1.2rem+1vw,2rem)]">{site.contact.email}</a>
