@@ -97,6 +97,12 @@ export default async function CaseStudyPage({ params }: Props) {
                 </div>
               ))}
             </dl>
+            {project.aiNote && (
+              <div className="ai-note mt-8">
+                <p className="t-label mb-2">{locale === "de" ? "KI-Einsatz" : "Use of AI"}</p>
+                <p className="m-0">{t(project.aiNote, locale)}</p>
+              </div>
+            )}
             {project.liveUrl && (
               <p className="mt-6">
                 <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="btn btn--secondary" lang="en">
@@ -132,6 +138,13 @@ export default async function CaseStudyPage({ params }: Props) {
           {project.gallery.length > 0 && (
             <section aria-label={c.gallery} className="col-span-full">
               <MediaGallery images={project.gallery} locale={locale} layout={project.galleryLayout} />
+              {project.mockups && (
+                <p className="t-caption t-muted mt-8">
+                  {locale === "de"
+                    ? "Hinweis: Die Produktdarstellungen sind Mockups – gestaltete Kompositionen auf Basis der Originaldaten."
+                    : "Note: product shots are mockups – designed compositions based on the original files."}
+                </p>
+              )}
               {project.document && (
                 <p className="mt-10">
                   <a href={project.document.href} target="_blank" rel="noopener" className="btn btn--primary">

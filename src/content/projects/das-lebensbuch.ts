@@ -46,6 +46,7 @@ const project: PortfolioProject = {
     { src: "/projects/das-lebensbuch/dieline.webp", alt: { de: "Stanzformen der Schachtel: Deckel außen und Innenseite mit Fragen", en: "Box dielines: lid outside and inside printed with questions" }, caption: { de: "Stanzformen", en: "Dielines" }, aspect: "16/9", width: 2400, height: 1350 },
     { src: "/projects/das-lebensbuch/tissue-detail.webp", alt: { de: "Detail des Seidenpapiers", en: "Tissue paper detail" }, caption: { de: "Seidenpapier, Detail", en: "Tissue paper, detail" }, aspect: "16/9", width: 2400, height: 1350 },
   ],
+  mockups: true,
   featured: true,
   published: true,
   order: 6,

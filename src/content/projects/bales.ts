@@ -47,6 +47,7 @@ const project: PortfolioProject = {
     { src: "/projects/bales-smart-home/carousel-smart-vs-normal.webp", span: "full", alt: { de: "Karussell-Post „Smart vs. Normal“ im Smartphone-Mockup, daneben alle sechs Slides", en: "Carousel post “Smart vs. normal” in a smartphone mockup, next to all six slides" }, caption: { de: "Instagram-Karussell · Smart vs. Normal", en: "Instagram carousel · Smart vs. normal" }, aspect: "16/9", width: 2400, height: 1350 },
     { src: "/projects/bales-smart-home/carousel-ein-tag.webp", span: "full", alt: { de: "Karussell-Post „Ein Tag“ im Smartphone-Mockup, daneben alle acht Slides", en: "Carousel post “One day” in a smartphone mockup, next to all eight slides" }, caption: { de: "Instagram-Karussell · Ein Tag", en: "Instagram carousel · One day" }, aspect: "16/9", width: 2400, height: 1350 },
   ],
+  mockups: true,
   featured: true,
   published: true,
   order: 3,

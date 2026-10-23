@@ -30,6 +30,8 @@ export type ProjectImage = {
   autoplay?: boolean;
   /** Layout in der Galerie: "full" = volle Breite, "half" = halbe Breite. Sonst automatisch. */
   span?: "full" | "half";
+  /** Enthält KI-generierte Bild-, Video- oder Audioinhalte → sichtbares Badge (EU AI Act, Art. 50 Abs. 4). */
+  ai?: boolean;
 };
 
 export type PortfolioProject = {
@@ -61,6 +63,10 @@ export type PortfolioProject = {
   theme?: { bg: string; fg: string; muted: string; border: string; accent: string };
   /** Optionaler Download, z. B. die vollständige Case-Study als PDF. */
   document?: { href: string; label: Localized };
+  /** Offenlegung des KI-Einsatzes auf der Projektseite (was mit KI entstand, was von Hand). */
+  aiNote?: Localized;
+  /** true = Galeriebilder sind Mockup-Darstellungen auf Basis der Originaldaten → Hinweis unter der Galerie. */
+  mockups?: boolean;
   featured: boolean;
   published: boolean;             // false until approved
   /** Reihenfolge in Listen (kleiner = weiter oben). */

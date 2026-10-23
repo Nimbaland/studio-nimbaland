@@ -27,7 +27,7 @@ export function Expertise({ locale, dict, deliverablesLabel }: { locale: Locale;
       if (hit) used.add(hit.slug);
       return hit ? [hit] : [];
     })();
-    examples[s.id] = hits.map((h) => ({ href: href(locale, `/work/${h.slug}`), title: h.title, src: h.coverImage.src as string, alt: h.coverImage.alt[locale] }));
+    examples[s.id] = hits.map((h) => ({ href: href(locale, `/work/${h.slug}`), title: h.title, src: h.coverImage.src as string, alt: h.coverImage.alt[locale], ai: h.coverImage.ai }));
   }
 
   return (

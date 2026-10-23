@@ -44,6 +44,7 @@ const project: PortfolioProject = {
     { src: "/projects/the-grid-bar/gallery-03.webp", alt: { de: "Karneval-Special-Einleger mit dem Drink „Fastelovend“", en: "Carnival special insert featuring the “Fastelovend” drink" }, caption: { de: "Karneval-Special", en: "Carnival special" }, aspect: "16/9", width: 2400, height: 1350 },
     { src: "/projects/the-grid-bar/gallery-04.webp", alt: { de: "Flying-Buffet-Karte, Titel und Innenseite", en: "Flying buffet card, cover and inside" }, caption: { de: "Flying Buffet", en: "Flying buffet" }, aspect: "16/9", width: 2400, height: 1350 },
   ],
+  mockups: true,
   featured: true,
   published: true,
   order: 9,

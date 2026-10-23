@@ -6,8 +6,9 @@ import { useId, useState } from "react";
 import { t, type Locale } from "@/i18n/config";
 import type { Service } from "@/content/services";
 import type { ProofLink } from "@/lib/service-proof";
+import { AiBadge } from "@/components/ui/AiBadge";
 
-export type ServiceExample = { href: string; title: string; src: string; alt: string };
+export type ServiceExample = { href: string; title: string; src: string; alt: string; ai?: boolean };
 
 type Props = {
   services: Service[];
@@ -72,6 +73,7 @@ export function ServicesAccordion({ services, locale, deliverablesLabel, example
                           <Link key={e.href} href={e.href} className={`svc__example${k > 0 ? " svc__example--small" : ""}`} tabIndex={isOpen ? 0 : -1}>
                             <span className="svc__media">
                               <Image src={e.src} alt={e.alt} fill sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover" />
+                              {e.ai && <AiBadge locale={locale} />}
                             </span>
                             <span className="svc__caption">
                               <span className="t-label t-muted">{exampleLabel}</span>

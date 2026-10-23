@@ -2,6 +2,7 @@ import Image from "next/image";
 import { t, type Locale } from "@/i18n/config";
 import type { ProjectImage } from "@/content/projects";
 import { AssetPlaceholder } from "@/components/ui/AssetPlaceholder";
+import { AiBadge, AI_LABEL } from "@/components/ui/AiBadge";
 
 type Props = {
   image: ProjectImage;
@@ -21,6 +22,8 @@ export function ProjectMedia({ image, locale, sizes, priority, aspect, reveal = 
     return <AssetPlaceholder code="ASSET_REQUIRED" path={image.expected} aspect={ratio} label={t(image.alt, locale)} />;
   }
   const cls = `${reveal ? "media-figure " : ""}relative w-full overflow-hidden`;
+  const alt = image.ai ? `${t(image.alt, locale)} (${AI_LABEL[locale]})` : t(image.alt, locale);
+  const badge = image.ai ? <AiBadge locale={locale} /> : null;
   if (image.video) {
     return (
       <div className={cls} style={{ aspectRatio: ratio }}>
@@ -34,14 +37,16 @@ export function ProjectMedia({ image, locale, sizes, priority, aspect, reveal = 
           playsInline
           controls
           preload={image.autoplay === false ? "none" : "metadata"}
-          aria-label={t(image.alt, locale)}
+          aria-label={alt}
         />
+        {badge}
       </div>
     );
   }
   return (
     <div className={cls} style={{ aspectRatio: ratio }}>
-      <Image src={image.src} alt={t(image.alt, locale)} fill sizes={sizes} priority={priority} className="object-cover" />
+      <Image src={image.src} alt={alt} fill sizes={sizes} priority={priority} className="object-cover" />
+      {badge}
     </div>
   );
 }

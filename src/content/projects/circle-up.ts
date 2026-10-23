@@ -51,6 +51,7 @@ const project: PortfolioProject = {
     { src: "/projects/circle-up/instagram-grid.webp", span: "half", alt: { de: "Übersicht aller 14 Story-Vorlagen: verschiedene Sportarten in Schwarz-Weiß mit Logo in Neon-Gelb, Weiß oder Schwarz", en: "Overview of all 14 story templates: different sports in black and white with the logo in neon yellow, white or black" }, caption: { de: "14 Story-Vorlagen", en: "14 story templates" }, aspect: "16/9", width: 2400, height: 1350 },
     { src: "/projects/circle-up/pitch-deck-poster.webp", video: "/projects/circle-up/pitch-deck.mp4", span: "full", alt: { de: "Video: das Investoren-Pitch-Deck Folie für Folie auf einem Laptop", en: "Video: the investor pitch deck slide by slide on a laptop" }, caption: { de: "Pitch Deck für Investoren · Video", en: "Investor pitch deck · video" }, aspect: "16/9", width: 1600, height: 900 },
   ],
+  mockups: true,
   featured: true,
   published: true,
   order: 4,

@@ -3,14 +3,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState } from "react";
+import { AiBadge } from "@/components/ui/AiBadge";
+import type { Locale } from "@/i18n/config";
 
-export type PreviewItem = { href: string; title: string; meta: string; year?: string; src: string | null; alt: string };
+export type PreviewItem = { href: string; title: string; meta: string; year?: string; src: string | null; alt: string; ai?: boolean };
 
 /**
  * Projektindex nach Referenz ("Awards"-Liste): Beim Überfahren einer Zeile folgt
  * das Titelbild dem Mauszeiger und öffnet sich per clip-path. Auf Touch nur die Liste.
  */
-export function HoverPreview({ items, label }: { items: PreviewItem[]; label: string }) {
+export function HoverPreview({ items, label, locale }: { items: PreviewItem[]; label: string; locale: Locale }) {
   const [active, setActive] = useState<number | null>(null);
   const box = useRef<HTMLDivElement>(null);
   const wrap = useRef<HTMLDivElement>(null);
@@ -40,6 +42,7 @@ export function HoverPreview({ items, label }: { items: PreviewItem[]; label: st
         {items.map((it, i) => it.src && (
           <span key={it.href} className={`hover-index__img${active === i ? " is-active" : ""}`}>
             <Image src={it.src} alt="" fill sizes="420px" className="object-cover" />
+            {it.ai && <AiBadge locale={locale} />}
           </span>
         ))}
       </div>

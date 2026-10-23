@@ -60,6 +60,7 @@ const project: PortfolioProject = {
     { src: "/projects/herzhaft/gallery-08.webp", span: "half", alt: { de: "Zwei 2 Meter hohe Außenschilder mit der kompletten Speisekarte an der Fassade", en: "Two 2-metre exterior signs with the full menu on the facade" }, caption: { de: "Außenschilder 600 × 2000 mm", en: "Exterior signs 600 × 2000 mm" }, aspect: "16/9", width: 2400, height: 1350 },
     { src: "/projects/herzhaft/gallery-09.webp", span: "full", alt: { de: "Gutschein im A6-Format und Treuebonus-Karte, Vorder- und Rückseite", en: "A6 gift voucher and loyalty card, front and back" }, caption: { de: "Gutschein A6 und Treuebonus-Karte", en: "A6 gift voucher and loyalty card" }, aspect: "16/9", width: 2400, height: 1350 },
   ],
+  mockups: true,
   featured: true,
   published: true,
   order: 10,

@@ -42,6 +42,7 @@ export default async function WorkPage({ params }: Props) {
             <p className="t-label t-muted mb-6" lang="en">Index</p>
             <h2 id="work-index" className="t-h2 mb-12" lang="en">{locale === "de" ? "Alle Projekte." : "All projects."}</h2>
             <HoverPreview
+              locale={locale}
               label={locale === "de" ? "Projektindex" : "Project index"}
               items={projects.map((p) => ({
                 href: href(locale, `/work/${p.slug}`),
@@ -50,6 +51,7 @@ export default async function WorkPage({ params }: Props) {
                 year: p.year,
                 src: p.coverImage.src,
                 alt: p.coverImage.alt[locale],
+                ai: p.coverImage.ai,
               }))}
             />
           </div>

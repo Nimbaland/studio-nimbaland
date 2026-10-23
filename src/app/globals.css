@@ -831,6 +831,11 @@ html.lenis, html.lenis body { height: auto; }
   .recog__img.is-active { opacity: 1; transform: scale(1); }
   .recog__caption { position: absolute; left: 0; right: 0; bottom: 0; display: flex; justify-content: space-between; gap: 1rem; padding: 2.5rem 1.1rem 1rem; font-size: 0.85rem; font-weight: 600; background: linear-gradient(to top, rgba(0,0,0,.6), transparent); }
   .recog__caption span:first-child { font-family: var(--font-mono); font-weight: 400; opacity: .8; }
+  /* ---------- KI-Kennzeichnung (EU AI Act Art. 50) ---------- */
+  .ai-badge { position: absolute; left: .75rem; top: .75rem; z-index: 2; display: inline-flex; align-items: center; gap: .35rem; padding: .32rem .6rem; border-radius: 999px; background: rgba(17,18,18,.72); color: #fff; font-family: var(--font-mono); font-size: .68rem; letter-spacing: .06em; text-transform: uppercase; line-height: 1; pointer-events: none; -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+  .ai-badge svg { color: var(--color-accent); }
+  .ai-note { padding: 1rem 1.1rem; border-left: 3px solid var(--color-accent); background: color-mix(in srgb, var(--color-accent) 7%, transparent); font-size: .95rem; line-height: 1.55; }
+
   /* ---------- CTA-Laufband (Signalfarbe) ---------- */
   .marquee { display: block; overflow: hidden; background: var(--color-accent); color: var(--graphite-900); text-decoration: none; border-block: 1px solid rgba(0,0,0,.08); }
   .marquee__track { display: flex; width: max-content; animation: marquee 32s linear infinite; }

@@ -59,6 +59,7 @@ const project: PortfolioProject = {
     { src: "/projects/tervica/stickerbogen.webp", span: "full", alt: { de: "Stickerbogen mit sechs Kuppel-Stickern im neuen Logo", en: "Sticker sheet with six domed stickers in the new logo" }, caption: { de: "Mockup: Stickerbogen", en: "Mockup: sticker sheet" }, aspect: "16/9", width: 2400, height: 1350 },
   ],
   theme: { bg: "#1d1226", fg: "#f4eff8", muted: "#b7a5c6", border: "#3d2d4b", accent: "#c9aad0" },
+  mockups: true,
   featured: true,
   published: true,
   order: 2,
