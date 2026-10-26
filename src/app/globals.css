@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@source not "../../spices";
 @import "../styles/fonts.css";
 @import "../styles/tokens.css";
 

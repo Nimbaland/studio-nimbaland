@@ -1,0 +1,210 @@
+{
+  "_note": "Redaktionelle Produktinhalte. Preise, Varianten, Verfügbarkeit und Warenkorb kommen ausschließlich aus Shopify. Zutatenreihenfolge = bestätigte absteigende Reihenfolge nach Gewichtsanteil (Etikett).",
+  "ingredients": [
+    {
+      "id": "koriander", "latin": "Coriandrum sativum (Samen)",
+      "img": null, "imgProvisional": true,
+      "de": {
+        "name": "Koriander",
+        "about": "Die getrockneten Früchte der Korianderpflanze, oft einfach Koriandersamen genannt. In der Küche Sri Lankas gehört Koriander zu den Grundpfeilern vieler Currypulver.",
+        "aroma": "Warm, leicht nussig, mit einer frischen, zitronigen Note.",
+        "tips": ["Entfaltet sein Aroma am besten, wenn er kurz in heißem Öl angeröstet wird.", "Passt gut zu Linsen, Hülsenfrüchten und Wurzelgemüse."]
+      },
+      "en": {
+        "name": "Coriander",
+        "about": "The dried fruits of the coriander plant, usually called coriander seeds. In Sri Lankan cooking, coriander is a cornerstone of many curry powders.",
+        "aroma": "Warm and slightly nutty, with a fresh, lemony note.",
+        "tips": ["Releases its aroma best when briefly toasted in hot oil.", "Works well with lentils, pulses and root vegetables."]
+      },
+      "role": {
+        "de": "Steht in beiden Mischungen an erster Stelle und hat damit den größten Gewichtsanteil. Er bildet die warme, runde Basis.",
+        "en": "Comes first in both blends, so it makes up the largest share by weight. It forms the warm, rounded base."
+      }
+    },
+    {
+      "id": "kreuzkuemmel", "latin": "Cuminum cyminum",
+      "img": "img/photo-38.jpg", "imgProvisional": true,
+      "de": {
+        "name": "Kreuzkümmel (Cumin)",
+        "about": "Die länglichen Samen einer Doldenpflanze. Nicht zu verwechseln mit dem in Deutschland verbreiteten Kümmel.",
+        "aroma": "Erdig, warm und leicht herb.",
+        "tips": ["Etwas weniger ist oft mehr: Kreuzkümmel prägt ein Gericht schnell.", "Gibt Gemüse aus Ofen oder Pfanne eine kräftige, herzhafte Tiefe."]
+      },
+      "en": {
+        "name": "Cumin",
+        "about": "The elongated seeds of a plant in the carrot family. Not to be confused with caraway, which is common in German cooking.",
+        "aroma": "Earthy, warm and slightly bitter.",
+        "tips": ["A little goes a long way: cumin shapes a dish quickly.", "Gives roasted or pan-fried vegetables a deep, savoury note."]
+      },
+      "role": {
+        "de": "Zweitgrößter Anteil. Bringt die erdige Tiefe, die man mit Curry verbindet.",
+        "en": "Second-largest share. Brings the earthy depth people associate with curry."
+      }
+    },
+    {
+      "id": "fenchel", "latin": "Foeniculum vulgare (Samen)",
+      "img": null, "imgProvisional": true,
+      "de": {
+        "name": "Fenchelsamen",
+        "about": "Die getrockneten Früchte des Fenchels. In Sri Lanka werden sie häufig im Currypulver und zu Gerichten mit Kokosmilch verwendet.",
+        "aroma": "Süßlich, mild und leicht anisartig.",
+        "tips": ["Gleicht kräftige und scharfe Noten aus.", "Harmoniert mit Kokosmilch, Fisch und Hülsenfrüchten."]
+      },
+      "en": {
+        "name": "Fennel seeds",
+        "about": "The dried fruits of the fennel plant. In Sri Lanka they often go into curry powder and into dishes cooked with coconut milk.",
+        "aroma": "Sweetish, mild and lightly aniseed-like.",
+        "tips": ["Balances strong and spicy notes.", "Pairs well with coconut milk, fish and pulses."]
+      },
+      "role": {
+        "de": "Sorgt für eine leicht süßliche Frische und rundet die Mischung ab.",
+        "en": "Adds a gently sweet freshness and rounds the blend off."
+      }
+    },
+    {
+      "id": "pfeffer", "latin": "Piper nigrum",
+      "img": null, "imgProvisional": true,
+      "de": {
+        "name": "Schwarzer Pfeffer",
+        "about": "Die getrockneten, unreif geernteten Früchte der Pfefferpflanze.",
+        "aroma": "Würzig mit einer warmen, prickelnden Schärfe.",
+        "tips": ["Seine Schärfe ist anders als die von Chili: kurz und prickelnd statt anhaltend.", "Auch in Cosy Mildness sorgt er für eine leichte Wärme."]
+      },
+      "en": {
+        "name": "Black pepper",
+        "about": "The dried fruits of the pepper vine, harvested before they ripen.",
+        "aroma": "Spicy, with a warm, tingling heat.",
+        "tips": ["Its heat differs from chilli: short and tingling rather than lingering.", "Even in Cosy Mildness it adds a little warmth."]
+      },
+      "role": {
+        "de": "Gibt Wärme und Würze. In Cosy Mildness ist er die einzige Quelle leichter Schärfe.",
+        "en": "Adds warmth and bite. In Cosy Mildness it is the only source of gentle heat."
+      }
+    },
+    {
+      "id": "kurkuma", "latin": "Curcuma longa",
+      "img": "img/photo-55.jpg", "imgProvisional": true,
+      "de": {
+        "name": "Kurkuma",
+        "about": "Der getrocknete, gemahlene Wurzelstock der Kurkumapflanze, einer Verwandten des Ingwers.",
+        "aroma": "Mild erdig, leicht bitter, mit dezenter Ingwernote.",
+        "tips": ["Gibt Saucen, Reis und Linsen ihre goldgelbe Farbe.", "Färbt stark: Holzbretter und Stoff nach dem Kochen gleich abwaschen."]
+      },
+      "en": {
+        "name": "Turmeric",
+        "about": "The dried, ground rhizome of the turmeric plant, a relative of ginger.",
+        "aroma": "Mildly earthy and slightly bitter, with a subtle ginger note.",
+        "tips": ["Gives sauces, rice and lentils their golden colour.", "It stains: wash wooden boards and fabric right after cooking."]
+      },
+      "role": {
+        "de": "Bringt die goldene Farbe und eine sanfte, erdige Note.",
+        "en": "Brings the golden colour and a soft, earthy note."
+      }
+    },
+    {
+      "id": "curryblaetter", "latin": "Murraya koenigii",
+      "img": null, "imgProvisional": true,
+      "de": {
+        "name": "Curryblätter",
+        "about": "Die Blätter des Currybaums. Mit Currypulver sind sie nicht verwandt, gehören in Sri Lanka und Südindien aber zu vielen Gerichten dazu.",
+        "aroma": "Aromatisch, leicht zitronig und nussig.",
+        "tips": ["Frische Curryblätter gibt es oft im Asialaden. Kurz in Öl gebraten sind sie eine schöne Ergänzung.", "Passen besonders gut zu Linsen und Kokosgerichten."]
+      },
+      "en": {
+        "name": "Curry leaves",
+        "about": "The leaves of the curry tree. They are not related to curry powder, but they belong in many dishes in Sri Lanka and South India.",
+        "aroma": "Aromatic, slightly lemony and nutty.",
+        "tips": ["Fresh curry leaves are often sold in Asian grocers. Briefly fried in oil they make a lovely addition.", "Especially good with lentils and coconut dishes."]
+      },
+      "role": {
+        "de": "Geben der Mischung ihre typisch srilankische, aromatische Note.",
+        "en": "Give the blend its typically Sri Lankan aromatic note."
+      }
+    },
+    {
+      "id": "pandan", "latin": "Pandanus amaryllifolius",
+      "img": null, "imgProvisional": true,
+      "de": {
+        "name": "Pandan",
+        "about": "Die langen, schmalen Blätter der Pandanpflanze. In Sri Lanka heißt sie Rampe und wird gern beim Kochen von Reis und Currys mitgegeben.",
+        "aroma": "Sanft, grasig-frisch und leicht vanilleartig.",
+        "tips": ["Frische Pandanblätter gibt es tiefgekühlt im Asialaden. Ein Stück im Reiswasser bringt zusätzliches Aroma.", "Mildert und verbindet die übrigen Gewürze."]
+      },
+      "en": {
+        "name": "Pandan",
+        "about": "The long, narrow leaves of the pandan plant. In Sri Lanka it is called rampe and often added when cooking rice and curries.",
+        "aroma": "Gentle, fresh and grassy, slightly vanilla-like.",
+        "tips": ["Fresh pandan leaves are sold frozen in Asian grocers. A piece in the rice water adds extra aroma.", "Softens and ties the other spices together."]
+      },
+      "role": {
+        "de": "Verbindet die Gewürze und gibt der Mischung eine weiche, duftige Note.",
+        "en": "Ties the spices together and gives the blend a soft, fragrant note."
+      }
+    },
+    {
+      "id": "chili", "latin": "Capsicum annuum",
+      "img": "img/photo-60.jpg", "imgProvisional": true,
+      "de": {
+        "name": "Rote Chilis",
+        "about": "Getrocknete und gemahlene rote Chilischoten.",
+        "aroma": "Fruchtig mit anhaltender Schärfe.",
+        "tips": ["Wer es milder mag, beginnt mit wenig und würzt später nach.", "Kokosmilch, Joghurt oder ein Spritzer Limette mildern die Schärfe im fertigen Gericht."]
+      },
+      "en": {
+        "name": "Red chillies",
+        "about": "Dried and ground red chilli peppers.",
+        "aroma": "Fruity, with lingering heat.",
+        "tips": ["If you prefer it milder, start with a little and add more later.", "Coconut milk, yoghurt or a squeeze of lime soften the heat in the finished dish."]
+      },
+      "role": {
+        "de": "Nur in Advanced Spiciness. Sorgt für die Schärfe und steht laut Etikett an letzter Stelle der Zutatenliste.",
+        "en": "Only in Advanced Spiciness. Brings the heat and comes last in the ingredient list on the label."
+      }
+    }
+  ],
+  "products": {
+    "cosy-mildness": {
+      "ingredients": ["koriander", "kreuzkuemmel", "fenchel", "pfeffer", "kurkuma", "curryblaetter", "pandan"],
+      "dosage": {
+        "de": {
+          "amount": "Startpunkt: 1–2 gestrichene Teelöffel für ein Gericht mit 2 Portionen.",
+          "when": "Nach Zwiebel, Knoblauch und Ingwer in das heiße Öl geben und unter Rühren etwa 30–60 Sekunden anrösten, bis es duftet. Erst dann Flüssigkeit wie Kokosmilch, Tomaten oder Brühe zugeben.",
+          "adjust": "Zu mild? Einen halben Teelöffel separat in wenig Öl anrösten und unterrühren, dann noch ein paar Minuten köcheln lassen. Die Mischung enthält kein Salz: Salz separat und zum Schluss abschmecken."
+        },
+        "en": {
+          "amount": "Starting point: 1–2 level teaspoons for a dish that serves 2.",
+          "when": "Add it to the hot oil after the onion, garlic and ginger and stir for about 30–60 seconds until fragrant. Only then add liquid such as coconut milk, tomatoes or stock.",
+          "adjust": "Too mild? Toast another half teaspoon separately in a little oil, stir it in and simmer for a few more minutes. The blend contains no salt, so season with salt separately at the end."
+        }
+      }
+    },
+    "advanced-spiciness": {
+      "ingredients": ["koriander", "kreuzkuemmel", "fenchel", "pfeffer", "kurkuma", "curryblaetter", "pandan", "chili"],
+      "dosage": {
+        "de": {
+          "amount": "Startpunkt: 1 gestrichener Teelöffel für ein Gericht mit 2 Portionen. Wer es schärfer mag, steigert auf bis zu 2 Teelöffel.",
+          "when": "Nach Zwiebel, Knoblauch und Ingwer in das heiße Öl geben und unter Rühren etwa 30–60 Sekunden anrösten. Nicht zu heiß werden lassen, damit Chili und Gewürze nicht bitter werden. Dann Flüssigkeit zugeben.",
+          "adjust": "Zu scharf? Kokosmilch, Joghurt oder etwas Limettensaft mildern die Schärfe. Zu mild? Einen halben Teelöffel separat in wenig Öl anrösten und unterrühren. Salz separat abschmecken, die Mischung enthält keins."
+        },
+        "en": {
+          "amount": "Starting point: 1 level teaspoon for a dish that serves 2. If you like it hotter, go up to 2 teaspoons.",
+          "when": "Add it to the hot oil after the onion, garlic and ginger and stir for about 30–60 seconds. Don’t let it get too hot, or the chilli and spices turn bitter. Then add the liquid.",
+          "adjust": "Too hot? Coconut milk, yoghurt or a little lime juice soften the heat. Too mild? Toast another half teaspoon separately in a little oil and stir it in. Season with salt separately; the blend contains none."
+        }
+      }
+    }
+  },
+  "origin": {
+    "ingredients": { "de": "Sri Lanka", "en": "Sri Lanka" },
+    "blending": { "de": "Jaffna, Sri Lanka", "en": "Jaffna, Sri Lanka" },
+    "filling": { "de": "Jaffna, Sri Lanka", "en": "Jaffna, Sri Lanka" },
+    "address": null
+  },
+  "chefs": [
+    {
+      "id": "philf-henker", "name": "Philf Henker", "nameConfirmed": false,
+      "portrait": null, "workplace": null, "style": null, "intro": null,
+      "recipes": ["gemuese-curry-apfel-sosse", "lammcurry-bohnen-kartoffeln", "haehnchen-rahmlinsen-taleggio"]
+    }
+  ]
+}

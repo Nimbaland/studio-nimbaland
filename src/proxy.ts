@@ -27,5 +27,6 @@ export function proxy(request: NextRequest) {
 
 export const config = {
   // Alles außer API, Next-Interna und Dateien mit Endung (Bilder, Favicon, robots, sitemap …)
-  matcher: ["/((?!api|_next|.*\\..*).*)"],
+  // /spices gehört zur eigenständigen Shop-App nimbaland.spices (siehe next.config.ts → rewrites)
+  matcher: ["/((?!api|_next|spices(?:/|$)|.*\\..*).*)"],
 };
