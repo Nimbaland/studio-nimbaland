@@ -3,10 +3,12 @@
 import { useId, useState } from "react";
 import type { Locale } from "@/i18n/config";
 import { getT } from "@/i18n/t";
+import Link from "next/link";
+import { href } from "@/i18n/config";
 import { asset } from "@/lib/base";
 
 /** Newsletter-Anmeldung mit Double-Opt-in. Zeigt Erfolg nur, wenn der Server die Anmeldung wirklich angenommen hat. */
-export function Newsletter({ locale }: { locale: Locale }) {
+export function Newsletter({ locale, connected }: { locale: Locale; connected: boolean }) {
   const t = getT(locale);
   const id = useId();
   const [st, setSt] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -27,13 +29,15 @@ export function Newsletter({ locale }: { locale: Locale }) {
     } catch { setSt("error"); setMsg(t("nl.err.generic")); }
   }
   return (
-    <section className="nl" aria-labelledby={`${id}-h`}>
+    <section className="nl" id="newsletter" aria-labelledby={`${id}-h`}>
       <div className="wrap nl-in">
         <div>
           <h2 id={`${id}-h`}>{t("nl.h")}</h2>
           <p className="lead">{t("nl.lead")}</p>
         </div>
-        {st === "success" ? (
+        {!connected ? (
+          <p className="nl-ok" role="status">{t("nl.soon")}</p>
+        ) : st === "success" ? (
           <p className="nl-ok" role="status">{msg}</p>
         ) : (
           <form className="nl-form" onSubmit={submit} noValidate aria-busy={st === "loading" || undefined}>
@@ -45,7 +49,7 @@ export function Newsletter({ locale }: { locale: Locale }) {
             </div>
             <label className="nl-consent"><input type="checkbox" name="consent" required /> <span>{t("nl.consent")}</span></label>
             <div className="hp" aria-hidden="true"><label>Website <input name="website" tabIndex={-1} autoComplete="off" /></label></div>
-            <p className="credit">{t("nl.privacy")}</p>
+            <p className="credit">{t("nl.privacy")} <Link href={href(locale, "/datenschutz")}>{t("nl.privacy.link")}</Link>.</p>
             <p id={`${id}-m`} className={st === "error" ? "err" : "sr"} role={st === "error" ? "alert" : undefined}>{st === "error" ? msg : ""}</p>
           </form>
         )}

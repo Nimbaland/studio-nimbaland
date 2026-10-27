@@ -5,6 +5,7 @@ import { getT } from "@/i18n/t";
 import { Newsletter } from "@/components/Newsletter";
 import { Arrow, PageHead } from "@/components/ui";
 import { asset } from "@/lib/base";
+import { newsletterConfigured } from "@/lib/newsletter";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -26,7 +27,7 @@ export default async function NewsletterPage({ params, searchParams }: { params:
         <div className="wrap" style={{ paddingBottom: "var(--sp-section)" }}>
           <Link className="btn primary" href={href(locale, "/recipes")}>{t("st.cta2")} <Arrow /></Link>
         </div>
-      ) : <Newsletter locale={locale} />}
+      ) : <Newsletter locale={locale} connected={newsletterConfigured} />}
     </>
   );
 }

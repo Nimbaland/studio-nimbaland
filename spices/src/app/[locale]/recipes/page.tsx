@@ -9,6 +9,7 @@ import { Newsletter } from "@/components/Newsletter";
 import { RecipeBrowser } from "@/components/interactive";
 import { Arrow, PageHead } from "@/components/ui";
 import { asset } from "@/lib/base";
+import { newsletterConfigured } from "@/lib/newsletter";
 
 export const revalidate = 120;
 
@@ -37,7 +38,7 @@ export default async function Recipes({ params }: { params: Promise<{ locale: Lo
           </aside>
         ))}
       </div>
-      <Newsletter locale={locale} />
+      <Newsletter locale={locale} connected={newsletterConfigured} />
     </>
   );
 }

@@ -8,6 +8,7 @@ import { getT } from "@/i18n/t";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { getProducts, isSellable } from "@/lib/content";
+import { salesOpen } from "@/lib/flags";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -35,7 +36,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
   if (!isLocale(locale)) notFound();
   const t = getT(locale as Locale);
   const products = await getProducts(locale);
-  const locked = !products.every(isSellable);
+  const locked = !salesOpen || !products.every(isSellable);
   return (
     <html lang={locale} className={fontVariables}>
       <body>

@@ -7,6 +7,7 @@ import { href, locales, localeLabels, type Locale } from "@/i18n/config";
 import { getT } from "@/i18n/t";
 import { BrandMark } from "./BrandMark";
 import { BASE_PATH } from "@/lib/base";
+import { salesOpen } from "@/lib/flags";
 import { useCartCount } from "./shop";
 
 /** Header in der Grammatik von nimbaland.studio: Graphit, Mono-Navigation in Klammern, DE/EN, Warenkorb. */
@@ -15,7 +16,6 @@ export function Header({ locale }: { locale: Locale }) {
   const pathname = usePathname() ?? `/${locale}`;
   const [open, setOpen] = useState(false);
   const toggleRef = useRef<HTMLButtonElement>(null);
-  const count = useCartCount(locale);
   const items = [
     { path: "/shop", label: t("nav.shop") },
     { path: "/recipes", label: t("nav.recipes") },
@@ -68,11 +68,23 @@ export function Header({ locale }: { locale: Locale }) {
             </Link>
           ))}
         </nav>
-        <Link className="hdr-cta" href={href(locale, "/cart")} aria-label={t("nav.cart")}>
-          <span className="txt">[{t("nav.cart")}]</span>
-          <span className="count">{count}</span>
-        </Link>
+        {salesOpen ? <CartLink locale={locale} /> : (
+          <Link className="hdr-cta" href={href(locale, "/newsletter")}>
+            <span className="txt">[{t("nav.notify")}]</span>
+          </Link>
+        )}
       </div>
     </header>
+  );
+}
+
+function CartLink({ locale }: { locale: Locale }) {
+  const t = getT(locale);
+  const count = useCartCount(locale);
+  return (
+    <Link className="hdr-cta" href={href(locale, "/cart")} aria-label={t("nav.cart")}>
+      <span className="txt">[{t("nav.cart")}]</span>
+      <span className="count">{count}</span>
+    </Link>
   );
 }

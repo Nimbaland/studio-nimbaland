@@ -30,11 +30,14 @@ Arbeitshilfe, keine Rechtsberatung. Pflichtangaben und Rechtstexte bitte fachlic
 - [ ] Vor dem Launch: `SITE_INDEXABLE=true`, `NEXT_PUBLIC_SHOW_DRAFTS=false`, Domain in `NEXT_PUBLIC_SITE_URL`
 
 ## Rezepte
-- [ ] Alle 9 Rezepte nachkochen, Zeiten, Portionen und Dosierung prüfen, dann freigeben
-- [ ] Gemüse mit Curry-Apfel-Soße: Knoblauchmenge prüfen („1 Knolle“); KI-Bild zeigt Kräuterzweig, der nicht im Rezept vorkommt
-- [ ] Lammcurry: Brühe klären, Chili der Beilage in Zutatenliste, Portionen
-- [ ] Hähnchen mit Taleggio: Mischung zuordnen („braunes Curry“), Mengen ergänzen
-- [ ] Gemüsecurry mit Tofu: Mischung im Foto bestätigen
+- [x] Alle 9 Rezepte freigegeben (27.10.2026)
+
+## Landingpage (bis zum Verkaufsstart)
+- [x] Landing-Modus: kein Warenkorb, keine Kaufbuttons, Warenkorb-API aus, keine Cookies, kein Browserspeicher, keine Drittanbieter-Anfragen
+- [x] Datenschutzerklärung DE/EN unter /spices/de/datenschutz (Abschnitte für Newsletter/Shop/CMS erscheinen erst, wenn diese verbunden sind)
+- [x] Impressum: Link auf das Impressum von nimbaland.studio (gleicher Anbieter, gleiche Domain)
+- [ ] Datenschutz-Abschnitt Newsletter vor Aktivierung prüfen (Shopify, Resend: AV-Verträge abschließen, Drittlandübermittlung)
+- [ ] Zum Verkaufsstart: `NEXT_PUBLIC_SALES_OPEN=true` im Vercel-Projekt nimbaland-spices, dazu AGB, Widerruf, Versand & Zahlung
 
 ## Erledigt
 - [x] Hintergrundmusik, Audioplayer und Bedienelemente entfernt (Website und Artifact)

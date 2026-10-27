@@ -107,6 +107,12 @@ Variante in Shopify verfügbar ist und einen Grundpreis hat.
 `img` (Pfad unter `public/img/`); `imgProvisional: false` setzen, sobald das finale Foto drin ist. Vorläufige Bilder sind in der
 Vorschau mit „Vorläufiges Bild“ markiert. Die Zutatenreihenfolge in `products` ist die bestätigte Reihenfolge nach Gewicht.
 
+## Landing-Modus
+
+Bis zum Verkaufsstart läuft die Seite als Landingpage (`NEXT_PUBLIC_SALES_OPEN` nicht gesetzt): Produkte, Zutaten, Rezepte und
+Geschichte sind sichtbar, Warenkorb und Kaufbuttons sind ausgeblendet, `/cart` und die Warenkorb-API antworten mit 404.
+Es werden keine Cookies gesetzt. Zum Verkaufsstart `NEXT_PUBLIC_SALES_OPEN=true` setzen und neu deployen.
+
 ## Newsletter (Double-Opt-in)
 
 Anmeldung → Kontakt wird in Shopify mit Status „ausstehend“ angelegt → Bestätigungsmail mit signiertem Link (7 Tage gültig,

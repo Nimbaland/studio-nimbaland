@@ -1,11 +1,13 @@
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
+import { salesOpen } from "@/lib/flags";
 import { getCart, shopifyConfigured } from "@/lib/shopify";
 import { asset } from "@/lib/base";
 
 /** Leitet zum Shopify-Checkout weiter. Bezahlung und Bestellung laufen ausschließlich dort. */
 export const dynamic = "force-dynamic";
 export async function GET(req: Request) {
+  if (!salesOpen) return NextResponse.json({ error: "not_found" }, { status: 404 });
   const url = new URL(req.url);
   const locale = url.searchParams.get("locale") === "en" ? "en" : "de";
   const back = new URL(asset(`/${locale}/cart`), url.origin);

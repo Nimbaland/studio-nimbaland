@@ -37,12 +37,12 @@ export default async function Story({ params }: { params: Promise<{ locale: Loca
             <Image src={asset("/img/story-kueche-2013.jpg")} alt={t("photo.kitchen.alt")} width={900} height={1600} sizes="(min-width: 900px) 34vw, 100vw" />
             <figcaption>{t("photo.kitchen.cap")}</figcaption>
           </figure>
-          <div className="prose"><SecLabel n="02">{locale === "de" ? "Das Verhältnis" : "The balance"}</SecLabel><p>{t("st.p3")}</p><p>{t("st.p4")}</p></div>
+          <div className="prose"><SecLabel n="02">{t("st.fam.label")}</SecLabel><h2>{t("st.fam.h")}</h2><p>{t("st.fam.p1")}</p><p>{t("st.fam.p2")}</p></div>
         </div>
         <div className="chapter">
           <JaffnaPanel name={t("jaffna.name")} sub={t("jaffna.sub")} credit={t("jaffna.credit")} alt={t("jaffna.alt")} />
           <div className="prose">
-            <SecLabel n="03">{t("st.c3.label")}</SecLabel><p>{t("st.p5")}</p>
+            <SecLabel n="03">{t("st.ratio.label")}</SecLabel><h2>{t("s3.h2")}</h2><p>{t("st.p3")}</p><p>{t("st.p4")}</p><p>{t("st.p5")}</p>
             <div className="ledger">
               {row(t("st.l.ingr"), o.ingredients, true)}
               {row(t("st.l.blend"), o.blending, true)}

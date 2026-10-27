@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import type { Locale } from "@/i18n/config";
+import { salesOpen } from "@/lib/flags";
 import { getT } from "@/i18n/t";
 import { CartView } from "@/components/shop";
 import { PageHead } from "@/components/ui";
@@ -11,6 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
 
 export default async function Cart({ params }: { params: Promise<{ locale: Locale }> }) {
   const { locale } = await params;
+  if (!salesOpen) notFound();
   const t = getT(locale);
   return (
     <>

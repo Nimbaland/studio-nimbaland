@@ -9,6 +9,7 @@ import { RecipeCard } from "@/components/cards";
 import { DiffSwitch, Finder } from "@/components/interactive";
 import { Arrow, Divider, Marquee, SecLabel } from "@/components/ui";
 import { asset } from "@/lib/base";
+import { newsletterConfigured } from "@/lib/newsletter";
 
 export const revalidate = 120;
 
@@ -94,7 +95,7 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
         </div>
       </section>
 
-      <Newsletter locale={locale} />
+      <Newsletter locale={locale} connected={newsletterConfigured} />
 
       <section className="closing">
         <div className="wrap">

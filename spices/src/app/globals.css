@@ -500,3 +500,13 @@ body:has(dialog[open]){overflow:hidden}
 .carttotal b{font-size:1.4rem}
 .carttotal p{flex-basis:100%;margin:0}
 .btn.sm{min-height:36px;padding:.3rem .7rem}
+
+/* ===== Landing-Modus & Rechtstexte ===== */
+.landingbox{display:grid;gap:.8rem;padding:1.25rem 1.3rem;border:1px solid var(--line);border-left:4px solid var(--sig-a);border-radius:var(--r-md);background:var(--card)}
+.landingbox h2{font-size:var(--t-h3);margin:0}
+.landingbox p{margin:0}
+.legaltext{max-width:820px;padding-bottom:var(--sp-section);display:grid;gap:.9rem}
+.legaltext h2{font-size:1.35rem;margin:1.4rem 0 0}
+.legaltext p{margin:0}
+.legaltext a{text-decoration:underline;text-underline-offset:2px}
+.nl .credit a{color:var(--on-dark);text-decoration:underline}

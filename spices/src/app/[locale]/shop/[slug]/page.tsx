@@ -12,6 +12,7 @@ import { fmtMoney, getShopProduct, shopifyConfigured } from "@/lib/shopify";
 import { showDrafts } from "@/lib/content";
 import { Arrow, HeatTag, productKey } from "@/components/ui";
 import { asset } from "@/lib/base";
+import { salesOpen } from "@/lib/flags";
 
 export const revalidate = 120;
 
@@ -47,7 +48,7 @@ export default async function ProductPage({ params }: { params: Promise<{ locale
   const ok = <span className="ok">{t("pd.o.ok")}</span>;
   const n = p.nutrition;
   const blend = getBlend(p.slug, locale);
-  const shop = await getShopProduct(p.shopifyHandle ?? p.slug, locale);
+  const shop = salesOpen ? await getShopProduct(p.shopifyHandle ?? p.slug, locale) : null;
   const unitLabel = (u: string, v: number) => `${v === 1 ? "" : v + " "}${u.toLowerCase()}`;
   const variants: VariantView[] = (shop?.variants ?? []).map((v) => ({
     id: v.id,
@@ -69,8 +70,21 @@ export default async function ProductPage({ params }: { params: Promise<{ locale
           <h1>{p.name}</h1>
           <div className="btnrow"><HeatTag heat={p.heat} t={t} />{!sell && <span className="label">{t("pd.status")}</span>}</div>
           <p className="lead">{p.description}</p>
-          <VariantBuy locale={locale} name={p.name} variants={variants} sellable={sell && shopifyConfigured} />
-          <p className="credit">{sell && p.shipping ? p.shipping : t("pd.ship")}</p>
+          {salesOpen ? (
+            <VariantBuy locale={locale} name={p.name} variants={variants} sellable={sell && shopifyConfigured} />
+          ) : (
+            <div className="landingbox">
+              <span className="badge">{t("pd.status")}</span>
+              <h2>{t("landing.h")}</h2>
+              <p>{t("landing.p")}</p>
+              <div className="btnrow">
+                <Link className={`btn ${k}`} href={href(locale, "/newsletter")}>{t("landing.cta")} <Arrow /></Link>
+                <a className="btn ghost" href="#rezepte">{t("landing.recipes")}</a>
+              </div>
+              <p className="credit">{t("var.planned")}</p>
+            </div>
+          )}
+          {salesOpen && <p className="credit">{sell && p.shipping ? p.shipping : t("pd.ship")}</p>}
         </div>
       </div>
 
@@ -86,7 +100,7 @@ export default async function ProductPage({ params }: { params: Promise<{ locale
       <div className="detail" style={{ marginBottom: "var(--sp-section)" }}>
         <div className="blk"><h2>{t("pd.h.taste")}</h2><div className="c"><p>{p.taste ?? t(k === "adv" ? "pd.taste.adv" : "pd.taste.cosy")}</p></div></div>
         {recs.length > 0 && (
-          <div className="blk"><h2>{t("pd.h.recipes")}</h2><div className="c">
+          <div className="blk" id="rezepte"><h2>{t("pd.h.recipes")}</h2><div className="c">
             <div className="rgrid">{recs.map((r) => <RecipeCard key={r.id} r={r} products={products} locale={locale} t={t} />)}</div>
             <div><Link className="btn ghost" href={href(locale, "/recipes")}>{t("pd.recipes.cta")}</Link></div>
           </div></div>

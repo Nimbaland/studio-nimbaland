@@ -6,6 +6,7 @@ import { getProducts, getRecipes } from "@/lib/content";
 import { ProductCard } from "@/components/cards";
 import { HeatTag, PageHead, Pending, Swatch } from "@/components/ui";
 import { asset } from "@/lib/base";
+import { salesOpen } from "@/lib/flags";
 
 export const revalidate = 120;
 
@@ -43,7 +44,7 @@ export default async function Shop({ params }: { params: Promise<{ locale: Local
                 {row(t("cmp.base"), chips(a.ingredients, base), chips(b.ingredients, base))}
                 {row(t("cmp.allergens"), a.allergens ?? t("pd.allergens"), b.allergens ?? t("pd.allergens"))}
                 {row(t("cmp.size"), t("var.planned"), t("var.planned"))}
-                {row(t("cmp.price"), pend, pend)}
+                {salesOpen && row(t("cmp.price"), pend, pend)}
                 {row(t("cmp.recipes"), recs(a.slug), recs(b.slug))}
               </tbody>
             </table>

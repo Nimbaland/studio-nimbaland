@@ -1,5 +1,6 @@
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
+import { salesOpen } from "@/lib/flags";
 import { addLines, createCart, getCart, removeLines, shopifyConfigured, updateLines, type ShopCart } from "@/lib/shopify";
 import type { Locale } from "@/i18n/config";
 
@@ -21,6 +22,7 @@ async function setCookie(id: string) {
 }
 
 export async function GET(req: Request) {
+  if (!salesOpen) return NextResponse.json({ error: "not_found" }, { status: 404 });
   if (!shopifyConfigured) return NextResponse.json({ connected: false, cart: null }, { status: 200 });
   const id = (await cookies()).get(COOKIE)?.value;
   if (!id) return NextResponse.json(out(null));
@@ -34,6 +36,7 @@ export async function GET(req: Request) {
 }
 
 export async function POST(req: Request) {
+  if (!salesOpen) return NextResponse.json({ error: "not_found" }, { status: 404 });
   if (!shopifyConfigured) return NextResponse.json({ connected: false, error: "not_connected" }, { status: 503 });
   let body: { action?: string; merchandiseId?: string; lineId?: string; quantity?: number; locale?: string };
   try { body = await req.json(); } catch { return NextResponse.json({ error: "bad_request" }, { status: 400 }); }

@@ -7,7 +7,7 @@ const base = (process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000") + (pr
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const out: MetadataRoute.Sitemap = [];
   for (const l of locales) {
-    for (const p of ["", "/shop", "/recipes", "/story", "/faq"]) out.push({ url: `${base}/${l}${p}` });
+    for (const p of ["", "/shop", "/recipes", "/story", "/faq", "/datenschutz"]) out.push({ url: `${base}/${l}${p}` });
     for (const p of await getProducts(l)) out.push({ url: `${base}/${l}/shop/${p.slug}` });
     for (const r of await getRecipes(l)) if (r.testStatus === "approved") out.push({ url: `${base}/${l}/recipes/${r.slug}` });
   }
