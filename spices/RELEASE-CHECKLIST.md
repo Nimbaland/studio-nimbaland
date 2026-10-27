@@ -22,7 +22,10 @@ Arbeitshilfe, keine Rechtsberatung. Pflichtangaben und Rechtstexte bitte fachlic
 - [ ] Produkte/Varianten mit Grundpreis (1 kg) in Shopify, Versandzonen, Steuern (7 % USt. Lebensmittel), Zahlungsanbieter
 - [ ] Newsletter: Admin-API-Token (read/write_customers), Resend-Konto + verifizierte Absenderdomain, Signatur-Secret
 - [ ] Sanity-Projekt anlegen, Seed importieren (siehe README)
-- [ ] GitHub-Repo `Nimbaland/nimbaland-spices` mit Zugriff für Claude/Vercel → Vercel-Preview
+- [x] Code liegt im Repo `Nimbaland/studio-nimbaland`, Ordner `spices/`, Branch `spices`; Vercel-Projekt `nimbaland-spices` (Root `spices`, basePath `/spices`)
+- [x] Vorschau als Unterseite: studio-nimbaland-git-spices-nimbalands-projects.vercel.app/spices (Studio-Preview leitet per Rewrite auf nimbaland-spices.vercel.app)
+- [ ] Launch als Unterseite der Live-Seite: Branch `spices` in `main` mergen und im Projekt studio-nimbaland `SPICES_ORIGIN=https://nimbaland-spices.vercel.app` für Production setzen
+- [ ] Vor dem Launch im Projekt nimbaland-spices `NEXT_PUBLIC_SHOW_DRAFTS=false` (Production) setzen
 - [ ] Impressum, Datenschutz (inkl. Shopify, Resend, Sanity, Vercel), AGB, Widerruf, Versand & Zahlung; Link zur Datenschutzerklärung im Newsletter-Formular
 - [ ] Vor dem Launch: `SITE_INDEXABLE=true`, `NEXT_PUBLIC_SHOW_DRAFTS=false`, Domain in `NEXT_PUBLIC_SITE_URL`
 
