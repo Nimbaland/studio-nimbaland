@@ -23,9 +23,9 @@ Stand: 20.10.2026. Abhaken, sobald erledigt.
 
 ## Kontakt und Recht
 
-- [x] E-Mail-Adresse: nimalan@posteo.de.
+- [x] E-Mail-Adresse: nimba@nimbaland.com (geändert 10.11.2026).
 - [ ] **Formular-Endpunkt** (`CONTACT_WEBHOOK_URL`).
-- [ ] **Social Links** bestätigen: LinkedIn `/in/nimbaland`, Instagram `nimbaland.studios`.
+- [ ] **Social Links** bestätigen: LinkedIn `/in/nimbaland`, Instagram `nimbaland.studio`.
 - [ ] **Impressum**: geprüfte Angaben (Name, ladungsfähige Anschrift, Kontakt, ggf. USt-IdNr.).
 - [ ] **Datenschutzerklärung**: geprüfter Text, inkl. Hosting, Kontaktformular und Webhook-Dienst.
 
@@ -73,6 +73,6 @@ Alle Leitsätze und Kundenfreigaben sind laut Nimalan erteilt (20.10.2026).
 
 ## Freigaben 21.10.2026
 - Palette final freigegeben.
-- Social Links bestätigt: LinkedIn (linkedin.com/in/nimbaland), Instagram (instagram.com/nimbaland.studios).
+- Social Links bestätigt: LinkedIn (linkedin.com/in/nimbaland), Instagram (instagram.com/nimbaland.studio).
 - Studio-Adresse: Studio.Nimbaland, Lindenstraße 68, 40233 Düsseldorf – in Footer, Kontaktseite und Impressum.
 - Impressum: restliche Pflichtangaben (Verantwortlicher i. S. d. § 18 MStV, ggf. USt-ID) und Datenschutztext noch offen.

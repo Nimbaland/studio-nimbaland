@@ -31,7 +31,7 @@ export const site = {
 
   contact: {
     /** Freigegebene Kontaktadresse (von Nimalan im Kontakttext angegeben, 20.10.2026). */
-    email: "nimalan@posteo.de" as string | null,
+    email: "nimba@nimbaland.com" as string | null,
     /** Studio-Adresse, von Nimalan freigegeben (21.10.2026). */
     address: { name: "nimbaland.studio", street: "Lindenstraße 68", city: "40233 Düsseldorf", country: "Deutschland" },
   },
@@ -39,7 +39,7 @@ export const site = {
   /** Social-Profile – von Nimalan bestätigt (21.10.2026). */
   social: [
     { label: "LinkedIn", url: "https://www.linkedin.com/in/nimbaland" },
-    { label: "Instagram", url: "https://www.instagram.com/nimbaland.studios" },
+    { label: "Instagram", url: "https://www.instagram.com/nimbaland.studio" },
   ] as { label: string; url: string }[],
 
   /**
