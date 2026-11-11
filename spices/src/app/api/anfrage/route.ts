@@ -21,12 +21,14 @@ export async function POST(req: Request) {
   const format = b.format === "supper" ? "supper" : b.format === "course" ? "course" : null;
   const name = String(b.name ?? "").trim().slice(0, 200);
   const email = String(b.email ?? "").trim().slice(0, 254);
+  const venue = b.venue === "company" ? "Im Unternehmen" : b.venue === "home" ? "Bei den Gästen zu Hause" : null;
+  const city = String(b.city ?? "").trim().slice(0, 120);
   const size = Number(b.size);
   const date = String(b.date ?? "").trim().slice(0, 300);
   const diet = String(b.diet ?? "").trim().slice(0, 1000);
   const locale = b.locale === "en" ? "en" : "de";
 
-  if (!format || !name || !EMAIL.test(email) || !Number.isInteger(size) || size < 4 || size > 8 || !date) {
+  if (!format || !venue || !city || !name || !EMAIL.test(email) || !Number.isInteger(size) || size < 4 || size > 8 || !date) {
     return NextResponse.json({ error: "validation" }, { status: 422 });
   }
   // Angaben zu Allergien sind Gesundheitsdaten: nur mit ausdrücklicher Einwilligung annehmen.
@@ -42,8 +44,8 @@ export async function POST(req: Request) {
       body: JSON.stringify({
         name, email,
         projectType: `${FORMATS[format]} (${size} Personen)`,
-        message: `${FORMATS[format]} · ${size} Personen\nWunschtermin: ${date}\nErnährung/Allergien: ${diet || "keine Angabe"}${diet ? " (Einwilligung erteilt)" : ""}`,
-        format: FORMATS[format], groupSize: size, preferredDate: date, dietaryNotes: diet || null, dietConsent: diet ? true : null,
+        message: `${FORMATS[format]} · ${size} Personen\nWo: ${venue}, ${city}\nWunschtermin: ${date}\nErnährung/Allergien: ${diet || "keine Angabe"}${diet ? " (Einwilligung erteilt)" : ""}`,
+        format: FORMATS[format], venue, city, groupSize: size, preferredDate: date, dietaryNotes: diet || null, dietConsent: diet ? true : null,
         locale, source: "nimbaland.spices · Kochkurse & Supper Club", receivedAt: new Date().toISOString(),
       }),
     });

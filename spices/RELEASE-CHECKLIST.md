@@ -51,7 +51,9 @@ Arbeitshilfe, keine Rechtsberatung. Pflichtangaben und Rechtstexte bitte fachlic
 - [x] Datenschutzerklärung: Abschnitt „Kontakt per E-Mail, Telefon, WhatsApp und Anfrageformular“ (inkl. Einwilligung für Allergie-Angaben, Art. 9 DSGVO), WhatsApp-Text wie nimbaland.studio
 - [ ] Sobald `CONTACT_WEBHOOK_URL` gesetzt ist: Anbieter des Webhooks (z. B. Formspree) in der Datenschutzerklärung nennen, AV-Vertrag abschließen. Fachlich prüfen lassen
 - [ ] Echtes Porträt von Nimba beim Kochen (für „Dein Gastgeber“, bisher Foto mit Oma 2013)
-- [ ] Optional: echte Fotos aus Kurs/Supper Club, Food-Fotos der Menügerichte. Bis dahin KI-Stimmungsbilder, als solche beschriftet
-- [ ] Ort, Preis, Dauer, Termine festlegen (Website sagt bisher „besprechen wir bei deiner Anfrage“)
+- [ ] Optional: echte Fotos aus Kurs/Supper Club (mit Einverständnis der Gäste/Firma), Food-Fotos der Menügerichte. Bis dahin KI-Stimmungsbilder, als solche beschriftet
+- [x] Ort: Nimba kocht bei den Gästen zu Hause oder in Unternehmen, Düsseldorf und Umgebung, auf Anfrage weiter (11.11.2026)
+- [ ] Preis, Dauer, Termine festlegen (Website sagt bisher „besprechen wir bei deiner Anfrage“)
+- [ ] Beim Ordnungsamt bestätigen lassen, dass Kochen beim Kunden (Mietkoch) keine Gaststättenanzeige/-erlaubnis braucht; Lebensmittelüberwachung zur Registrierung als mobiler Lebensmittelunternehmer fragen
 - [ ] Beispielmenü nachkochen; Senfsaat im Thalippu ist ein Hauptallergen, bei echten Menüs Allergene kennzeichnen
 - [ ] Freigabe → Branch `spices-kochkurse` in `spices` mergen

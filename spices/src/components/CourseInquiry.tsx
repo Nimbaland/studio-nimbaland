@@ -9,7 +9,8 @@ import { asset } from "@/lib/base";
 import { phone, phoneHref, whatsappHref } from "@/lib/contact";
 
 type Format = "course" | "supper";
-type Field = "name" | "email" | "size" | "date" | "consent";
+type Field = "name" | "email" | "city" | "size" | "date" | "consent";
+type Venue = "home" | "company";
 type Status = "idle" | "sending" | "success" | "offline" | "failed";
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
@@ -32,6 +33,7 @@ export function CourseInquiry({ locale, fallbackEmail }: { locale: Locale; fallb
   const [errors, setErrors] = useState<Partial<Record<Field, string>>>({});
   const [status, setStatus] = useState<Status>("idle");
   const [diet, setDiet] = useState("");
+  const [venue, setVenue] = useState<Venue>("home");
   const [sent, setSent] = useState<{ name: string; mailto: string; waText: string } | null>(null);
   const started = useRef(Date.now());
   const summary = useRef<HTMLDivElement>(null);
@@ -42,12 +44,14 @@ export function CourseInquiry({ locale, fallbackEmail }: { locale: Locale; fallb
   useEffect(() => { if (status === "success" || status === "offline") result.current?.focus(); }, [status]);
 
   const fmtName = (f: Format) => t(f === "course" ? "kc.form.format.course" : "kc.form.format.supper");
+  const venueName = (x: Venue) => t(x === "home" ? "kc.form.venue.home" : "kc.form.venue.company");
   const fmtInline = (f: Format) => (locale === "en" ? fmtName(f).toLowerCase() : fmtName(f));
 
   function validate(d: FormData) {
     const e: Partial<Record<Field, string>> = {};
     if (!String(d.get("name") ?? "").trim()) e.name = t("kc.form.err.name");
     if (!EMAIL.test(String(d.get("email") ?? "").trim())) e.email = t("kc.form.err.email");
+    if (!String(d.get("city") ?? "").trim()) e.city = t("kc.form.err.city");
     const s = Number(d.get("size"));
     if (!SIZES.includes(s)) e.size = t("kc.form.err.size");
     if (!String(d.get("date") ?? "").trim()) e.date = t("kc.form.err.date");
@@ -63,18 +67,18 @@ export function CourseInquiry({ locale, fallbackEmail }: { locale: Locale; fallb
     if (Object.keys(found).length) { setStatus("idle"); requestAnimationFrame(() => summary.current?.focus()); return; }
 
     const v = {
-      name: String(d.get("name")).trim(), email: String(d.get("email")).trim(), size: Number(d.get("size")),
+      name: String(d.get("name")).trim(), email: String(d.get("email")).trim(), city: String(d.get("city")).trim(), size: Number(d.get("size")),
       date: String(d.get("date")).trim(), diet: String(d.get("diet") ?? "").trim(),
     };
     const mailto = `mailto:${fallbackEmail}?subject=${encodeURIComponent(t("kc.mail.subject", { format: fmtName(format) }))}&body=${encodeURIComponent(
-      t("kc.mail.body", { format: fmtInline(format), name: v.name, email: v.email, size: v.size, date: v.date, diet: v.diet || t("kc.mail.none") }).replace(/\{name\}/g, v.name))}`;
-    const waText = t("kc.mail.body", { format: fmtInline(format), name: v.name, email: v.email, size: v.size, date: v.date, diet: v.diet || t("kc.mail.none") }).replace(/\{name\}/g, v.name);
+      t("kc.mail.body", { format: fmtInline(format), name: v.name, email: v.email, venue: venueName(venue), city: v.city, size: v.size, date: v.date, diet: v.diet || t("kc.mail.none") }).replace(/\{name\}/g, v.name))}`;
+    const waText = t("kc.mail.body", { format: fmtInline(format), name: v.name, email: v.email, venue: venueName(venue), city: v.city, size: v.size, date: v.date, diet: v.diet || t("kc.mail.none") }).replace(/\{name\}/g, v.name);
     setSent({ name: v.name, mailto, waText });
     setStatus("sending");
     try {
       const r = await fetch(asset("/api/anfrage"), {
         method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...v, format, dietConsent: v.diet ? true : undefined, locale, website: d.get("website") || "", elapsed: Date.now() - started.current }),
+        body: JSON.stringify({ ...v, format, venue, dietConsent: v.diet ? true : undefined, locale, website: d.get("website") || "", elapsed: Date.now() - started.current }),
       });
       if (r.ok) { setStatus("success"); return; }
       const j = await r.json().catch(() => ({}));
@@ -137,7 +141,24 @@ export function CourseInquiry({ locale, fallbackEmail }: { locale: Locale; fallb
         </div>
       </div>
 
+      <fieldset className="variants kc-formats">
+        <legend className="label">{t("kc.form.venue")}</legend>
+        {(["home", "company"] as const).map((x) => (
+          <label key={x} className="vopt">
+            <input type="radio" name="venue" value={x} checked={venue === x} onChange={() => setVenue(x)} />
+            <span className="vname">{venueName(x)}</span>
+            <span className="kc-fdesc">{t(x === "home" ? "kc.form.venue.home.d" : "kc.form.venue.company.d")}</span>
+          </label>
+        ))}
+      </fieldset>
+
       <div className="kc-row">
+        <div className="kc-field">
+          <label htmlFor={id("city")}>{t("kc.form.city")} <span className="kc-req" aria-hidden="true">*</span></label>
+          <input id={id("city")} name="city" autoComplete="address-level2" required aria-invalid={errors.city ? true : undefined} aria-describedby={desc("city", id("city-h"))} />
+          <p className="credit" id={id("city-h")}>{t("kc.form.city.hint")}</p>
+          {errors.city && <p className="err" id={id("city-e")}>{errors.city}</p>}
+        </div>
         <div className="kc-field">
           <label htmlFor={id("size")}>{t("kc.form.size")} <span className="kc-req" aria-hidden="true">*</span></label>
           <select id={id("size")} name="size" defaultValue="4" required aria-invalid={errors.size ? true : undefined} aria-describedby={desc("size")}>
@@ -145,6 +166,8 @@ export function CourseInquiry({ locale, fallbackEmail }: { locale: Locale; fallb
           </select>
           {errors.size && <p className="err" id={id("size-e")}>{errors.size}</p>}
         </div>
+      </div>
+      <div className="kc-row">
         <div className="kc-field">
           <label htmlFor={id("date")}>{t("kc.form.date")} <span className="kc-req" aria-hidden="true">*</span></label>
           <input id={id("date")} name="date" required placeholder={t("kc.form.date.ph")} aria-invalid={errors.date ? true : undefined} aria-describedby={desc("date", id("date-h"))} />

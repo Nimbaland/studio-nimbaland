@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
   const { locale } = await params;
   const t = getT(locale);
   return {
-    title: t("kc.meta.title"),
+    title: { absolute: t("kc.meta.title") },
     description: t("kc.meta.desc"),
     alternates: { canonical: asset(`/${locale}/cooking-classes`), languages: { de: asset("/de/cooking-classes"), en: asset("/en/cooking-classes"), "x-default": asset("/de/cooking-classes") } },
     openGraph: { title: t("kc.meta.title"), description: t("kc.meta.desc"), type: "website", images: [{ url: asset("/img/dish-curry.jpg"), alt: t("hero.photo") }] },
@@ -37,7 +37,7 @@ export default async function CookingClasses({ params }: { params: Promise<{ loc
   // Strukturierte Daten: FAQ der Seite (gleiche Texte wie sichtbar). Kein Event-Markup, solange es keine Termine gibt.
   const faqLd = {
     "@context": "https://schema.org", "@type": "FAQPage", inLanguage: locale,
-    mainEntity: [1, 2, 3, 4, 5, 6].map((i) => ({ "@type": "Question", name: t(k(`kc.faq.q${i}`)), acceptedAnswer: { "@type": "Answer", text: t(k(`kc.faq.a${i}`)) } })),
+    mainEntity: [1, 2, 3, 4, 5, 6, 7, 8].map((i) => ({ "@type": "Question", name: t(k(`kc.faq.q${i}`)), acceptedAnswer: { "@type": "Answer", text: t(k(`kc.faq.a${i}`)) } })),
   };
   return (
     <>
@@ -176,7 +176,7 @@ export default async function CookingClasses({ params }: { params: Promise<{ loc
         <div className="wrap">
           <div className="sechead"><span className="label">{t("kc.faq.label")}</span><h2>{t("kc.faq.h2")}</h2></div>
           <div className="faq">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
+            {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
               <details key={i}><summary>{t(k(`kc.faq.q${i}`))}</summary><div className="ans"><p>{t(k(`kc.faq.a${i}`))}</p></div></details>
             ))}
           </div>
