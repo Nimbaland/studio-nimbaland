@@ -54,15 +54,15 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
           </div>
           <div className="kc-formats-grid">
             <Link className="kc-card" href={`${href(locale, "/cooking-classes")}#kochkurs`}>
-              <span className="kc-card-img"><Image src={asset("/img/kochkurse/kochkurs.jpg")} alt={t("kc.course.img.alt")} fill sizes="(min-width: 760px) 50vw, 100vw" /><span className="cat">{t("kc.home.fact1")}</span></span>
+              <span className="kc-card-img"><Image src={asset("/img/kochkurse/kochkurs.jpg")} alt={t("kc.course.img.alt")} fill sizes="(min-width: 760px) 50vw, 100vw" /><span className="cat">{t("kc.home.fact1")}</span><span className="kc-ai">KI</span></span>
               <span className="kc-card-body"><h3>{t("kc.form.format.course")}</h3><span>{t("kc.fmt.course.p")}</span><b>{t("kc.fmt.course.cta")} <Arrow /></b></span>
             </Link>
             <Link className="kc-card" href={`${href(locale, "/cooking-classes")}#supper-club`}>
-              <span className="kc-card-img"><Image src={asset("/img/kochkurse/supperclub.jpg")} alt={t("kc.supper.img.alt")} fill sizes="(min-width: 760px) 50vw, 100vw" /><span className="cat">{t("kc.home.fact1")}</span></span>
+              <span className="kc-card-img"><Image src={asset("/img/kochkurse/supperclub.jpg")} alt={t("kc.supper.img.alt")} fill sizes="(min-width: 760px) 50vw, 100vw" /><span className="cat">{t("kc.home.fact1")}</span><span className="kc-ai">KI</span></span>
               <span className="kc-card-body"><h3>{t("kc.form.format.supper")}</h3><span>{t("kc.fmt.supper.p")}</span><b>{t("kc.fmt.supper.cta")} <Arrow /></b></span>
             </Link>
           </div>
-          <p className="credit" style={{ marginTop: ".75rem" }}>{t("kc.course.img.cap").split("·")[0].trim()}</p>
+          <p className="credit" style={{ marginTop: ".75rem" }}>{t("kc.fmt.cap")}</p>
         </div>
       </section>
       <Divider />

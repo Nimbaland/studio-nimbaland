@@ -584,3 +584,4 @@ body:has(dialog[open]){overflow:hidden}
 .kc-direct li{display:grid;grid-template-columns:6.5rem 1fr;gap:.75rem;align-items:baseline}
 .kc-direct a{font-weight:700;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
 .kc-hero h1 .kc-kicker{display:flex;margin-bottom:1rem;font-family:var(--f-mono);line-height:1.4;letter-spacing:.1em}
+.kc-card-img .kc-ai{position:absolute;right:10px;bottom:10px;z-index:1;font-family:var(--f-mono);font-size:.66rem;letter-spacing:.08em;background:rgba(22,25,29,.75);color:#fff;padding:.25rem .45rem;border-radius:var(--r-sm)}

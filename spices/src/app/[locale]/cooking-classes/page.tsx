@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
     title: t("kc.meta.title"),
     description: t("kc.meta.desc"),
     alternates: { canonical: asset(`/${locale}/cooking-classes`), languages: { de: asset("/de/cooking-classes"), en: asset("/en/cooking-classes"), "x-default": asset("/de/cooking-classes") } },
-    openGraph: { title: t("kc.meta.title"), description: t("kc.meta.desc"), type: "website", images: [{ url: asset("/img/kochkurse/einstieg.jpg"), width: 967, height: 1200, alt: t("kc.home.photo.alt") }] },
+    openGraph: { title: t("kc.meta.title"), description: t("kc.meta.desc"), type: "website", images: [{ url: asset("/img/dish-curry.jpg"), alt: t("hero.photo") }] },
   };
 }
 
