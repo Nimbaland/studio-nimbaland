@@ -42,6 +42,7 @@ export function Hero({ locale, dict, recent }: Props) {
     <section className="tone-dark hero-wrap relative isolate overflow-hidden" aria-labelledby="hero-title">
       <HeroVisual />
       <div className="container-site hero relative">
+        <div className="hero__head">
         <p className="hero__hello hero__fade">
           {site.portrait && (
             <span className="hero__portrait">
@@ -64,6 +65,7 @@ export function Hero({ locale, dict, recent }: Props) {
             </span>
           </span>
         </h1>
+        </div>
 
         <div className="hero__grid hero__fade">
           <div className="hero__intro">

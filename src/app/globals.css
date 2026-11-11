@@ -283,7 +283,16 @@ html.lenis, html.lenis body { height: auto; }
   /* Persönliche Vorstellung über der Headline – mit kleinem Porträt */
   .hero__hello { display: flex; align-items: center; gap: 0.7rem; font-family: var(--font-display); font-size: clamp(1.25rem, 1.05rem + 0.9vw, 1.75rem); line-height: 1.2; }
   .hero__hello .hero__portrait { width: 2.1rem; height: 2.75rem; margin: 0; vertical-align: middle; flex: none; font-size: inherit; }
-  @media (min-width: 1024px) { .hero__hello .hero__portrait { width: 2.6rem; height: 3.4rem; } }
+  /* Desktop: Porträt + „Hi, ich bin Nimba.“ groß rechts neben dem Claim – keine leere Fläche darüber */
+  .hero__head { display: grid; gap: var(--space-5, 1.25rem); align-self: end; }
+  @media (min-width: 1024px) {
+    .hero { grid-template-rows: auto auto auto; min-height: auto; padding-block: clamp(4rem, 9vh, 7.5rem) var(--space-8); }
+    .hero__head { grid-template-columns: auto auto; justify-content: start; align-items: end; column-gap: clamp(2rem, 4vw, 4rem); }
+    .hero__head .hero__title { order: 1; max-width: 12.5ch; }
+    .hero__head .hero__hello { order: 2; flex-direction: column; align-items: flex-start; gap: 1rem; padding-bottom: 0.6rem;
+      font-size: clamp(1.9rem, 0.9rem + 1.7vw, 2.75rem); line-height: 1.1; max-width: 9ch; }
+    .hero__hello .hero__portrait { width: clamp(6rem, 3rem + 4.5vw, 8.5rem); height: clamp(7.9rem, 4rem + 5.9vw, 11.2rem); border-radius: 0.6rem; }
+  }
   /* Mobil: kein Vollbild-Hero – Angebot und Button sollen ohne Scrollen sichtbar sein */
   @media (max-width: 1023px) {
     .hero { min-height: auto; grid-template-rows: auto auto auto auto; gap: var(--space-5, 1.25rem); padding-block: var(--space-6) var(--space-10, 2.5rem); }
