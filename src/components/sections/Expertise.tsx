@@ -33,7 +33,7 @@ export function Expertise({ locale, dict, deliverablesLabel }: { locale: Locale;
   return (
     <section className="tone-dark section border-t border-line" aria-labelledby="expertise-title">
       <div className="container-site">
-        <SectionHeading id="expertise-title" eyebrow={dict.eyebrow} title={dict.sectionTitle} titleLang="en" intro={[dict.intro, dict.introMore].filter(Boolean)} />
+        <SectionHeading id="expertise-title" eyebrow={dict.eyebrow} title={dict.sectionTitle} intro={[dict.intro, dict.introMore].filter(Boolean)} />
 
         <div className="mt-14 lg:mt-20">
           <ServicesAccordion services={services.map(({ match: _m, ...rest }) => rest)} locale={locale} deliverablesLabel={deliverablesLabel} examples={examples} exampleLabel={dict.exampleLabel} focusLabel={dict.focusLabel} proofs={Object.fromEntries(services.map((s) => [s.id, resolveProof(s, locale)]))} />
@@ -41,7 +41,7 @@ export function Expertise({ locale, dict, deliverablesLabel }: { locale: Locale;
 
         <div className="section-cta">
           <p className="section-cta__text">{dict.ctaText}</p>
-          <ButtonLink href="#contact" lang="en">{dict.cta}</ButtonLink>
+          <ButtonLink href="#contact">{dict.cta}</ButtonLink>
         </div>
       </div>
     </section>

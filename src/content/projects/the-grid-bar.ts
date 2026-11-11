@@ -8,14 +8,14 @@ import type { PortfolioProject } from "./types";
 const project: PortfolioProject = {
   slug: "the-grid-bar",
   title: "The Grid Bar",
-  tagline: { de: "A bar menu worth reading.", en: "A bar menu worth reading." },
+  tagline: { de: "Eine Barkarte, die man gern liest.", en: "A bar menu worth reading." },
   client: "The Grid Bar, Köln",
   year: "2018–2019",
   date: "2019-11",
   category: { de: ["Print", "Editorial", "Gastronomie"], en: ["Print", "Editorial", "Hospitality"] },
-  role: { de: ["Editorial Design", "Print Design"], en: ["Editorial design", "Print design"] },
+  role: { de: ["Editorial Design", "Printdesign"], en: ["Editorial design", "Print design"] },
   services: {
-    de: ["Editorial Design", "Print Design", "Event Collateral"],
+    de: ["Editorial Design", "Printdesign", "Eventmaterialien"],
     en: ["Editorial Design", "Print Design", "Event Collateral"],
   },
   summary: {

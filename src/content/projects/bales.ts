@@ -6,14 +6,14 @@ import type { PortfolioProject } from "./types";
 const project: PortfolioProject = {
   slug: "bales-smart-home",
   title: "Bales Smart Home Services",
-  tagline: { de: "Making smart living feel intuitive.", en: "Making smart living feel intuitive." },
+  tagline: { de: "Damit sich smartes Wohnen einfach anfühlt.", en: "Making smart living feel intuitive." },
   client: "Bales Smart Home Services",
   year: "2026",
   date: "2026-03",
   category: { de: ["Corporate Identity", "Kampagne", "Social Media"], en: ["Corporate identity", "Campaign", "Social media"] },
-  role: { de: ["Brand Identity", "Kampagnenkonzept", "Art Direction"], en: ["Brand identity", "Campaign concept", "Art direction"] },
+  role: { de: ["Markenidentität", "Kampagnenkonzept", "Art Direction"], en: ["Brand identity", "Campaign concept", "Art direction"] },
   services: {
-    de: ["Brand Identity", "Art Direction", "Digital Design"],
+    de: ["Markenidentität", "Art Direction", "Digitales Design"],
     en: ["Brand Identity", "Art Direction", "Digital Design"],
   },
   summary: {
@@ -25,7 +25,7 @@ const project: PortfolioProject = {
     en: "A regional smart home service provider in the Hannover area needed more visibility and, from it, personal consultation requests.",
   },
   approach: {
-    de: "Ausgehend vom Logo – Wortmarke mit Haus und Signalwellen – entstand ein Kampagnenkonzept in sieben Schritten: Ziel und KPIs, Personas, Kernbotschaft „Ein Zuhause, das mitdenkt.“, Visual Identity (premium, minimal, editorial), Kanal-Mix aus Instagram, Meta Ads und Google Business, Content-Plan und Messbarkeit.",
+    de: "Ausgehend vom Logo – Wortmarke mit Haus und Signalwellen – entstand ein Kampagnenkonzept in sieben Schritten: Ziel und KPIs, Personas, Kernbotschaft „Ein Zuhause, das mitdenkt.“, visuelle Identität (hochwertig, reduziert, editorial), Kanal-Mix aus Instagram, Meta Ads und Google Business, Content-Plan und Messbarkeit.",
     en: "Starting from the logo — a wordmark with a house and signal waves — a seven-step campaign concept followed: goals and KPIs, personas, the core message “A home that thinks ahead”, visual identity (premium, minimal, editorial), a channel mix of Instagram, Meta Ads and Google Business, a content plan and measurement.",
   },
   solution: {
@@ -42,7 +42,7 @@ const project: PortfolioProject = {
   gallery: [
     { src: "/projects/bales-smart-home/gallery-01.webp", alt: { de: "Titelfolie des Kampagnenkonzepts", en: "Title slide of the campaign concept" }, caption: { de: "Kampagnenkonzept", en: "Campaign concept" }, aspect: "16/9", width: 2401, height: 1350 },
     { src: "/projects/bales-smart-home/gallery-02.webp", alt: { de: "Ziele der Kampagne: Impressions, Follower, Beratungsanfragen", en: "Campaign goals: impressions, followers, consultation requests" }, caption: { de: "Ziel und KPIs", en: "Goals and KPIs" }, aspect: "16/9", width: 2401, height: 1350 },
-    { src: "/projects/bales-smart-home/gallery-03.webp", alt: { de: "Visual Identity: Farben, Typografie, Bildsprache", en: "Visual identity: colours, typography, imagery" }, caption: { de: "Visual Identity", en: "Visual identity" }, aspect: "16/9", width: 2401, height: 1350 },
+    { src: "/projects/bales-smart-home/gallery-03.webp", alt: { de: "Visuelle Identität: Farben, Typografie, Bildsprache", en: "Visual identity: colours, typography, imagery" }, caption: { de: "Visuelle Identität", en: "Visual identity" }, aspect: "16/9", width: 2401, height: 1350 },
     { src: "/projects/bales-smart-home/gallery-04.webp", alt: { de: "Kanal-Mix: Instagram, Meta Ads, Google Business", en: "Channel mix: Instagram, Meta Ads, Google Business" }, caption: { de: "Kanäle", en: "Channels" }, aspect: "16/9", width: 2401, height: 1350 },
     { src: "/projects/bales-smart-home/carousel-smart-vs-normal.webp", span: "full", alt: { de: "Karussell-Post „Smart vs. Normal“ im Smartphone-Mockup, daneben alle sechs Slides", en: "Carousel post “Smart vs. normal” in a smartphone mockup, next to all six slides" }, caption: { de: "Instagram-Karussell · Smart vs. Normal", en: "Instagram carousel · Smart vs. normal" }, aspect: "16/9", width: 2400, height: 1350 },
     { src: "/projects/bales-smart-home/carousel-ein-tag.webp", span: "full", alt: { de: "Karussell-Post „Ein Tag“ im Smartphone-Mockup, daneben alle acht Slides", en: "Carousel post “One day” in a smartphone mockup, next to all eight slides" }, caption: { de: "Instagram-Karussell · Ein Tag", en: "Instagram carousel · One day" }, aspect: "16/9", width: 2400, height: 1350 },

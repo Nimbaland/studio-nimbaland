@@ -74,7 +74,7 @@ export default async function CaseStudyPage({ params }: Props) {
           <div className="grid-site mt-10 gap-y-6">
             <h1 className="t-display col-span-full lg:col-span-8">{project.title}</h1>
             <div className="col-span-full lg:col-span-4 lg:self-end">
-              {project.tagline && <p className="t-h3 italic" lang="en">{t(project.tagline, locale)}</p>}
+              {project.tagline && <p className="t-h3 italic" lang={locale === "de" && project.tagline.de === project.tagline.en ? "en" : undefined}>{t(project.tagline, locale)}</p>}
               <p className="t-lead t-muted mt-4">{t(project.summary, locale)}</p>
             </div>
           </div>
@@ -105,8 +105,8 @@ export default async function CaseStudyPage({ params }: Props) {
             )}
             {project.liveUrl && (
               <p className="mt-6">
-                <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="btn btn--secondary" lang="en">
-                  <span>Visit Website</span>
+                <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="btn btn--secondary">
+                  <span>{locale === "de" ? "Website ansehen" : "Visit website"}</span>
                   <span className="sr-only"> ({d.a11y.externalLink})</span>
                 </a>
               </p>

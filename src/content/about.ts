@@ -10,8 +10,8 @@ export const experience: Station[] = [
     role: { de: "Freiberuflicher Creative Director & Brand Designer", en: "Freelance Creative Director & Brand Designer" },
     company: "nimbaland.studio, Düsseldorf",
     points: {
-      de: ["Markenentwicklung, Corporate Design und Kampagnen für 66 Kunden aus allen Branchen", "Digitale Auftritte von UX/UI über Figma-Prototypen bis zur Umsetzung mit React und Next.js", "KI-gestützte Workflows für Bild-, Video- und Kampagnenproduktion"],
-      en: ["Brand development, corporate design and campaigns for 66 clients across all industries", "Digital experiences from UX/UI and Figma prototypes to builds in React and Next.js", "AI-assisted workflows for image, video and campaign production"],
+      de: ["Markenentwicklung, Corporate Design und Kampagnen für 66 Kund:innen aus unterschiedlichsten Branchen", "Digitale Auftritte von UX/UI über Figma-Prototypen bis zur Umsetzung mit React und Next.js", "KI-gestützte Arbeitsabläufe für Bild-, Video- und Kampagnenproduktion"],
+      en: ["Brand development, corporate design and campaigns for 66 clients across many industries", "Digital experiences from UX/UI and Figma prototypes to builds in React and Next.js", "AI-assisted workflows for image, video and campaign production"],
     },
   },
   {
@@ -19,7 +19,7 @@ export const experience: Station[] = [
     role: { de: "Brand & Design Manager", en: "Brand & Design Manager" },
     company: "Kratzert Baumanagement GmbH",
     points: {
-      de: ["Aufbau des Corporate Designs und Rollout über alle Touchpoints", "Website-Relaunch mit Konzeption, Design und Redaktion"],
+      de: ["Aufbau des Corporate Designs und Einführung in allen Medien", "Website-Relaunch mit Konzeption, Design und Redaktion"],
       en: ["Built the corporate design and rolled it out across all touchpoints", "Website relaunch including concept, design and editorial"],
     },
   },
@@ -37,7 +37,7 @@ export const experience: Station[] = [
     role: { de: "Senior Art Director Print & Digital", en: "Senior Art Director Print & Digital" },
     company: "Colliers International",
     points: {
-      de: ["Art Direction nationaler Vermarktungs- und Employer-Branding-Kampagnen", "Fachliche Führung von vier Designerinnen, Designern und Werkstudierenden", "Corporate-Design-Guidelines und Templates für sechs Standorte"],
+      de: ["Art Direction nationaler Vermarktungs- und Employer-Branding-Kampagnen", "Fachliche Führung von vier Designerinnen, Designern und Werkstudierenden", "Corporate-Design-Richtlinien und Vorlagen für sechs Standorte"],
       en: ["Art direction of national marketing and employer branding campaigns", "Led a team of four designers and working students", "Corporate design guidelines and templates for six offices"],
     },
   },
@@ -73,7 +73,7 @@ export const skills: { label: Localized<string>; items: Localized<string> }[] = 
   { label: { de: "Software", en: "Software" }, items: { de: "Adobe Creative Cloud, Figma, FigJam, Miro", en: "Adobe Creative Cloud, Figma, FigJam, Miro" } },
   { label: { de: "Web & Technik", en: "Web & tech" }, items: { de: "HTML, CSS, JavaScript, React, Next.js, Git", en: "HTML, CSS, JavaScript, React, Next.js, Git" } },
   { label: { de: "KI", en: "AI" }, items: { de: "KI-gestützte Bild-, Video- und Content-Produktion, Prompt Engineering", en: "AI-assisted image, video and content production, prompt engineering" } },
-  { label: { de: "Arbeitsweise", en: "Ways of working" }, items: { de: "Agil, Scrum, Jira, Teamlead, Stakeholder-Management", en: "Agile, Scrum, Jira, team lead, stakeholder management" } },
+  { label: { de: "Arbeitsweise", en: "Ways of working" }, items: { de: "Agil, Scrum, Jira, Teamleitung, Stakeholder-Management", en: "Agile, Scrum, Jira, team lead, stakeholder management" } },
 ];
 
 export const languages: Localized<string>[] = [

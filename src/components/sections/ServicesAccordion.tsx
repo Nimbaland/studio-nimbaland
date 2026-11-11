@@ -41,7 +41,7 @@ export function ServicesAccordion({ services, locale, deliverablesLabel, example
             <h3 className="m-0">
               <button id={btnId} type="button" className="accordion__trigger" aria-expanded={isOpen} aria-controls={panelId} onClick={() => setOpen(isOpen ? -1 : i)}>
                 <span className="accordion__num t-label t-muted tabular-nums">00-{i + 1}</span>
-                <span className="accordion__title" lang="en">{s.homeTitle}{s.featured && focusLabel && <span className="accordion__badge">{focusLabel}</span>}</span>
+                <span className="accordion__title">{t(s.homeTitle, locale)}{s.featured && focusLabel && <span className="accordion__badge">{focusLabel}</span>}</span>
                 <span className="accordion__icon" aria-hidden="true" />
               </button>
             </h3>
@@ -49,18 +49,19 @@ export function ServicesAccordion({ services, locale, deliverablesLabel, example
               <div className="accordion__inner">
                 <div className="svc">
                   <div className="svc__body">
-                    <ul className="svc__list" aria-label={deliverablesLabel} lang="en">
-                      {s.deliverables.map((d) => {
+                    <ul className="svc__list" aria-label={deliverablesLabel}>
+                      {s.deliverables.map((d, di) => {
+                        const label = locale === "de" ? s.deliverablesDe[di] : d;
                         const pr = proofs[s.id]?.[d];
                         return (
                           <li key={d}>
                             {pr ? (
                               <Link href={pr.href} className="svc__item" tabIndex={isOpen ? 0 : -1}>
-                                <span className="svc__slash">/</span>{d}
+                                <span className="svc__slash">/</span>{label}
                                 <span className="svc__proof">{pr.title} <span aria-hidden="true">↗</span></span>
                               </Link>
                             ) : (
-                              <><span className="svc__slash">/</span>{d}</>
+                              <><span className="svc__slash">/</span>{label}</>
                             )}
                           </li>
                         );

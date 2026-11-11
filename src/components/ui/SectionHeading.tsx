@@ -20,7 +20,7 @@ export function SectionHeading({ id, eyebrow, title, intro, as: Tag = "h2", size
   return (
     <div className="grid-site gap-y-8">
       <div className="col-span-full lg:col-span-7">
-        {eyebrow && <p className="t-label t-muted mb-6" lang="en">{eyebrow}</p>}
+        {eyebrow && <p className="t-label t-muted mb-6">{eyebrow}</p>}
         <Tag id={id} className={`t-${cls}`} lang={titleLang}>{title}</Tag>
       </div>
       {(paragraphs.length > 0 || action) && (

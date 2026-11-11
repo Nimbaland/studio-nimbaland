@@ -101,7 +101,7 @@ export function Header({ locale, dict }: Props) {
         </nav>
         <div className="hidden items-center gap-4 lg:flex">
           <LanguageSwitch current={locale} label={dict.a11y.languageSwitch} />
-          <Link href={contactHref} className="header-cta" lang="en">
+          <Link href={contactHref} className="header-cta">
             <RollText text={dict.nav.cta} />
             <span aria-hidden="true" className="header-cta__arrow">↗</span>
           </Link>

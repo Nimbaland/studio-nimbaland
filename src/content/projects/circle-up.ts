@@ -12,9 +12,9 @@ const project: PortfolioProject = {
   year: "2025",
   date: "2025-12",
   category: { de: ["Branding", "Konzept", "Pitch"], en: ["Branding", "Concept", "Pitch"] },
-  role: { de: ["Logo Design", "Konzeption", "Pitch Deck"], en: ["Logo design", "Concept", "Pitch deck"] },
+  role: { de: ["Logodesign", "Konzeption", "Pitch-Deck"], en: ["Logo design", "Concept", "Pitch deck"] },
   services: {
-    de: ["Brand Identity", "Concept", "Pitch Design"],
+    de: ["Markenidentität", "Konzept", "Pitch-Design"],
     en: ["Brand Identity", "Concept", "Pitch Design"],
   },
   summary: {

@@ -277,10 +277,17 @@ html.lenis, html.lenis body { height: auto; }
   .hero__top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-4); }
   .hero__actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-4) var(--space-6); margin-top: var(--space-6); }
   .hero__worklink { font-weight: 600; display: inline-flex; align-items: center; gap: 0.4em; }
+  .hero__title { max-width: 16ch; }
+  @media (max-width: 379px) { .hero__lead { font-size: 1rem; line-height: 1.5; } .hero__actions { margin-top: var(--space-4); } }
+  @media (min-width: 1024px) { .hero__title { font-size: clamp(4rem, 1.2rem + 4.6vw, 6.25rem); } }
+  /* Persönliche Vorstellung über der Headline – mit kleinem Porträt */
+  .hero__hello { display: flex; align-items: center; gap: 0.7rem; font-family: var(--font-display); font-size: clamp(1.25rem, 1.05rem + 0.9vw, 1.75rem); line-height: 1.2; }
+  .hero__hello .hero__portrait { width: 2.1rem; height: 2.75rem; margin: 0; vertical-align: middle; flex: none; font-size: inherit; }
+  @media (min-width: 1024px) { .hero__hello .hero__portrait { width: 2.6rem; height: 3.4rem; } }
   /* Mobil: kein Vollbild-Hero – Angebot und Button sollen ohne Scrollen sichtbar sein */
   @media (max-width: 1023px) {
     .hero { min-height: auto; grid-template-rows: auto auto auto auto; gap: var(--space-5, 1.25rem); padding-block: var(--space-6) var(--space-10, 2.5rem); }
-    .hero__title { font-size: clamp(2.75rem, 13vw, 4.75rem); line-height: 1.02; }
+    .hero__title { font-size: clamp(2.4rem, 11.2vw, 4.5rem); line-height: 1.04; }
     .hero__grid { padding-top: var(--space-5, 1.25rem); gap: var(--space-5, 1.25rem); }
     .hero__lead { font-size: 1.0625rem; line-height: 1.55; }
     .hero__bottom .hero__recent { text-align: left; }

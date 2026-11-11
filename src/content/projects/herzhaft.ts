@@ -16,13 +16,13 @@ const project: PortfolioProject = {
   year: "2023–2024",
   date: "2024-01",
   category: { de: ["Branding", "Print", "Außenwerbung", "Gastronomie"], en: ["Branding", "Print", "Outdoor", "Hospitality"] },
-  role: { de: ["Logo", "Design System", "Schriftwahl", "Print Design", "Außenwerbung"], en: ["Logo", "Design system", "Type selection", "Print design", "Outdoor advertising"] },
+  role: { de: ["Logo", "Designsystem", "Schriftwahl", "Printdesign", "Außenwerbung"], en: ["Logo", "Design system", "Type selection", "Print design", "Outdoor advertising"] },
   services: {
-    de: ["Brand Identity", "Logo Design", "Design System", "Print Design", "Signage"],
+    de: ["Markenidentität", "Logodesign", "Designsystem", "Printdesign", "Beschilderung"],
     en: ["Brand Identity", "Logo Design", "Design System", "Print Design", "Signage"],
   },
   summary: {
-    de: "Logo, Design System und alle Medien für ein Café in Opladen – Speisekarte, Außenschilder, Kundenstopper, Gutschein, Treuekarte und Fensterbeklebung – ein Auftritt, der vom Gehweg bis zum Tisch dieselbe Sprache spricht.",
+    de: "Logo, Designsystem und alle Medien für ein Café in Opladen – Speisekarte, Außenschilder, Kundenstopper, Gutschein, Treuekarte und Fensterbeklebung – ein Auftritt, der vom Gehweg bis zum Tisch dieselbe Sprache spricht.",
     en: "Logo, design system and every touchpoint for a café in Opladen – menu, exterior signs, A-boards, gift voucher, loyalty card and window graphics – one look that speaks the same language from the pavement to the table.",
   },
   challenge: {
@@ -51,7 +51,7 @@ const project: PortfolioProject = {
   },
   gallery: [
     { src: "/projects/herzhaft/gallery-01.webp", span: "full", alt: { de: "Herzhaft-Logo: Wortmarke über Bildmarke im grünen Verlauf, Negativ auf Dunkelgrün, Wortmarke und Bildmarke einzeln", en: "Herzhaft logo: wordmark above the mark in a green gradient, reversed on dark green, wordmark and mark on their own" }, caption: { de: "Logo · Wortmarke und Bildmarke", en: "Logo · wordmark and mark" }, aspect: "16/9", width: 2400, height: 1350 },
-    { src: "/projects/herzhaft/gallery-02.webp", span: "full", alt: { de: "Design System: fünf Farben, Logo-Verlauf, vier Siegel, Schriften Futura PT und Josefin Sans", en: "Design system: five colours, logo gradient, four seals, typefaces Futura PT and Josefin Sans" }, caption: { de: "Design System · Farbe, Siegel, Typografie", en: "Design system · colour, seals, typography" }, aspect: "16/9", width: 2400, height: 1350 },
+    { src: "/projects/herzhaft/gallery-02.webp", span: "full", alt: { de: "Designsystem: fünf Farben, Logo-Verlauf, vier Siegel, Schriften Futura PT und Josefin Sans", en: "Design system: five colours, logo gradient, four seals, typefaces Futura PT and Josefin Sans" }, caption: { de: "Designsystem · Farbe, Siegel, Typografie", en: "Design system · colour, seals, typography" }, aspect: "16/9", width: 2400, height: 1350 },
     { src: "/projects/herzhaft/gallery-03.webp", span: "full", alt: { de: "Fensterbeklebung mit Wortmarke und grüner Bildmarke auf der Scheibe des Cafés", en: "Window graphic with wordmark and green mark on the café window" }, caption: { de: "Fensterbeklebung 400 × 400 mm", en: "Window graphic 400 × 400 mm" }, aspect: "16/9", width: 2400, height: 1350 },
     { src: "/projects/herzhaft/gallery-04.webp", span: "full", alt: { de: "Alle 15 Seiten der Speisekarte im Überblick", en: "All 15 pages of the menu at a glance" }, caption: { de: "Speisekarte 2024 · A5 · 15 Seiten", en: "Menu 2024 · A5 · 15 pages" }, aspect: "16/9", width: 2400, height: 1350 },
     { src: "/projects/herzhaft/gallery-05.webp", span: "full", alt: { de: "Dunkle Getränkeseiten der Speisekarte und die Seite mit den Saucen", en: "Dark drinks pages of the menu and the sauces page" }, caption: { de: "Getränke auf Schwarz", en: "Drinks on black" }, aspect: "16/9", width: 2400, height: 1350 },

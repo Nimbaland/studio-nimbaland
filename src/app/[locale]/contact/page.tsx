@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { href, type Locale } from "@/i18n/config";
+import { href, t, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { pageMetadata } from "@/lib/metadata";
 import { site } from "@/content/site";
@@ -13,7 +13,7 @@ type Props = { params: Promise<{ locale: Locale }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const d = getDictionary(locale);
-  return pageMetadata({ locale, path: "/contact", title: "Contact", description: d.contact.intro[0] });
+  return pageMetadata({ locale, path: "/contact", title: locale === "de" ? "Kontakt" : "Contact", description: d.contact.intro[0] });
 }
 
 export default async function ContactPage({ params }: Props) {
@@ -23,7 +23,7 @@ export default async function ContactPage({ params }: Props) {
 
   return (
     <>
-      <PageIntro eyebrow={c.eyebrow} title={c.pageTitle} titleLang="en" intro={c.intro} />
+      <PageIntro eyebrow={c.eyebrow} title={c.pageTitle} intro={c.intro} />
 
       {site.contact.email && (
         <section className="tone-dark border-t border-line">
@@ -39,17 +39,17 @@ export default async function ContactPage({ params }: Props) {
       <section className="tone-dark section border-t border-line">
         <div className="container-site grid-site gap-y-16">
           <div className="col-span-full lg:col-span-7">
-            <h2 className="t-h2 mb-10" lang="en">{c.formTitle}</h2>
+            <h2 className="t-h2 mb-10">{c.formTitle}</h2>
             <ContactForm
               dict={c}
-              serviceOptions={services.map((s) => s.title)}
+              serviceOptions={services.map((s) => t(s.title, locale))}
               privacyHref={href(locale, "/datenschutz")}
               fallbackEmail={site.contact.email}
             />
           </div>
 
           <aside className="col-span-full flex flex-col gap-10 lg:col-span-4 lg:col-start-9 lg:pt-4">
-            <ul className="rule-list" lang="en">
+            <ul className="rule-list">
               {c.meta.map((m) => <li key={m} className="t-label py-4">{m}</li>)}
             </ul>
             <address className="not-italic leading-relaxed">

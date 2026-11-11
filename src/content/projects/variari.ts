@@ -7,7 +7,7 @@ import type { PortfolioProject } from "./types";
 const project: PortfolioProject = {
   slug: "variari",
   title: "Variari Food Boutique",
-  tagline: { de: "Making taste visible.", en: "Making taste visible." },
+  tagline: { de: "Geschmack sichtbar machen.", en: "Making taste visible." },
   client: "Variari Food Boutique",
   liveUrl: "https://www.variari.com/",
   year: "2019–2020",
@@ -15,7 +15,7 @@ const project: PortfolioProject = {
   category: { de: ["Rebranding", "Creative Direction", "Print"], en: ["Rebranding", "Creative direction", "Print"] },
   role: { de: ["Creative Director", "Logo-Rebranding", "Bildkonzept", "Print"], en: ["Creative director", "Logo rebrand", "Photo concept", "Print"] },
   services: {
-    de: ["Rebranding", "Creative Direction", "Print Design"],
+    de: ["Rebranding", "Creative Direction", "Printdesign"],
     en: ["Rebranding", "Creative Direction", "Print Design"],
   },
   summary: {

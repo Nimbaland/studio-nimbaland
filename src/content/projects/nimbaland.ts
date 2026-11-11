@@ -4,10 +4,10 @@ import type { PortfolioProject } from "./types";
 const project: PortfolioProject = {
   slug: "nimbaland",
   title: "Nimbaland",
-  category: { de: ["Eigene Marke", "Brand Development"], en: ["Own brand", "Brand development"] },
+  category: { de: ["Eigene Marke", "Markenentwicklung"], en: ["Own brand", "Brand development"] },
   role: { de: ["Gründer", "Creative Director"], en: ["Founder", "Creative Director"] },
   services: {
-    de: ["Brand Development", "Creative Direction", "AI Visual Content"],
+    de: ["Markenentwicklung", "Creative Direction", "KI-Bildinhalte"],
     en: ["Brand development", "Creative direction", "AI visual content"],
   },
   summary: {

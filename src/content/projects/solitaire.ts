@@ -5,13 +5,13 @@ import type { PortfolioProject } from "./types";
 const project: PortfolioProject = {
   slug: "solitaire",
   title: "Solitaire",
-  tagline: { de: "A prime office, presented like one.", en: "A prime office, presented like one." },
+  tagline: { de: "Erstklassige Büroflächen, erstklassig präsentiert.", en: "A prime office, presented like one." },
   client: "Colliers International",
   year: "2019",
   date: "2019-08",
-  category: { de: ["Präsentation", "Real Estate"], en: ["Presentation", "Real estate"] },
-  role: { de: ["Art Direction", "Presentation Design"], en: ["Art direction", "Presentation design"] },
-  services: { de: ["Art Direction", "Presentation Design", "Pitch Design"], en: ["Art Direction", "Presentation Design", "Pitch Design"] },
+  category: { de: ["Präsentation", "Immobilien"], en: ["Presentation", "Real estate"] },
+  role: { de: ["Art Direction", "Präsentationsdesign"], en: ["Art direction", "Presentation design"] },
+  services: { de: ["Art Direction", "Präsentationsdesign", "Pitch-Design"], en: ["Art Direction", "Presentation Design", "Pitch Design"] },
   summary: {
     de: "Investment-Präsentation für ein Bürohochhaus in Toplage – 42 Folien von den Investment Highlights über Markt und Wettbewerb bis zum Vermarktungskonzept mit Website, App und Film.",
     en: "Investment presentation for a prime-location office tower — 42 slides from investment highlights through market and competition to a marketing concept with website, app and film.",

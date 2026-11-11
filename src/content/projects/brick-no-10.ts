@@ -6,13 +6,13 @@ import type { PortfolioProject } from "./types";
 const project: PortfolioProject = {
   slug: "brick-no-10",
   title: "Brick No 10",
-  tagline: { de: "Where Hanseatic tradition meets the digital future.", en: "Where Hanseatic tradition meets the digital future." },
+  tagline: { de: "Wo hanseatische Tradition auf digitale Zukunft trifft.", en: "Where Hanseatic tradition meets the digital future." },
   client: "Colliers International",
   year: "2019",
   date: "2019-07",
-  category: { de: ["Editorial", "Real Estate", "Pitch"], en: ["Editorial", "Real estate", "Pitch"] },
+  category: { de: ["Editorial", "Immobilien", "Pitch"], en: ["Editorial", "Real estate", "Pitch"] },
   role: { de: ["Art Direction", "Editorial Design", "Naming & Logo"], en: ["Art direction", "Editorial design", "Naming & logo"] },
-  services: { de: ["Art Direction", "Editorial Design", "Pitch Design"], en: ["Art Direction", "Editorial Design", "Pitch Design"] },
+  services: { de: ["Art Direction", "Editorial Design", "Pitch-Design"], en: ["Art Direction", "Editorial Design", "Pitch Design"] },
   summary: {
     de: "Ein 87-seitiges Pitchbuch für den Verkauf eines historischen Backstein-Kontorhauses im Hamburger Kontorhausviertel – mit eigener Objektmarke, Kapiteldramaturgie und maritimer Bildsprache.",
     en: "An 87-page pitch book for the sale of a historic brick office building in Hamburg's Kontorhaus district — with its own property brand, chapter dramaturgy and maritime visual language.",

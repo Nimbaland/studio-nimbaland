@@ -17,7 +17,7 @@ export function CtaMarquee({ href, label, items }: { href: string; label: string
     </span>
   );
   return (
-    <Link href={href} className="marquee" aria-label={label} lang="en">
+    <Link href={href} className="marquee" aria-label={label}>
       <span className="marquee__track" aria-hidden="true">
         {row(false)}
         {row(true)}

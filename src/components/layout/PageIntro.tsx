@@ -18,9 +18,9 @@ export function PageIntro({ eyebrow, title, subtitle, intro, children, titleLang
       <div className="container-site grid-site gap-y-8 pt-16 pb-16 lg:pt-24 lg:pb-24">
         {children && <div className="col-span-full">{children}</div>}
         <div className="col-span-full lg:col-span-7">
-          {eyebrow && <p className="t-label t-muted mb-6" lang="en">{eyebrow}</p>}
+          {eyebrow && <p className="t-label t-muted mb-6">{eyebrow}</p>}
           <h1 className="t-display" lang={titleLang}>{title}</h1>
-          {subtitle && <p className="t-h3 mt-6 italic t-muted" lang="en">{subtitle}</p>}
+          {subtitle && <p className="t-h3 mt-6 italic t-muted">{subtitle}</p>}
         </div>
         {paragraphs.length > 0 && (
           <div className="col-span-full flex flex-col gap-4 lg:col-span-4 lg:col-start-9 lg:self-end">

@@ -7,14 +7,14 @@ import type { PortfolioProject } from "./types";
 const project: PortfolioProject = {
   slug: "frauenzimmer-wolfsburg",
   title: "Frauen-Zimmer Wolfsburg",
-  tagline: { de: "A protected space for all women.", en: "A protected space for all women." },
+  tagline: { de: "Ein geschützter Raum für alle Frauen.", en: "A protected space for all women." },
   client: "Frauenzentrum Frauen-Zimmer, Wolfsburg",
   year: "2026",
   date: "2026-10",
-  category: { de: ["Web Design", "Logo-Redesign", "Non-Profit"], en: ["Web design", "Logo redesign", "Non-profit"] },
-  role: { de: ["Web Design", "UX/UI", "Logo-Redesign"], en: ["Web design", "UX/UI", "Logo redesign"] },
+  category: { de: ["Webdesign", "Logo-Redesign", "Non-Profit"], en: ["Web design", "Logo redesign", "Non-profit"] },
+  role: { de: ["Webdesign", "UX/UI", "Logo-Redesign"], en: ["Web design", "UX/UI", "Logo redesign"] },
   services: {
-    de: ["Web Design", "UX/UI", "Brand Identity"],
+    de: ["Webdesign", "UX/UI", "Markenidentität"],
     en: ["Web Design", "UX/UI", "Brand Identity"],
   },
   summary: {
@@ -30,7 +30,7 @@ const project: PortfolioProject = {
     en: "A warm, calm look in sand, blue and pink: at the top the clear promise “A protected space for all women”, right next to it the phone number and a “quick exit” button for safety. Three ways to get in touch, four areas for the groups, voices from the house. The logo keeps the female symbol, with an arc beneath it as a gesture of holding — it catches the symbol and opens to the right.",
   },
   story: {
-    challenge: { de: "Wer hier Hilfe sucht, steht oft unter Druck. Die Seite muss in Sekunden zeigen, wie man ankommt.", en: "Who looks for help here is often under pressure. The site has to show within seconds how to get in touch." },
+    challenge: { de: "Wer hier Hilfe sucht, steht oft unter Druck. Die Seite muss in Sekunden zeigen, wie man ankommt.", en: "People who come here for help are often under pressure. The site has to show within seconds how to get in touch." },
     idea: { de: "Ein geschützter Raum – auch digital.", en: "A protected space – online too." },
     decision: { de: "Telefonnummer und „Schnell verlassen“-Button stehen ganz oben. Im Logo fängt ein Bogen das Frauenzeichen auf.", en: "Phone number and a “quick exit” button sit right at the top. In the logo, an arc catches the female symbol." },
   },

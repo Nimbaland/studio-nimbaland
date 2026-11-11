@@ -6,18 +6,18 @@ import type { PortfolioProject } from "./types";
 const project: PortfolioProject = {
   slug: "tina-sood",
   title: "Tina Sood Ergotherapie",
-  tagline: { de: "Making care feel close.", en: "Making care feel close." },
+  tagline: { de: "Damit sich Therapie nah anfühlt.", en: "Making care feel close." },
   client: "Tina Sood · Ganzheitliche Ergotherapie",
   year: "2026",
   date: "2026-06",
   liveUrl: "https://ergotherapie-sood.de/",
   category: { de: ["Branding", "Website"], en: ["Branding", "Website"] },
   role: {
-    de: ["Brand Design", "Webdesign", "Projektleitung"],
+    de: ["Markendesign", "Webdesign", "Projektleitung"],
     en: ["Brand design", "Web design", "Project management"],
   },
   services: {
-    de: ["Brand Identity", "Web Design", "Project Management"],
+    de: ["Markenidentität", "Webdesign", "Projektleitung"],
     en: ["Brand Identity", "Web Design", "Project Management"],
   },
   summary: {

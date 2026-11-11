@@ -7,12 +7,12 @@ import type { PortfolioProject } from "./types";
 const project: PortfolioProject = {
   slug: "waiturn",
   title: "Waiturn",
-  tagline: { de: "Order for the waiting room.", en: "Order for the waiting room." },
+  tagline: { de: "Ordnung fürs Wartezimmer.", en: "Order for the waiting room." },
   date: "2026-01",
   category: { de: ["Digital", "Landingpage"], en: ["Digital", "Landing page"] },
-  role: { de: ["Screen Design", "UX/UI"], en: ["Screen design", "UX/UI"] },
+  role: { de: ["Screendesign", "UX/UI"], en: ["Screen design", "UX/UI"] },
   services: {
-    de: ["Digital Design", "UX/UI", "Landing Page"],
+    de: ["Digitales Design", "UX/UI", "Landingpage"],
     en: ["Digital Design", "UX/UI", "Landing Page"],
   },
   summary: {

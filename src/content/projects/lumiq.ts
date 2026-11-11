@@ -11,14 +11,14 @@ const project: PortfolioProject = {
   client: "Abschlussprojekt SuperCode · Team mit Bianca und Steffi",
   year: "2026",
   date: "2026-07",
-  category: { de: ["AI Visual Engineering", "Kampagne"], en: ["AI visual engineering", "Campaign"] },
-  role: { de: ["Konzept", "AI Visual Engineering", "Logo", "Kampagne", "Song"], en: ["Concept", "AI visual engineering", "Logo", "Campaign", "Song"] },
+  category: { de: ["KI-Bildwelten", "Kampagne"], en: ["AI-powered visuals", "Campaign"] },
+  role: { de: ["Konzept", "KI-Bildwelten", "Logo", "Kampagne", "Song"], en: ["Concept", "AI-powered visuals", "Logo", "Campaign", "Song"] },
   services: {
-    de: ["AI Visual Engineering", "Brand Identity", "Campaign Visuals"],
+    de: ["KI-Bildwelten", "Markenidentität", "Kampagnenmotive"],
     en: ["AI Visual Engineering", "Brand Identity", "Campaign Visuals"],
   },
   summary: {
-    de: "Eine komplette Supplement-Marke in 12 Stunden – von Name und Markenstory über Logo und Packaging bis zu Kampagnenbildern und Reel, entwickelt mit KI-Werkzeugen und von Hand verfeinert.",
+    de: "Eine komplette Supplement-Marke in 12 Stunden – von Name und Markenstory über Logo und Verpackung bis zu Kampagnenbildern und Reel, entwickelt mit KI-Werkzeugen und von Hand verfeinert.",
     en: "A complete supplement brand in 12 hours – from name and brand story to logo, packaging, campaign images and a reel, developed with AI tools and refined by hand.",
   },
   challenge: {

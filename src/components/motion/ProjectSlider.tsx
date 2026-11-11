@@ -95,7 +95,7 @@ export function ProjectSlider({ count, children, hint, prevLabel, nextLabel }: P
           {String(index).padStart(2, "0")} <span className="t-muted">/ {String(count).padStart(2, "0")}</span>
         </p>
         <div className="slider__nav">
-          <p className="t-label t-muted hidden md:block" lang="en">{hint}</p>
+          <p className="t-label t-muted hidden md:block">{hint}</p>
           <button type="button" className="slider__arrow" onClick={() => go(-1)} disabled={index <= 1} aria-label={prevLabel}>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" /></svg>
           </button>

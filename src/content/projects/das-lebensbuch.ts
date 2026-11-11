@@ -7,17 +7,17 @@ import type { PortfolioProject } from "./types";
 const project: PortfolioProject = {
   slug: "das-lebensbuch",
   title: "Das Lebensbuch",
-  tagline: { de: "A box full of memories.", en: "A box full of memories." },
+  tagline: { de: "Eine Box voller Erinnerungen.", en: "A box full of memories." },
   client: "Britta Küper · Lebensbuch",
   year: "2025",
   date: "2025-10",
-  category: { de: ["Packaging", "Print"], en: ["Packaging", "Print"] },
+  category: { de: ["Verpackung", "Print"], en: ["Packaging", "Print"] },
   role: {
     de: ["Verpackungsdesign", "Stanzform", "Print"],
     en: ["Packaging design", "Dieline", "Print"],
   },
   services: {
-    de: ["Packaging Design", "Print Design"],
+    de: ["Verpackungsdesign", "Printdesign"],
     en: ["Packaging Design", "Print Design"],
   },
   summary: {

@@ -23,24 +23,24 @@ export function ServiceList({ services, locale, variant = "home", deliverablesLa
             {home && (
               <span className="t-label t-muted pt-2 tabular-nums" aria-hidden="true">{String(i + 1).padStart(2, "0")}</span>
             )}
-            <H className="t-h3" lang="en">{home ? s.homeTitle : s.title}</H>
+            <H className="t-h3">{t(home ? s.homeTitle : s.title, locale)}</H>
           </div>
           <div className="col-span-full lg:col-span-6 lg:col-start-7">
             <p className={home ? "measure" : "t-lead measure"}>{t(home ? s.homeSummary : s.description, locale)}</p>
             {!home && (
               <div className="mt-6">
                 <p className="t-label t-muted mb-3">{deliverablesLabel}</p>
-                <ul className="svc-chips" lang="en">
+                <ul className="svc-chips">
                   {(() => {
                     const pr = resolveProof(s, locale);
-                    return s.deliverables.map((d) => (
+                    return s.deliverables.map((d, di) => (
                       <li key={d}>
                         {pr[d] ? (
                           <Link href={pr[d].href} className="svc-chip svc-chip--link" title={pr[d].title}>
-                            {d} <span className="svc-chip__proof">· {pr[d].title} ↗</span>
+                            {locale === "de" ? s.deliverablesDe[di] : d} <span className="svc-chip__proof">· {pr[d].title} ↗</span>
                           </Link>
                         ) : (
-                          <span className="svc-chip">{d}</span>
+                          <span className="svc-chip">{locale === "de" ? s.deliverablesDe[di] : d}</span>
                         )}
                       </li>
                     ));

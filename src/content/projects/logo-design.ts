@@ -8,12 +8,12 @@ import type { PortfolioProject } from "./types";
 const project: PortfolioProject = {
   slug: "logo-design",
   title: "Logo Design",
-  tagline: { de: "Marks that stay.", en: "Marks that stay." },
+  tagline: { de: "Zeichen, die bleiben.", en: "Marks that stay." },
   client: "Verschiedene Kunden",
-  category: { de: ["Logo Design", "Branding"], en: ["Logo design", "Branding"] },
-  role: { de: ["Logo Design", "Brand Identity"], en: ["Logo design", "Brand identity"] },
+  category: { de: ["Logodesign", "Branding"], en: ["Logo design", "Branding"] },
+  role: { de: ["Logodesign", "Markenidentität"], en: ["Logo design", "Brand identity"] },
   services: {
-    de: ["Brand Identity", "Logo Design"],
+    de: ["Markenidentität", "Logodesign"],
     en: ["Brand Identity", "Logo Design"],
   },
   summary: {

@@ -6,7 +6,7 @@ import type { PortfolioProject } from "./types";
 const project: PortfolioProject = {
   slug: "mkg-koeln-west",
   title: "MKG Köln West",
-  tagline: { de: "A clear identity for precise care.", en: "A clear identity for precise care." },
+  tagline: { de: "Eine klare Identität für präzise Medizin.", en: "A clear identity for precise care." },
   client: "MKG Köln West",
   liveUrl: "https://www.mkg-koeln-west.de/",
   year: "2020–2021",
@@ -14,7 +14,7 @@ const project: PortfolioProject = {
   category: { de: ["Branding", "Außendarstellung", "Website"], en: ["Branding", "Signage", "Website"] },
   role: { de: ["Branding", "Art Direction", "Webdesign"], en: ["Branding", "Art direction", "Web design"] },
   services: {
-    de: ["Brand Identity", "Corporate Design", "Signage", "Web Design"],
+    de: ["Markenidentität", "Corporate Design", "Beschilderung", "Webdesign"],
     en: ["Brand Identity", "Corporate Design", "Signage", "Web Design"],
   },
   summary: {

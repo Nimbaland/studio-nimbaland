@@ -9,7 +9,7 @@ export function WorkEmptyState({ locale, dict }: { locale: Locale; dict: Diction
       <p className="t-h3 col-span-full lg:col-span-6">{dict.emptyTitle}</p>
       <div className="col-span-full lg:col-span-6">
         <p className="t-muted measure">{dict.emptyBody}</p>
-        <div className="mt-6"><ButtonLink href={href(locale, "/contact")} lang="en">{dict.emptyCta}</ButtonLink></div>
+        <div className="mt-6"><ButtonLink href={href(locale, "/contact")}>{dict.emptyCta}</ButtonLink></div>
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ type Props = { params: Promise<{ locale: Locale }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const d = getDictionary(locale);
-  return pageMetadata({ locale, path: "/work", title: "Selected work", description: d.workPage.intro });
+  return pageMetadata({ locale, path: "/work", title: locale === "de" ? "Projekte" : "Work", description: d.workPage.intro });
 }
 
 /** Projektliste. Filter erst ergänzen, wenn genug Projekte veröffentlicht sind. */
@@ -26,7 +26,7 @@ export default async function WorkPage({ params }: Props) {
 
   return (
     <>
-      <PageIntro title={d.workPage.pageTitle} titleLang="en" subtitle={d.workPage.subtitle} intro={d.workPage.intro} />
+      <PageIntro title={d.workPage.pageTitle} subtitle={d.workPage.subtitle} intro={d.workPage.intro} />
       <section className="tone-dark section border-t border-line">
         <div className="container-site">
           {projects.length > 0 ? (
@@ -39,8 +39,8 @@ export default async function WorkPage({ params }: Props) {
       {projects.length > 0 && (
         <section className="tone-dark section border-t border-line" aria-labelledby="work-index">
           <div className="container-site">
-            <p className="t-label t-muted mb-6" lang="en">Index</p>
-            <h2 id="work-index" className="t-h2 mb-12" lang="en">{locale === "de" ? "Alle Projekte." : "All projects."}</h2>
+            <p className="t-label t-muted mb-6">{locale === "de" ? "Übersicht" : "Index"}</p>
+            <h2 id="work-index" className="t-h2 mb-12">{locale === "de" ? "Alle Projekte." : "All projects."}</h2>
             <HoverPreview
               locale={locale}
               label={locale === "de" ? "Projektindex" : "Project index"}

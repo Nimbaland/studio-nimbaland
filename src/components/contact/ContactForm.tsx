@@ -106,7 +106,7 @@ export function ContactForm({ dict, serviceOptions, privacyHref, fallbackEmail, 
           {[...serviceOptions, f.other].map((o, i) => (
             <label key={o} className="pill">
               <input type="radio" name="projectType" value={i === serviceOptions.length ? "other" : o} className="pill__input" />
-              <span className="pill__label" lang={i === serviceOptions.length ? undefined : "en"}>{o}</span>
+              <span className="pill__label">{o}</span>
             </label>
           ))}
         </div>

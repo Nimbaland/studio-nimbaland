@@ -17,7 +17,7 @@ export function SelectedWork({ locale, dict, projects, total }: { locale: Locale
   return (
     <section id="work" className="tone-dark section border-t border-line" aria-labelledby="work-title">
       <div className="container-site">
-        <SectionHeading id="work-title" eyebrow={dict.eyebrow} title={dict.sectionTitle} titleLang="en" intro={dict.sectionIntro} />
+        <SectionHeading id="work-title" eyebrow={dict.eyebrow} title={dict.sectionTitle} intro={dict.sectionIntro} />
 
         {projects.length > 0 ? (
           <ol className="feature-list">
@@ -27,10 +27,10 @@ export function SelectedWork({ locale, dict, projects, total }: { locale: Locale
                 <li key={p.slug} className={`feature${i % 2 ? " feature--flip" : ""}`}>
                   <Link href={link} className="feature__media" aria-label={`${p.title} – ${dict.viewProject}`} tabIndex={-1}>
                     <ProjectMedia image={p.coverImage} locale={locale} aspect="16/10" sizes="(min-width: 1024px) 58vw, 100vw" priority={i === 0} />
-                    <span className="feature__badge" aria-hidden="true" lang="en">{dict.viewProject} <ArrowUpRight size={16} /></span>
+                    <span className="feature__badge" aria-hidden="true">{dict.viewProject} <ArrowUpRight size={16} /></span>
                   </Link>
                   <div className="feature__body">
-                    <p className="t-label t-muted" lang="en">
+                    <p className="t-label t-muted">
                       <span className="tabular-nums">{String(i + 1).padStart(2, "0")}</span> · {t(p.category, locale).join(" / ")}{p.year ? ` · ${p.year}` : ""}
                     </p>
                     <h3 className="feature__title font-display">
@@ -44,7 +44,7 @@ export function SelectedWork({ locale, dict, projects, total }: { locale: Locale
                       </dl>
                     )}
                     <p className="mt-8">
-                      <Link href={link} className="feature__cta" lang="en">{dict.viewProject} <ArrowUpRight size={16} /></Link>
+                      <Link href={link} className="feature__cta">{dict.viewProject} <ArrowUpRight size={16} /></Link>
                     </p>
                   </div>
                 </li>
@@ -60,7 +60,7 @@ export function SelectedWork({ locale, dict, projects, total }: { locale: Locale
             <p className="t-h3">{dict.moreTitle}</p>
             <p className="t-muted mt-2 measure">{dict.moreBody}</p>
           </div>
-          <ButtonLink href={href(locale, "/work")} variant="secondary" lang="en">{dict.allWork} ({total})</ButtonLink>
+          <ButtonLink href={href(locale, "/work")} variant="secondary">{dict.allWork} ({total})</ButtonLink>
         </div>
       </div>
     </section>

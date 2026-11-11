@@ -4,12 +4,12 @@ import type { PortfolioProject } from "./types";
 const project: PortfolioProject = {
   slug: "kratzert",
   title: "Kratzert Gruppe",
-  tagline: { de: "Building a stronger brand presence.", en: "Building a stronger brand presence." },
+  tagline: { de: "Für einen stärkeren Markenauftritt.", en: "Building a stronger brand presence." },
   client: "Kratzert Gruppe",
   date: "2025-11",
   category: { de: ["Corporate Design", "Website"], en: ["Corporate design", "Website"] },
   role: { de: ["Brand & Design Manager"], en: ["Brand & Design Manager"] },
-  services: { de: ["Brand Development", "Creative Direction", "Corporate Design", "Web Design"], en: ["Brand Development", "Creative Direction", "Corporate Design", "Web Design"] },
+  services: { de: ["Markenentwicklung", "Creative Direction", "Corporate Design", "Webdesign"], en: ["Brand Development", "Creative Direction", "Corporate Design", "Web Design"] },
   summary: {
     de: "Ein konsistenter Markenauftritt für eine Unternehmensgruppe. Von der visuellen Identität bis zur digitalen Präsenz.",
     en: "A consistent brand presence for a group of companies. From visual identity to digital presence.",

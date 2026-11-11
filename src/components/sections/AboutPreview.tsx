@@ -21,8 +21,8 @@ export function AboutPreview({ locale, dict, portraitAlt }: { locale: Locale; di
     <section className="tone-dark section border-t border-line" aria-labelledby="about-title">
       <div className="container-site grid-site gap-y-10">
         <div className="col-span-full lg:col-span-8">
-          <p className="t-label t-muted mb-6" lang="en">{dict.eyebrow}</p>
-          <h2 id="about-title" className="t-h2" lang="en">{dict.sectionTitle}</h2>
+          <p className="t-label t-muted mb-6">{dict.eyebrow}</p>
+          <h2 id="about-title" className="t-h2">{dict.sectionTitle}</h2>
         </div>
 
         <div className="col-span-full max-w-[16rem] md:col-span-3 md:max-w-none lg:col-span-3 lg:col-start-1 lg:mt-10">
@@ -42,7 +42,7 @@ export function AboutPreview({ locale, dict, portraitAlt }: { locale: Locale; di
               </div>
             ))}
           </dl>
-          <div className="mt-10 flex flex-wrap gap-3"><ButtonLink href="#contact" lang="en">{dict.contactCta}</ButtonLink><ButtonLink href={href(locale, "/about")} variant="secondary" lang="en">{dict.cta}</ButtonLink></div>
+          <div className="mt-10 flex flex-wrap gap-3"><ButtonLink href="#contact">{dict.contactCta}</ButtonLink><ButtonLink href={href(locale, "/about")} variant="secondary">{dict.cta}</ButtonLink></div>
         </div>
       </div>
     </section>

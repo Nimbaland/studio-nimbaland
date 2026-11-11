@@ -12,10 +12,10 @@ const project: PortfolioProject = {
   client: "Eigenes Projekt · Nimbaland",
   year: "2026",
   date: "2026-06",
-  category: { de: ["AI Visual Engineering", "Musikvideo"], en: ["AI visual engineering", "Music video"] },
-  role: { de: ["Songwriting", "Musikproduktion", "Art Direction", "AI Visual Engineering", "Schnitt"], en: ["Songwriting", "Music production", "Art direction", "AI visual engineering", "Edit"] },
+  category: { de: ["KI-Bildwelten", "Musikvideo"], en: ["AI-powered visuals", "Music video"] },
+  role: { de: ["Songwriting", "Musikproduktion", "Art Direction", "KI-Bildwelten", "Schnitt"], en: ["Songwriting", "Music production", "Art direction", "AI-powered visuals", "Edit"] },
   services: {
-    de: ["AI Visual Engineering", "Visual Storytelling"],
+    de: ["KI-Bildwelten", "Visuelles Storytelling"],
     en: ["AI Visual Engineering", "Visual Storytelling"],
   },
   summary: {

@@ -16,7 +16,7 @@ export function RecognitionSection({ locale, dict, outroHref }: { locale: Locale
       <div className="container-site">
         <div className="grid-site gap-y-6">
           <div className="col-span-full lg:col-span-6">
-            <h2 id="recog-title" className="t-h1" lang="en">{r.title}</h2>
+            <h2 id="recog-title" className="t-h1">{r.title}</h2>
           </div>
           <p className="t-lead measure col-span-full lg:col-span-5 lg:col-start-8 lg:self-end">{r.intro}</p>
         </div>

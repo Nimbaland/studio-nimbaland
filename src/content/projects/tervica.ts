@@ -6,14 +6,14 @@ import type { PortfolioProject } from "./types";
 const project: PortfolioProject = {
   slug: "tervica",
   title: "Tervica",
-  tagline: { de: "Rethinking identity.", en: "Rethinking identity." },
+  tagline: { de: "Identität neu gedacht.", en: "Rethinking identity." },
   client: "Tervica",
   year: "2026",
   date: "2026-05",
   category: { de: ["Rebranding", "Markenstrategie"], en: ["Rebranding", "Brand strategy"] },
-  role: { de: ["Brand Strategy", "Visual Identity", "Pitch"], en: ["Brand strategy", "Visual identity", "Pitch"] },
+  role: { de: ["Markenstrategie", "Visuelle Identität", "Pitch"], en: ["Brand strategy", "Visual identity", "Pitch"] },
   services: {
-    de: ["Brand Strategy", "Rebranding", "Creative Concept"],
+    de: ["Markenstrategie", "Rebranding", "Kreativkonzept"],
     en: ["Brand Strategy", "Rebranding", "Creative Concept"],
   },
   summary: {

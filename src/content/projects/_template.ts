@@ -12,7 +12,7 @@ const project: PortfolioProject = {
   year: "2025",
   category: { de: ["Branding"], en: ["Branding"] },
   role: { de: ["Creative Direction"], en: ["Creative direction"] },
-  services: { de: ["Visual Identity"], en: ["Visual identity"] },
+  services: { de: ["Visuelle Identität"], en: ["Visual identity"] },
   summary: { de: "Ein Satz, worum es ging.", en: "One sentence on what it was about." },
   challenge: { de: "Ausgangslage …", en: "Context …" },
   approach: { de: "Vorgehen …", en: "Approach …" },

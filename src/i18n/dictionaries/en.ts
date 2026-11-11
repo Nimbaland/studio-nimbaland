@@ -1,15 +1,15 @@
 import type { Dictionary } from "./de";
 
 /**
- * UI copy, English. Headlines, eyebrows and buttons are identical to the German site;
- * body copy is translated from Nimalan's German text. Have a native speaker proofread before launch.
+ * UI copy, English – same message as the German site, written to read naturally in English (revised 11.11.2026).
+ * Have a native speaker proofread before launch.
  */
 const en: Dictionary = {
   meta: {
     siteName: "nimbaland.studio",
-    defaultTitle: "nimbaland.studio — Creative Direction for real change",
+    defaultTitle: "nimbaland.studio – Brand identities, websites and AI-powered visuals from Düsseldorf",
     defaultDescription:
-      "Nimalan Suntharalingam, independent creative director and brand designer based in Düsseldorf. Brand strategy, creative direction, digital design and AI visual engineering.",
+      "I'm Nimba (Nimalan Suntharalingam), a creative director and designer with a studio in Düsseldorf. I create brand identities, websites and AI-powered visuals for small businesses, health practices and hospitality.",
   },
   a11y: {
     skipToContent: "Skip to content",
@@ -27,21 +27,21 @@ const en: Dictionary = {
     services: "Services",
     about: "About",
     contact: "Contact",
-    cta: "Let's Talk",
+    cta: "Start a project",
     imprint: "Legal notice",
     privacy: "Privacy",
     closeMenu: "Close menu",
   },
 
   hero: {
-    eyebrow: "nimbaland.studio",
-    hello: "Hi, I'm",
-    name: "Nimba",
+    hello: "Hi, I’m Nimba.",
+    headline: "Let’s make your brand",
+    accent: "seen",
     intro:
-      "I love figuring out with you what your brand needs. I create brand identities, websites and AI-powered visual worlds. My studio is based in Düsseldorf.",
+      "With brand identities, websites and AI‑powered visuals – for small businesses, health practices and hospitality. My studio is based in Düsseldorf.",
     servicesCta: "🔥 How I can help",
-    workCta: "See the work",
-    recentWork: "Recent Work",
+    workCta: "See my work",
+    recentWork: "Latest project",
   },
 
   ticker: {
@@ -49,47 +49,47 @@ const en: Dictionary = {
     puzzle: "Your logo here?",
   },
   recognition: {
-    eyebrow: "Sound Familiar? / 01",
+    eyebrow: "Where projects start",
     title: "Sound familiar?",
     intro: "Most projects don't start with a brief, but with a feeling: there's more in this.",
     proof: "How I solved it",
     outro: "Here's what that looks like in my projects.",
   },
   work: {
-    eyebrow: "Work, Up Close / 02",
-    sectionTitle: "Work, up close.",
+    eyebrow: "Selected projects",
+    sectionTitle: "Three projects up close.",
     sectionIntro: [
-      "Three projects – each with the question at the start, the idea behind it and the decision that made the difference.",
+      "Each with the question at the start, the idea behind it and the decision that made the difference.",
     ],
-    allWork: "All Projects",
-    viewProject: "View Case Study",
+    allWork: "All projects",
+    viewProject: "View project",
     challenge: "The question",
     idea: "The idea",
     decision: "The decision",
     moreTitle: "Curious for more?",
-    moreBody: "The archive has every project – from packaging and editorial to an app concept.",
+    moreBody: "The overview has every project – from packaging and editorial design to an app concept.",
     scrollHint: "Scroll or use arrows",
     prevProject: "Previous project",
     nextProject: "Next project",
     draftBadge: "Draft – not approved",
-    emptyTitle: "Case studies are being prepared.",
+    emptyTitle: "The projects are being prepared.",
     emptyBody: "I'm happy to walk you through selected projects in a conversation or send you a portfolio.",
-    emptyCta: "Let's Talk",
+    emptyCta: "Start a project",
   },
   approach: {
-    eyebrow: "Approach / 00",
+    eyebrow: "Approach",
     dragHint: "Drag to move",
   },
   expertise: {
-    eyebrow: "What I Do / 03",
+    eyebrow: "Services",
     sectionTitle: "Where I can help.",
     intro: "You decide what you need. I can support single steps or the whole project – one point of contact from the first question to the finished design.",
     introMore: "",
     processTitle: "How I work",
     exampleLabel: "Project example",
-    focusLabel: "Main Focus",
+    focusLabel: "Main focus",
     ctaText: "Want to know which of this fits your project?",
-    cta: "Start a Project",
+    cta: "Start a project",
     process: [
       { title: "Understand", body: "Market, audience and what sets you apart." },
       { title: "Sharpen", body: "Positioning, core idea and tone of voice." },
@@ -99,10 +99,10 @@ const en: Dictionary = {
   },
   marquee: {
     label: "Start a project – write to me",
-    items: ["Got something good?", "Let's make it seen", "AI Visual Engineering", "Start a Project", "Brand · Web · Visuals"],
+    items: ["Got something good?", "Let's make it seen", "AI-powered visuals", "Start a project", "Brand · Web · Visuals"],
   },
   aboutPreview: {
-    eyebrow: "The Person Behind It / 04",
+    eyebrow: "The person behind it",
     sectionTitle: "Hi, I'm Nimba.",
     lead: "I don't believe in design by formula.",
     body: [
@@ -112,13 +112,13 @@ const en: Dictionary = {
     facts: [
       { value: "10+", label: "Years of design & art direction" },
       { value: "66", label: "Clients since 2018" },
-      { value: "AI", label: "Certified AI visual engineer" },
+      { value: "AI", label: "Certified AI Visual Engineer" },
     ],
-    contactCta: "Let's Talk",
-    cta: "More About Me",
+    contactCta: "Start a project",
+    cta: "More about me",
   },
   contactCta: {
-    eyebrow: "Let's Talk / 05",
+    eyebrow: "Contact",
     title: "Tell me what you're working on.",
     body: "You don't need a finished brief. A few sentences are enough: what it's about, where you are right now, and whether there's a timeline.",
     prompt: "",
@@ -128,34 +128,34 @@ const en: Dictionary = {
       "I read every message myself and reply personally.",
       "In a first conversation we clarify goals, scope and timing.",
     ],
-    button: "Start a Conversation",
+    button: "Start a project",
     availability: "Available for selected projects and collaborations.",
   },
 
   about: {
-    pageTitle: "Behind the ideas.",
+    pageTitle: "About me.",
     name: "Nimalan Suntharalingam",
-    role: "Independent Creative Director / Brand & Design / AI Visual Engineering",
+    role: "Creative Director & Brand Designer · Certified AI Visual Engineer",
     intro: "I'm Nimalan – most people call me Nimba. Creative director, designer and founder of nimbaland.studio.",
     body: [
       "For me, good design starts with questions: What does a brand stand for? What story does it tell? What should stay with people?",
       "For more than ten years I've been developing brands, designing campaigns and bringing digital presences to life. My experience ranges from brand & design management at Kratzert and senior art direction at Colliers International to design at Savills and art direction for Bosch and Würth. Since 2018 I've also been running my own studio.",
     ],
-    drivesTitle: "What drives me?",
-    drivesBody: "Curiosity. Independence. And the ambition to create something distinct rather than the next thing.",
+    drivesTitle: "What drives me",
+    drivesBody: "Curiosity, independence and the ambition to create something distinct rather than something interchangeable.",
     studioNote: "",
     beyondTitle: "Beyond the screen.",
     beyondBody: [
       "Art, fashion and visual culture shape how I see – so I never think about design within a single discipline. I like working directly with the people who want to move something forward.",
     ],
-    closing: "Based in Düsseldorf. Working beyond boundaries.",
-    cta: "Get in Touch",
+    closing: "Studio in Düsseldorf. Projects far beyond it.",
+    cta: "Start a project",
     portraitAlt: "Portrait of Nimalan Suntharalingam",
   },
 
   workPage: {
-    pageTitle: "Selected work.",
-    subtitle: "A selection of ideas made real.",
+    pageTitle: "Work.",
+    subtitle: "Ideas that made it into the world.",
     intro: "Different industries. Different challenges. One shared standard: design with a clear idea.",
   },
   caseStudy: {
@@ -169,31 +169,31 @@ const en: Dictionary = {
     solution: "Solution",
     outcomes: "Outcomes",
     gallery: "Project images",
-    nextProject: "Next Project",
-    backToWork: "Back to all work",
-    missingText: "The full case study is coming soon.",
+    nextProject: "Next project",
+    backToWork: "Back to all projects",
+    missingText: "The full project description is coming soon.",
   },
 
   services: {
-    eyebrow: "One Creative Partner. Multiple Disciplines.",
-    pageTitle: "What I bring to the table.",
+    eyebrow: "Services",
+    pageTitle: "How I can help.",
     intro: [
-      "I support projects from the first question to the finished design – strategically, conceptually or hands-on. Everything from one source.",
+      "I support projects from the first question to the finished design – strategically, conceptually or hands-on. You get everything from one person.",
     ],
-    deliverables: "Services",
-    closingTitle: "The right idea deserves the right execution.",
+    deliverables: "What's included",
+    closingTitle: "A good idea deserves good execution.",
     closingBody: "Need support with a specific project, or looking for a creative partner for the long term?",
-    closingCta: "Let's Work Together",
+    closingCta: "Start a project",
   },
 
   contact: {
-    eyebrow: "Have a Project in Mind?",
-    pageTitle: "Let's create something worth remembering.",
+    eyebrow: "Contact",
+    pageTitle: "Let's create something that lasts.",
     intro: [
       "New brand, existing identity or a digital idea: tell me what you're working on and what you want to achieve. I'll reply personally.",
     ],
     formTitle: "A good conversation is a good start.",
-    meta: ["Düsseldorf, Germany", "Brand / Digital / AI"],
+    meta: ["Studio in Düsseldorf", "Brand · Web · AI-powered visuals"],
     emailLabel: "Email",
     socialTitle: "Profiles",
     form: {
@@ -208,7 +208,7 @@ const en: Dictionary = {
       messagePlaceholder: "What is it about? Where are you right now? Is there a timeline?",
       privacy: "I have read the privacy notice and agree that my details are used to process this enquiry.",
       privacyLink: "Privacy notice",
-      submit: "Send Inquiry",
+      submit: "Send enquiry",
       submitting: "Sending …",
       honeypot: "Leave this field empty",
       other: "Something else",
@@ -221,9 +221,9 @@ const en: Dictionary = {
       summary: "Please check the highlighted fields.",
     },
     status: {
-      success: "Inquiry sent. Thank you — you'll hear from me by email.",
+      success: "Enquiry sent. Thank you – you'll hear from me by email.",
       notConfigured: "This form isn't connected to an inbox yet. Your message was not sent.",
-      failed: "Your inquiry couldn't be sent. Please try again in a few minutes.",
+      failed: "Your enquiry couldn't be sent. Please try again in a few minutes.",
       emailFallback: "You can also reach me directly by email:",
     },
   },
@@ -232,15 +232,15 @@ const en: Dictionary = {
     draftNotice: "Note: the provider details are approved. Further mandatory details (e.g. person responsible for content, VAT ID if applicable) will be added before launch.",
   },
   footer: {
-    tagline: "Independent Creative Studio",
+    tagline: "Independent design studio",
     location: "Düsseldorf, Germany",
     rights: "All rights reserved.",
     localTime: "Local time:",
     pages: "Pages",
-    connect: "Connect",
+    connect: "Profiles",
   },
   notFound: {
-    title: "This page doesn't exist.",
+    title: "This page doesn't exist",
     body: "The link is outdated or the address contains a typo.",
     cta: "Go to homepage",
   },

@@ -5,13 +5,13 @@ import type { PortfolioProject } from "./types";
 const project: PortfolioProject = {
   slug: "emmler-lofts",
   title: "Emmler Lofts",
-  tagline: { de: "Berlin energy for a sales pitch.", en: "Berlin energy for a sales pitch." },
+  tagline: { de: "Berliner Energie für eine Vermarktungspräsentation.", en: "Berlin energy for a sales pitch." },
   client: "Colliers International",
   year: "2020",
   date: "2020-05",
-  category: { de: ["Präsentation", "Real Estate"], en: ["Presentation", "Real estate"] },
-  role: { de: ["Art Direction", "Presentation Design"], en: ["Art direction", "Presentation design"] },
-  services: { de: ["Art Direction", "Presentation Design", "Pitch Design"], en: ["Art Direction", "Presentation Design", "Pitch Design"] },
+  category: { de: ["Präsentation", "Immobilien"], en: ["Presentation", "Real estate"] },
+  role: { de: ["Art Direction", "Präsentationsdesign"], en: ["Art direction", "Presentation design"] },
+  services: { de: ["Art Direction", "Präsentationsdesign", "Pitch-Design"], en: ["Art Direction", "Presentation Design", "Pitch Design"] },
   summary: {
     de: "Verkaufspreiseinschätzung für die Emmler Lofts am Kottbusser Damm in Berlin – eine 62-seitige Präsentation von Executive Summary über Markt, Lage und Objekt bis zu Vergleichstransaktionen und Honorarvorschlag.",
     en: "Sales price assessment for the Emmler Lofts on Kottbusser Damm in Berlin — a 62-slide presentation from executive summary through market, location and property to comparable transactions and fee proposal.",

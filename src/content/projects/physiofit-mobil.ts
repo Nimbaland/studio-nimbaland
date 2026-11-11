@@ -7,14 +7,14 @@ import type { PortfolioProject } from "./types";
 const project: PortfolioProject = {
   slug: "physiofit-mobil",
   title: "Physiofit-Mobil",
-  tagline: { de: "Therapy that comes to you.", en: "Therapy that comes to you." },
+  tagline: { de: "Therapie, die zu dir kommt.", en: "Therapy that comes to you." },
   client: "Inga Zander · Physiofit-Mobil",
   year: "2025",
   date: "2025-09",
   category: { de: ["Branding", "Print"], en: ["Branding", "Print"] },
   role: { de: ["Logo", "Corporate Design", "Print"], en: ["Logo", "Corporate design", "Print"] },
   services: {
-    de: ["Brand Identity", "Logo Design", "Print Design"],
+    de: ["Markenidentität", "Logodesign", "Printdesign"],
     en: ["Brand Identity", "Logo Design", "Print Design"],
   },
   summary: {

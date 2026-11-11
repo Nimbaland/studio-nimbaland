@@ -27,7 +27,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
             {site.contact.address.street}<br />
             {site.contact.address.city}
           </address>
-          <p className="t-label t-muted mt-6" lang="en">{dict.footer.tagline}</p>
+          <p className="t-label t-muted mt-6">{dict.footer.tagline}</p>
         </div>
 
         <nav aria-label={dict.footer.pages} className="col-span-2 lg:col-span-2 lg:col-start-7">
@@ -40,7 +40,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
         </nav>
 
         <div className="col-span-2 lg:col-span-2">
-          <p className="t-label t-muted mb-3" lang="en">{dict.footer.connect}</p>
+          <p className="t-label t-muted mb-3">{dict.footer.connect}</p>
           <ul>
             {site.social.map((s) => (
               <li key={s.url}>
@@ -53,7 +53,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
         </div>
 
         <div className="col-span-full lg:col-span-2">
-          <p className="t-label t-muted mb-3" lang="en">{dict.footer.localTime}</p>
+          <p className="t-label t-muted mb-3">{dict.footer.localTime}</p>
           <p className="t-label"><LocalTime locale={locale} /></p>
         </div>
       </div>

@@ -1,14 +1,14 @@
 /**
- * UI-Texte Deutsch – finale Texte von Nimalan (20.10.2026).
- * Headlines, Eyebrows und Buttons sind bewusst Englisch (Markenstimme),
- * Fließtexte Deutsch. Ansprache: "du".
+ * UI-Texte Deutsch – Grundlage: Texte von Nimalan (20.10.2026), sprachlich überarbeitet am 11.11.2026.
+ * Durchgehend Deutsch, Ich-Form, Ansprache „du“. Englisch nur bei etablierten Fachbegriffen
+ * (z. B. Art Direction, Corporate Design, UX/UI) und offiziellen Job- und Zertifikatstiteln.
  */
 const de = {
   meta: {
     siteName: "nimbaland.studio",
-    defaultTitle: "nimbaland.studio — Creative Direction for real change",
+    defaultTitle: "nimbaland.studio – Markenauftritte, Websites und KI-Bildwelten aus Düsseldorf",
     defaultDescription:
-      "Nimalan Suntharalingam, unabhängiger Creative Director und Brand Designer aus Düsseldorf. Brand Strategy, Creative Direction, Digital Design und AI Visual Engineering.",
+      "Ich bin Nimba (Nimalan Suntharalingam), Creative Director und Designer mit Studio in Düsseldorf. Ich entwickle Markenauftritte, Websites und KI-gestützte Bildwelten für kleine Unternehmen, Praxen und Gastronomie.",
   },
   a11y: {
     skipToContent: "Zum Inhalt springen",
@@ -26,7 +26,7 @@ const de = {
     services: "Leistungen",
     about: "Über mich",
     contact: "Kontakt",
-    cta: "Let's Talk",
+    cta: "Projekt anfragen",
     imprint: "Impressum",
     privacy: "Datenschutz",
     closeMenu: "Menü schließen",
@@ -34,14 +34,15 @@ const de = {
 
   /* ---------- 01 / Homepage ---------- */
   hero: {
-    eyebrow: "nimbaland.studio",
-    hello: "Hi, ich bin",
-    name: "Nimba",
+    hello: "Hi, ich bin Nimba.",
+    /** Headline: Text vor dem Akzentwort, Akzentwort (kursiv, unterstrichen), danach der Punkt. */
+    headline: "Ich mache deine Marke",
+    accent: "sichtbar",
     intro:
-      "Ich liebe es, mit dir herauszufinden, was deine Marke braucht. Ich entwickle Markenauftritte, Websites und KI-gestützte Bildwelten. Mein Studio sitzt in Düsseldorf.",
+      "Mit Markenauftritten, Websites und KI‑gestützten Bildwelten – für kleine Unternehmen, Praxen und Gastronomie. Mein Studio sitzt in Düsseldorf.",
     servicesCta: "🔥 So kann ich dir helfen",
     workCta: "Projekte ansehen",
-    recentWork: "Recent Work",
+    recentWork: "Neuestes Projekt",
   },
 
   ticker: {
@@ -49,47 +50,47 @@ const de = {
     puzzle: "Dein Logo hier?",
   },
   recognition: {
-    eyebrow: "Sound Familiar? / 01",
-    title: "Sound familiar?",
+    eyebrow: "Typische Ausgangslagen",
+    title: "Kommt dir das bekannt vor?",
     intro: "Die meisten Projekte beginnen nicht mit einem Briefing, sondern mit einem Gefühl: Da geht mehr.",
     proof: "So habe ich es gelöst",
     outro: "Wie das konkret aussieht, zeigen meine Projekte.",
   },
   work: {
-    eyebrow: "Work, Up Close / 02",
-    sectionTitle: "Work, up close.",
+    eyebrow: "Ausgewählte Projekte",
+    sectionTitle: "Drei Projekte im Detail.",
     sectionIntro: [
-      "Drei Projekte – jeweils mit der Frage am Anfang, der Idee dahinter und der Entscheidung, die den Unterschied gemacht hat.",
+      "Jeweils mit der Frage am Anfang, der Idee dahinter und der Entscheidung, die den Unterschied gemacht hat.",
     ],
-    allWork: "All Projects",
-    viewProject: "View Case Study",
+    allWork: "Alle Projekte",
+    viewProject: "Projekt ansehen",
     challenge: "Die Frage",
     idea: "Die Idee",
     decision: "Die Entscheidung",
     moreTitle: "Neugierig auf mehr?",
-    moreBody: "Im Archiv findest du alle Projekte – von Packaging über Editorial bis App-Konzept.",
+    moreBody: "In der Übersicht findest du alle Projekte – von Verpackung über Editorial Design bis zum App-Konzept.",
     scrollHint: "Scrollen oder Pfeile",
     prevProject: "Vorheriges Projekt",
     nextProject: "Nächstes Projekt",
     draftBadge: "Entwurf – nicht freigegeben",
-    emptyTitle: "Die Case Studies werden gerade aufbereitet.",
+    emptyTitle: "Die Projekte werden gerade aufbereitet.",
     emptyBody: "Gern zeige ich dir ausgewählte Projekte im persönlichen Gespräch oder schicke dir eine Mappe zu.",
-    emptyCta: "Let's Talk",
+    emptyCta: "Projekt anfragen",
   },
   approach: {
-    eyebrow: "Approach / 00",
+    eyebrow: "Vorgehen",
     dragHint: "Zum Bewegen ziehen",
   },
   expertise: {
-    eyebrow: "What I Do / 03",
-    sectionTitle: "Where I can help.",
-    intro: "Was du davon brauchst, entscheidest du. Ich begleite einzelne Schritte oder das ganze Projekt – mit einem Ansprechpartner von der ersten Frage bis zum fertigen Design.",
+    eyebrow: "Leistungen",
+    sectionTitle: "Wobei ich dir helfen kann.",
+    intro: "Was du davon brauchst, entscheidest du. Ich begleite einzelne Schritte oder das ganze Projekt – als feste Ansprechperson von der ersten Frage bis zum fertigen Design.",
     introMore: "",
-    processTitle: "How I work",
+    processTitle: "So arbeite ich",
     exampleLabel: "Projektbeispiel",
-    focusLabel: "Main Focus",
+    focusLabel: "Schwerpunkt",
     ctaText: "Du willst wissen, was davon zu deinem Projekt passt?",
-    cta: "Start a Project",
+    cta: "Projekt anfragen",
     process: [
       { title: "Verstehen", body: "Markt, Zielgruppe und das, was dich ausmacht." },
       { title: "Schärfen", body: "Positionierung, Kernidee und Tonalität." },
@@ -99,10 +100,10 @@ const de = {
   },
   marquee: {
     label: "Projekt starten – schreib mir",
-    items: ["Got something good?", "Let's make it seen", "AI Visual Engineering", "Start a Project", "Brand · Web · Visuals"],
+    items: ["Du hast etwas Gutes?", "Lass es uns sichtbar machen", "KI-gestützte Bildwelten", "Projekt anfragen", "Marke · Website · Bildwelten"],
   },
   aboutPreview: {
-    eyebrow: "The Person Behind It / 04",
+    eyebrow: "Die Person dahinter",
     sectionTitle: "Hi, I'm Nimba.",
     lead: "Ich glaube nicht an Gestaltung nach Schema F.",
     body: [
@@ -114,12 +115,12 @@ const de = {
       { value: "66", label: "Kund:innen seit 2018" },
       { value: "AI", label: "Zertifizierter AI Visual Engineer" },
     ],
-    contactCta: "Let's Talk",
-    cta: "More About Me",
+    contactCta: "Projekt anfragen",
+    cta: "Mehr über mich",
   },
   contactCta: {
-    eyebrow: "Let's Talk / 05",
-    title: "Tell me what you're working on.",
+    eyebrow: "Kontakt",
+    title: "Erzähl mir, woran du arbeitest.",
     body: "Du brauchst kein fertiges Briefing. Ein paar Sätze reichen: Worum geht es, wo stehst du gerade, und gibt es einen Zeitrahmen?",
     prompt: "",
     stepsTitle: "So geht es weiter",
@@ -128,41 +129,41 @@ const de = {
       "Ich lese jede Nachricht selbst und antworte dir persönlich.",
       "Im ersten Gespräch klären wir Ziel, Umfang und Zeitrahmen.",
     ],
-    button: "Start a Conversation",
-    availability: "Available for selected projects and collaborations.",
+    button: "Projekt anfragen",
+    availability: "Offen für ausgewählte Projekte und Kooperationen.",
   },
 
   /* ---------- 02 / About ---------- */
   about: {
-    pageTitle: "Behind the ideas.",
+    pageTitle: "Über mich.",
     name: "Nimalan Suntharalingam",
-    role: "Independent Creative Director / Brand & Design / AI Visual Engineering",
+    role: "Creative Director & Brand Designer · Zertifizierter AI Visual Engineer",
     intro: "Ich bin Nimalan – die meisten nennen mich Nimba. Creative Director, Designer und Gründer von nimbaland.studio.",
     body: [
       "Gute Gestaltung beginnt für mich mit Fragen: Wofür steht eine Marke? Welche Geschichte erzählt sie? Was soll bei den Menschen hängen bleiben?",
       "Seit über zehn Jahren entwickle ich Marken, gestalte Kampagnen und bringe digitale Auftritte zum Leben. Meine Erfahrung reicht vom Brand & Design Management bei Kratzert über Senior Art Direction bei Colliers International und Design bei Savills bis zur Art Direction für Bosch und Würth. Seit 2018 führe ich außerdem mein eigenes Studio.",
     ],
-    drivesTitle: "Was mich antreibt?",
+    drivesTitle: "Was mich antreibt",
     drivesBody:
-      "Neugier. Unabhängigkeit. Und der Anspruch, etwas Eigenständiges zu schaffen statt das Nächste.",
+      "Neugier, Unabhängigkeit und der Anspruch, etwas Eigenständiges zu gestalten statt etwas Austauschbares.",
     studioNote: "",
-    beyondTitle: "Beyond the screen.",
+    beyondTitle: "Abseits vom Bildschirm.",
     beyondBody: [
       "Kunst, Mode und visuelle Kultur prägen meinen Blick – deshalb denke ich Design nie nur in einer Disziplin. Ich arbeite am liebsten direkt mit den Menschen, die etwas bewegen wollen.",
     ],
-    closing: "Based in Düsseldorf. Working beyond boundaries.",
-    cta: "Get in Touch",
+    closing: "Studio in Düsseldorf. Projekte weit darüber hinaus.",
+    cta: "Projekt anfragen",
     portraitAlt: "Porträt von Nimalan Suntharalingam",
   },
 
   /* ---------- 03 / Work ---------- */
   workPage: {
-    pageTitle: "Selected work.",
-    subtitle: "A selection of ideas made real.",
+    pageTitle: "Projekte.",
+    subtitle: "Ideen, die umgesetzt wurden.",
     intro: "Unterschiedliche Branchen. Unterschiedliche Herausforderungen. Ein gemeinsamer Anspruch: Gestaltung mit einer klaren Idee.",
   },
   caseStudy: {
-    overview: "Overview",
+    overview: "Überblick",
     client: "Kunde",
     year: "Jahr",
     role: "Rolle",
@@ -172,34 +173,34 @@ const de = {
     solution: "Lösung",
     outcomes: "Ergebnisse",
     gallery: "Projektbilder",
-    nextProject: "Next Project",
-    backToWork: "Zurück zu allen Arbeiten",
-    missingText: "Die ausführliche Case Study folgt.",
+    nextProject: "Nächstes Projekt",
+    backToWork: "Zurück zu allen Projekten",
+    missingText: "Die ausführliche Projektbeschreibung folgt.",
   },
 
   /* ---------- 04 / Services ---------- */
   services: {
-    eyebrow: "One Creative Partner. Multiple Disciplines.",
-    pageTitle: "What I bring to the table.",
+    eyebrow: "Leistungen",
+    pageTitle: "So kann ich dir helfen.",
     intro: [
       "Ich begleite Projekte von der ersten Frage bis zum fertigen Design – strategisch, konzeptionell oder direkt in der Umsetzung. Du bekommst alles aus einer Hand.",
     ],
-    deliverables: "Leistungen",
-    closingTitle: "The right idea deserves the right execution.",
+    deliverables: "Was dazugehört",
+    closingTitle: "Eine gute Idee verdient eine gute Umsetzung.",
     closingBody:
       "Du brauchst Unterstützung für ein konkretes Projekt oder suchst einen kreativen Partner für eine langfristige Zusammenarbeit?",
-    closingCta: "Let's Work Together",
+    closingCta: "Projekt anfragen",
   },
 
   /* ---------- 05 / Contact ---------- */
   contact: {
-    eyebrow: "Have a Project in Mind?",
-    pageTitle: "Let's create something worth remembering.",
+    eyebrow: "Kontakt",
+    pageTitle: "Lass uns etwas gestalten, das bleibt.",
     intro: [
       "Neue Marke, bestehender Auftritt oder digitale Idee: Erzähl mir, woran du arbeitest und was du erreichen möchtest. Ich antworte persönlich.",
     ],
-    formTitle: "A good conversation is a good start.",
-    meta: ["Düsseldorf, Germany", "Brand / Digital / AI"],
+    formTitle: "Ein gutes Gespräch ist ein guter Anfang.",
+    meta: ["Studio in Düsseldorf", "Marke · Website · KI-Bildwelten"],
     emailLabel: "E-Mail",
     socialTitle: "Profile",
     form: {
@@ -214,7 +215,7 @@ const de = {
       messagePlaceholder: "Worum geht es? Wo stehst du gerade? Gibt es einen Zeitrahmen?",
       privacy: "Ich habe die Datenschutzhinweise gelesen und bin einverstanden, dass meine Angaben zur Bearbeitung der Anfrage verwendet werden.",
       privacyLink: "Datenschutzhinweise",
-      submit: "Send Inquiry",
+      submit: "Anfrage senden",
       submitting: "Wird gesendet …",
       honeypot: "Dieses Feld bitte leer lassen",
       other: "Etwas anderes",
@@ -224,7 +225,7 @@ const de = {
       email: "Bitte gib eine gültige E-Mail-Adresse an, z. B. name@firma.de.",
       message: "Deine Nachricht ist zu kurz. Bitte schreib mindestens 20 Zeichen.",
       privacy: "Bitte bestätige die Datenschutzhinweise, damit ich deine Anfrage bearbeiten darf.",
-      summary: "Bitte prüf die markierten Felder.",
+      summary: "Bitte prüfe die markierten Felder.",
     },
     status: {
       success: "Anfrage gesendet. Danke – du hörst per E-Mail von mir.",
@@ -238,15 +239,15 @@ const de = {
     draftNotice: "Hinweis: Die Anbieterangaben sind freigegeben. Weitere Pflichtangaben (z. B. Verantwortlicher für Inhalte, ggf. USt-ID) werden vor dem Launch ergänzt.",
   },
   footer: {
-    tagline: "Independent Creative Studio",
-    location: "Düsseldorf, Germany",
+    tagline: "Unabhängiges Designstudio",
+    location: "Düsseldorf, Deutschland",
     rights: "Alle Rechte vorbehalten.",
-    localTime: "Local time:",
+    localTime: "Ortszeit:",
     pages: "Seiten",
-    connect: "Connect",
+    connect: "Profile",
   },
   notFound: {
-    title: "Diese Seite gibt es nicht.",
+    title: "Diese Seite gibt es nicht",
     body: "Der Link ist veraltet oder die Adresse enthält einen Tippfehler.",
     cta: "Zur Startseite",
   },
