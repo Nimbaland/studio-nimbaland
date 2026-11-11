@@ -57,6 +57,23 @@ export const site = {
 
   /** "Recent Work" im Hero. Fällt auf das erste Featured-Projekt zurück, solange das Projekt noch fehlt. */
   recentWorkSlug: "lumiq",
+  /**
+   * Logo-Band am Ende der Startseite: Logos aus eigenen Kundenprojekten (bereits im Portfolio freigegeben),
+   * einfarbig umgesetzt. w/h = Anzeigegröße in px (optisch angeglichen).
+   */
+  clients: [
+    { slug: "herzhaft", name: "Herzhaft", src: "/clients/herzhaft.png", w: 40, h: 44 },
+    { slug: "tervica", name: "Tervica", src: "/clients/tervica.png", w: 82, h: 41 },
+    { slug: "circle-up", name: "Circle Up", src: "/clients/circle-up.png", w: 51, h: 44 },
+    { slug: "mkg-koeln-west", name: "MKG Köln West", src: "/clients/mkg-koeln-west.png", w: 99, h: 34 },
+    { slug: "das-lebensbuch", name: "Das Lebensbuch", src: "/clients/das-lebensbuch.png", w: 44, h: 44 },
+    { slug: "aurum-herbs", name: "Aurum Herbs", src: "/clients/aurum-herbs.png", w: 109, h: 31 },
+    { slug: "bales-smart-home", name: "Bales Smart Home", src: "/clients/bales-smart-home.png", w: 90, h: 38 },
+    { slug: "the-grid-bar", name: "The Grid Bar", src: "/clients/the-grid-bar.png", w: 82, h: 41 },
+    { slug: "physiofit-mobil", name: "Physiofit-Mobil", src: "/clients/physiofit-mobil.png", w: 48, h: 44 },
+    { slug: "variari", name: "Variari", src: "/clients/variari.png", w: 200, h: 23 },
+    { slug: "flamingo-swift", name: "Flamingo Swift", src: "/clients/flamingo-swift.png", w: 106, h: 32 },
+  ],
   /** Stehen in „Selected work“ ganz vorn, unabhängig vom Datum. */
   pinnedWork: ["lumiq"] as string[],
 

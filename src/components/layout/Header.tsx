@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { href, type Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries/de";
 import { BrandMark } from "./BrandMark";
@@ -16,12 +17,15 @@ export function Header({ locale, dict }: Props) {
   const toggleRef = useRef<HTMLButtonElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
 
+  // Reihenfolge: Angebot → Belege → Person → Kontakt
   const items = [
-    { path: "/about", label: dict.nav.about },
-    { path: "/work", label: dict.nav.work },
     { path: "/services", label: dict.nav.services },
+    { path: "/work", label: dict.nav.work },
+    { path: "/about", label: dict.nav.about },
     { path: "/contact", label: dict.nav.contact },
   ];
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
   const contactHref = href(locale, "/contact");
   const isCurrent = (path: string) =>
     pathname === href(locale, path) || pathname.startsWith(href(locale, path) + "/");
@@ -39,8 +43,15 @@ export function Header({ locale, dict }: Props) {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Menü bei Navigation schließen
+  // Menü bei Navigation schließen (auch bei Klick auf die aktuelle Seite / einen Anker)
   useEffect(() => setOpen(false), [pathname]);
+  // Ab Desktop-Breite automatisch schließen
+  useEffect(() => {
+    const mq = window.matchMedia("(min-width: 1024px)");
+    const on = () => mq.matches && setOpen(false);
+    mq.addEventListener("change", on);
+    return () => mq.removeEventListener("change", on);
+  }, []);
 
   // Escape schließt, Fokus bleibt im Menü, Body-Scroll sperren
   useEffect(() => {
@@ -103,9 +114,10 @@ export function Header({ locale, dict }: Props) {
           className="inline-flex min-h-11 items-center gap-3 rounded-sm px-2 font-semibold lg:hidden"
           aria-expanded={open}
           aria-controls="mobile-menu"
+          aria-label={open ? dict.nav.closeMenu : dict.nav.menu}
           onClick={() => setOpen((v) => !v)}
         >
-          <span>{dict.nav.menu}</span>
+          <span aria-hidden="true">{dict.nav.menu}</span>
           <span aria-hidden="true" className="relative block h-3 w-6">
             <span className={`absolute left-0 h-0.5 w-6 bg-current transition-transform duration-200 ${open ? "top-[5px] rotate-45" : "top-0"}`} />
             <span className={`absolute left-0 h-0.5 w-6 bg-current transition-transform duration-200 ${open ? "top-[5px] -rotate-45" : "top-2.5"}`} />
@@ -113,23 +125,26 @@ export function Header({ locale, dict }: Props) {
         </button>
       </div>
 
-      {open && (
-        <div id="mobile-menu" ref={menuRef} className="mobile-menu tone-dark lg:hidden">
+      {/* Portal: Der Header hat backdrop-filter/transform – darin würde position:fixed
+          nur relativ zum 72-px-Header gelten (Fehler: Menü abgeschnitten, Seite darunter sichtbar). */}
+      {open && mounted && createPortal(
+        <div id="mobile-menu" ref={menuRef} className="mobile-menu tone-dark lg:hidden" role="dialog" aria-modal="true" aria-label={dict.a11y.mainNav}>
           <nav aria-label={dict.a11y.mainNav}>
             <ul>
               {items.map((item) => (
                 <li key={item.path}>
-                  <Link href={href(locale, item.path)} className="mobile-menu__link" aria-current={isCurrent(item.path) ? "page" : undefined}>
+                  <Link href={href(locale, item.path)} className="mobile-menu__link" aria-current={isCurrent(item.path) ? "page" : undefined} onClick={() => setOpen(false)}>
                     {item.label}
                   </Link>
                 </li>
               ))}
             </ul>
           </nav>
-          <div className="mt-8">
+          <div className="mobile-menu__foot">
             <LanguageSwitch current={locale} label={dict.a11y.languageSwitch} />
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </header>
   );

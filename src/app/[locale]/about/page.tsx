@@ -18,7 +18,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function AboutPage({ params }: Props) {
   const { locale } = await params;
-  const a = getDictionary(locale).about;
+  const dict = getDictionary(locale);
+  const a = dict.about;
 
   return (
     <>
@@ -36,6 +37,16 @@ export default async function AboutPage({ params }: Props) {
             {a.body.map((p, i) => (
               <p key={i} className="measure mt-6">{p}</p>
             ))}
+
+            <dl className="facts">
+              {dict.aboutPreview.facts.map((f) => (
+                <div key={f.label} className="fact">
+                  <dt className="sr-only">{f.label}</dt>
+                  <dd className="fact__value font-display">{f.value}</dd>
+                  <dd className="t-label t-muted fact__label">{f.label}</dd>
+                </div>
+              ))}
+            </dl>
 
             <h2 className="t-h2 mt-16">{a.drivesTitle}</h2>
             <p className="t-lead measure mt-6">{a.drivesBody}</p>

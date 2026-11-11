@@ -22,42 +22,44 @@ const de = {
   nav: {
     menu: "Menü",
     home: "Start",
-    work: "Works",
-    services: "Services",
-    about: "About Me",
-    contact: "Contact",
+    work: "Projekte",
+    services: "Leistungen",
+    about: "Über mich",
+    contact: "Kontakt",
     cta: "Let's Talk",
     imprint: "Impressum",
     privacy: "Datenschutz",
+    closeMenu: "Menü schließen",
   },
 
   /* ---------- 01 / Homepage ---------- */
   hero: {
-    eyebrow: "nimbaland.studio / Düsseldorf",
-    titleLines: ["You have something good.", "Let's make it"],
-    /** Akzentwort am Ende der letzten Zeile, in Italic */
-    titleAccent: "seen",
-    statement: "",
+    eyebrow: "nimbaland.studio",
+    hello: "Hi, ich bin",
+    name: "Nimba",
     intro:
-      "Ich bin Nimba – Creative Director und Gründer von nimbaland.studio. Ich helfe Unternehmen, Praxen und Gründer:innen, ihr Angebot so zu gestalten, dass Menschen es verstehen, fühlen und wiedererkennen. Mein Schwerpunkt: AI Visual Engineering – KI-gestützte Bildwelten, verbunden mit Marke und Website.",
-    tagline: "",
-    location: ["Based", "in", "Düsseldorf"],
+      "Ich liebe es, mit dir herauszufinden, was deine Marke braucht. Ich entwickle Markenauftritte, Websites und KI-gestützte Bildwelten. Mein Studio sitzt in Düsseldorf.",
+    servicesCta: "🔥 So kann ich dir helfen",
+    workCta: "Projekte ansehen",
     recentWork: "Recent Work",
-    primaryCta: "See the Work",
-    secondaryCta: "Tell Me About Your Project",
+  },
+
+  ticker: {
+    label: "Aus meiner bisherigen Arbeit",
+    puzzle: "Dein Logo hier?",
   },
   recognition: {
     eyebrow: "Sound Familiar? / 01",
     title: "Sound familiar?",
     intro: "Die meisten Projekte beginnen nicht mit einem Briefing, sondern mit einem Gefühl: Da geht mehr.",
     proof: "So habe ich es gelöst",
-    outro: "Wie das konkret aussieht, zeige ich dir an sechs Projekten.",
+    outro: "Wie das konkret aussieht, zeigen meine Projekte.",
   },
   work: {
     eyebrow: "Work, Up Close / 02",
     sectionTitle: "Work, up close.",
     sectionIntro: [
-      "Sechs Projekte – jeweils mit der Frage am Anfang, der Idee dahinter und der Entscheidung, die den Unterschied gemacht hat.",
+      "Drei Projekte – jeweils mit der Frage am Anfang, der Idee dahinter und der Entscheidung, die den Unterschied gemacht hat.",
     ],
     allWork: "All Projects",
     viewProject: "View Case Study",
@@ -127,7 +129,7 @@ const de = {
       "Im ersten Gespräch klären wir Ziel, Umfang und Zeitrahmen.",
     ],
     button: "Start a Conversation",
-    availability: "Düsseldorf, Germany · Available for selected projects and collaborations.",
+    availability: "Available for selected projects and collaborations.",
   },
 
   /* ---------- 02 / About ---------- */
@@ -138,7 +140,7 @@ const de = {
     intro: "Ich bin Nimalan – die meisten nennen mich Nimba. Creative Director, Designer und Gründer von nimbaland.studio.",
     body: [
       "Gute Gestaltung beginnt für mich mit Fragen: Wofür steht eine Marke? Welche Geschichte erzählt sie? Was soll bei den Menschen hängen bleiben?",
-      "Seit über zehn Jahren übersetze ich diese Fragen in Marken, Kampagnen und Websites – im Kommunikationsdesign ausgebildet, in Agenturen und Inhouse-Teams geschult, vor allem im Immobilienumfeld. Mit generativer KI kann ich Ideen heute früher sichtbar machen und mehr Richtungen erproben. Die Entscheidung, was zur Marke passt, bleibt Handarbeit.",
+      "Seit über zehn Jahren entwickle ich Marken, gestalte Kampagnen und bringe digitale Auftritte zum Leben. Meine Erfahrung reicht vom Brand & Design Management bei Kratzert über Senior Art Direction bei Colliers International und Design bei Savills bis zur Art Direction für Bosch und Würth. Seit 2018 führe ich außerdem mein eigenes Studio.",
     ],
     drivesTitle: "Was mich antreibt?",
     drivesBody:
@@ -239,7 +241,7 @@ const de = {
     tagline: "Independent Creative Studio",
     location: "Düsseldorf, Germany",
     rights: "Alle Rechte vorbehalten.",
-    localTime: "Düsseldorf, Germany:",
+    localTime: "Local time:",
     pages: "Seiten",
     connect: "Connect",
   },

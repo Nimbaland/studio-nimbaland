@@ -240,12 +240,20 @@ html.lenis, html.lenis body { height: auto; }
 
   .mobile-menu {
     position: fixed;
-    inset: 72px 0 0 0;
-    z-index: 49;
-    padding: var(--space-8) var(--gutter);
+    inset: 73px 0 0 0;
+    z-index: 60;
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-6) var(--gutter) max(var(--space-8), env(safe-area-inset-bottom));
     background: var(--color-bg);
+    color: var(--fg);
     overflow-y: auto;
+    overscroll-behavior: contain;
+    animation: menu-in 220ms var(--ease-out);
   }
+  .mobile-menu__foot { margin-top: auto; padding-top: var(--space-8); }
+  @keyframes menu-in { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { .mobile-menu { animation: none; } }
   .mobile-menu a.mobile-menu__link {
     display: block;
     padding-block: var(--space-3);
@@ -267,6 +275,17 @@ html.lenis, html.lenis body { height: auto; }
     padding-block: var(--space-8);
   }
   .hero__top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-4); }
+  .hero__actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-4) var(--space-6); margin-top: var(--space-6); }
+  .hero__worklink { font-weight: 600; display: inline-flex; align-items: center; gap: 0.4em; }
+  /* Mobil: kein Vollbild-Hero – Angebot und Button sollen ohne Scrollen sichtbar sein */
+  @media (max-width: 1023px) {
+    .hero { min-height: auto; grid-template-rows: auto auto auto auto; gap: var(--space-5, 1.25rem); padding-block: var(--space-6) var(--space-10, 2.5rem); }
+    .hero__title { font-size: clamp(2.75rem, 13vw, 4.75rem); line-height: 1.02; }
+    .hero__grid { padding-top: var(--space-5, 1.25rem); gap: var(--space-5, 1.25rem); }
+    .hero__lead { font-size: 1.0625rem; line-height: 1.55; }
+    .hero__bottom .hero__recent { text-align: left; }
+    .hero__bottom > span:first-child { display: none; }
+  }
   .hero__location { display: flex; gap: clamp(1rem, 4vw, 4.5rem); }
   .hero__title {
     align-self: end;
@@ -836,6 +855,32 @@ html.lenis, html.lenis body { height: auto; }
   .ai-badge svg { color: var(--color-accent); }
   .ai-note { padding: 1rem 1.1rem; border-left: 3px solid var(--color-accent); background: color-mix(in srgb, var(--color-accent) 7%, transparent); font-size: .95rem; line-height: 1.55; }
 
+  /* ---------- Logo-Band am Seitenende ---------- */
+  .ticker { background: var(--color-bg, #16191d); color: var(--color-fg, #fff); padding-top: var(--space-8); }
+  .ticker__label { padding-inline: var(--gutter); max-width: var(--container, 90rem); margin: 0 auto var(--space-3); color: var(--slate-400, #8b9399); }
+  .ticker__viewport { overflow: hidden; background: var(--color-accent); border-block: 1px solid rgba(0,0,0,.08); }
+  .ticker__track { display: flex; width: max-content; animation: ticker 60s linear infinite; }
+  .ticker__viewport:hover .ticker__track, .ticker__viewport:focus-within .ticker__track { animation-play-state: paused; }
+  .ticker__group { display: flex; align-items: center; flex: none; gap: clamp(2rem, 4vw, 3.5rem); padding: 0.9rem 0 0.9rem clamp(2rem, 4vw, 3.5rem); margin: 0; list-style: none; }
+  .ticker__item { flex: none; display: flex; align-items: center; }
+  .ticker__item img { display: block; width: calc(var(--w) * var(--s, 1)); height: calc(var(--h) * var(--s, 1)); max-width: none; opacity: .9; transition: opacity .2s ease, transform .3s var(--ease-out); }
+  .ticker__item a { display: block; border-radius: 4px; }
+  .ticker__item a:hover img, .ticker__item a:focus-visible img { opacity: 1; transform: translateY(-2px); }
+  .ticker__item a:focus-visible { outline: 2px solid var(--graphite-900, #111212); outline-offset: 4px; }
+  .ticker__puzzle { position: relative; display: inline-flex; align-items: center; justify-content: center; width: 132px; height: 52px; color: var(--graphite-900, #111212); text-decoration: none; font-family: var(--font-mono); font-size: .66rem; letter-spacing: .06em; text-transform: uppercase; text-align: center; line-height: 1.15; }
+  .ticker__puzzle span { position: relative; padding: 0 1.6rem; }
+  .ticker__puzzle-shape { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .ticker__puzzle-shape path { fill: rgba(255,255,255,.18); stroke: currentColor; stroke-width: 1.4; stroke-dasharray: 4 3; transition: fill .2s ease; }
+  .ticker__puzzle:hover .ticker__puzzle-shape path, .ticker__puzzle:focus-visible .ticker__puzzle-shape path { fill: #fff; }
+  .ticker__puzzle:focus-visible { outline: 2px solid var(--graphite-900, #111212); outline-offset: 3px; }
+  @media (max-width: 640px) { .ticker__item { --s: .8; } .ticker__puzzle { width: 118px; height: 46px; } }
+  @keyframes ticker { to { transform: translateX(-50%); } }
+  @media (prefers-reduced-motion: reduce) {
+    .ticker__track { animation: none; width: auto; }
+    .ticker__group { flex-wrap: wrap; justify-content: center; padding: 1rem var(--gutter); row-gap: 1.25rem; }
+    .ticker__group + .ticker__group { display: none; }
+  }
+
   /* ---------- CTA-Laufband (Signalfarbe) ---------- */
   .marquee { display: block; overflow: hidden; background: var(--color-accent); color: var(--graphite-900); text-decoration: none; border-block: 1px solid rgba(0,0,0,.08); }
   .marquee__track { display: flex; width: max-content; animation: marquee 32s linear infinite; }
@@ -894,7 +939,7 @@ html.lenis, html.lenis body { height: auto; }
   .feature-more { margin-top: clamp(4rem, 9vw, 7rem); padding-top: 2.5rem; border-top: 1px solid var(--border); display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 1.5rem; }
 
   /* Hi, I'm Nimba – Fakten aus dem Lebenslauf */
-  .facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 2.5rem; padding-top: 1.75rem; border-top: 1px solid var(--border); }
+  .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: 1rem; margin-top: 2.5rem; padding-top: 1.75rem; border-top: 1px solid var(--border); }
   .fact { display: flex; flex-direction: column; gap: 0.4rem; }
   .fact__value { margin: 0; font-size: clamp(2rem, 1.4rem + 2vw, 3.25rem); line-height: 1; }
   .fact__label { margin: 0; line-height: 1.35; }

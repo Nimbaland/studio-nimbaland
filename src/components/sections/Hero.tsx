@@ -30,38 +30,29 @@ function Letters({ text, offset }: { text: string; offset: number }) {
 }
 
 /**
- * Hero im Aufbau der Referenz: Riesen-Headline baut sich Buchstabe für Buchstabe auf,
- * ringsum kleine Infos (Standort, Disziplinen, E-Mail, aktuelles Projekt).
- * Alles ist ohne JavaScript sichtbar; bei reduzierter Bewegung steht es sofort.
+ * Knapper Einstieg: Wer (Nimba), was (Marken, Websites, KI-Bildwelten), wo (Düsseldorf – genau einmal)
+ * und ein klarer Weg zu den Leistungen. Alles ist ohne JavaScript sichtbar; bei reduzierter Bewegung steht es sofort.
  */
 export function Hero({ locale, dict, recent }: Props) {
-  const [line1, line2] = dict.titleLines;
-  const full = `${line1} ${line2} ${dict.titleAccent}.`;
-  const l1 = line1.replace(/ /g, "").length;
-  const l2 = line2.replace(/ /g, "").length;
+  const full = `${dict.hello} ${dict.name}.`;
+  const l1 = dict.hello.replace(/ /g, "").length;
 
   return (
     <section className="tone-dark hero-wrap relative isolate overflow-hidden" aria-labelledby="hero-title">
       <HeroVisual />
       <div className="container-site hero relative">
-        <div className="hero__top">
-          <p className="t-label t-muted hero__fade" lang="en">{dict.eyebrow}</p>
-          <p className="hero__location t-label hero__fade" lang="en" aria-label={dict.location.join(" ")}>
-            {dict.location.map((w) => <span key={w} aria-hidden="true">{w}</span>)}
-          </p>
-        </div>
+        <p className="t-label t-muted hero__fade hero__eyebrow" lang="en">{dict.eyebrow}</p>
 
-        <h1 id="hero-title" lang="en" className="hero__title" aria-label={full}>
-          <span className="hero__line" aria-hidden="true"><Letters text={line1} offset={0} /></span>
+        <h1 id="hero-title" className="hero__title" aria-label={full}>
           <span className="hero__line" aria-hidden="true">
-            <Letters text={line2} offset={l1} />{" "}
+            <Letters text={dict.hello} offset={0} />{" "}
             <em className="hero__word hero__accent">
-              <Letters text={dict.titleAccent} offset={l1 + l2} />
+              <Letters text={dict.name} offset={l1} />
               <svg className="hero__underline" viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 14 C 50 4, 120 3, 197 9" /></svg>
             </em>
-            <span className="hero__char stop" style={{ ["--i" as string]: l1 + l2 + dict.titleAccent.length + 2 }}>.</span>
+            <span className="hero__char stop" style={{ ["--i" as string]: l1 + dict.name.length + 1 }}>.</span>
             {site.portrait && (
-              <span className="hero__portrait" style={{ ["--i" as string]: l1 + l2 + dict.titleAccent.length + 4 }}>
+              <span className="hero__portrait" style={{ ["--i" as string]: l1 + dict.name.length + 3 }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={site.portrait} alt="" width={120} height={177} decoding="async" />
               </span>
@@ -71,26 +62,26 @@ export function Hero({ locale, dict, recent }: Props) {
 
         <div className="hero__grid hero__fade">
           <div className="hero__intro">
-            <p className="t-lead measure">{dict.intro}</p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <ButtonLink href="#work" variant="primary" lang="en">{dict.primaryCta}</ButtonLink>
-              <ButtonLink href="#contact" variant="secondary" lang="en">{dict.secondaryCta}</ButtonLink>
+            <p className="t-lead measure hero__lead">{dict.intro}</p>
+            <div className="hero__actions">
+              <ButtonLink href={href(locale, "/services")} variant="primary">{dict.servicesCta}</ButtonLink>
+              <a href="#work" className="link-standalone hero__worklink">{dict.workCta} <span aria-hidden="true">↓</span></a>
             </div>
           </div>
         </div>
 
-        <div className="hero__bottom hero__fade">
-          <span />
-          {recent && (
+        {recent && (
+          <div className="hero__bottom hero__fade">
+            <span />
             <Link href={href(locale, `/work/${recent.slug}`)} className="hero__recent group">
               <span className="t-label t-muted" lang="en">{dict.recentWork}</span>
-              <span className="font-display text-[clamp(1.5rem,1.2rem+1vw,2rem)] leading-tight">
-                {recent.title} <ArrowUpRight size={18} className="inline-block transition-transform duration-150 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              <span className="font-display text-[clamp(1.25rem,1.1rem+0.8vw,1.75rem)] leading-tight">
+                {recent.title} <ArrowUpRight size={16} className="inline-block transition-transform duration-150 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </span>
-              {recent.tagline && <span className="t-muted italic font-display">{t(recent.tagline, locale)}</span>}
+              {recent.tagline && <span className="t-muted italic font-display hidden sm:block">{t(recent.tagline, locale)}</span>}
             </Link>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </section>
   );

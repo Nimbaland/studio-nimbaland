@@ -23,40 +23,43 @@ const en: Dictionary = {
   nav: {
     menu: "Menu",
     home: "Home",
-    work: "Works",
+    work: "Work",
     services: "Services",
-    about: "About Me",
+    about: "About",
     contact: "Contact",
     cta: "Let's Talk",
     imprint: "Legal notice",
     privacy: "Privacy",
+    closeMenu: "Close menu",
   },
 
   hero: {
-    eyebrow: "nimbaland.studio / Düsseldorf",
-    titleLines: ["You have something good.", "Let's make it"],
-    titleAccent: "seen",
-    statement: "",
+    eyebrow: "nimbaland.studio",
+    hello: "Hi, I'm",
+    name: "Nimba",
     intro:
-      "I'm Nimba – creative director and founder of nimbaland.studio. I help companies, practices and founders shape what they offer so people understand it, feel it and recognise it. My focus: AI Visual Engineering – AI-driven visual worlds, connected with brand and website.",
-    tagline: "",
-    location: ["Based", "in", "Düsseldorf"],
+      "I love figuring out with you what your brand needs. I create brand identities, websites and AI-powered visual worlds. My studio is based in Düsseldorf.",
+    servicesCta: "🔥 How I can help",
+    workCta: "See the work",
     recentWork: "Recent Work",
-    primaryCta: "See the Work",
-    secondaryCta: "Tell Me About Your Project",
+  },
+
+  ticker: {
+    label: "From my work so far",
+    puzzle: "Your logo here?",
   },
   recognition: {
     eyebrow: "Sound Familiar? / 01",
     title: "Sound familiar?",
     intro: "Most projects don't start with a brief, but with a feeling: there's more in this.",
     proof: "How I solved it",
-    outro: "Here's what that looks like in six projects.",
+    outro: "Here's what that looks like in my projects.",
   },
   work: {
     eyebrow: "Work, Up Close / 02",
     sectionTitle: "Work, up close.",
     sectionIntro: [
-      "Six projects – each with the question at the start, the idea behind it and the decision that made the difference.",
+      "Three projects – each with the question at the start, the idea behind it and the decision that made the difference.",
     ],
     allWork: "All Projects",
     viewProject: "View Case Study",
@@ -126,7 +129,7 @@ const en: Dictionary = {
       "In a first conversation we clarify goals, scope and timing.",
     ],
     button: "Start a Conversation",
-    availability: "Düsseldorf, Germany · Available for selected projects and collaborations.",
+    availability: "Available for selected projects and collaborations.",
   },
 
   about: {
@@ -136,7 +139,7 @@ const en: Dictionary = {
     intro: "I'm Nimalan – most people call me Nimba. Creative director, designer and founder of nimbaland.studio.",
     body: [
       "For me, good design starts with questions: What does a brand stand for? What story does it tell? What should stay with people?",
-      "For more than ten years I've been turning these questions into brands, campaigns and websites – trained in communication design, shaped by agencies and in-house teams, much of it in real estate. Generative AI now lets me make ideas visible earlier and test more directions. Deciding what fits the brand is still handcraft.",
+      "For more than ten years I've been developing brands, designing campaigns and bringing digital presences to life. My experience ranges from brand & design management at Kratzert and senior art direction at Colliers International to design at Savills and art direction for Bosch and Würth. Since 2018 I've also been running my own studio.",
     ],
     drivesTitle: "What drives me?",
     drivesBody: "Curiosity. Independence. And the ambition to create something distinct rather than the next thing.",
@@ -232,7 +235,7 @@ const en: Dictionary = {
     tagline: "Independent Creative Studio",
     location: "Düsseldorf, Germany",
     rights: "All rights reserved.",
-    localTime: "Düsseldorf, Germany:",
+    localTime: "Local time:",
     pages: "Pages",
     connect: "Connect",
   },

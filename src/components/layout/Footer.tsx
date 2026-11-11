@@ -9,9 +9,9 @@ import { LocalTime } from "@/components/motion/LocalTime";
 export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const year = new Date().getFullYear();
   const nav = [
-    { path: "/about", label: dict.nav.about },
-    { path: "/work", label: dict.nav.work },
     { path: "/services", label: dict.nav.services },
+    { path: "/work", label: dict.nav.work },
+    { path: "/about", label: dict.nav.about },
     { path: "/contact", label: dict.nav.contact },
   ];
 
@@ -34,7 +34,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           <p className="t-label t-muted mb-3">{dict.footer.pages}</p>
           <ul>
             {nav.map((n) => (
-              <li key={n.path}><Link href={href(locale, n.path)} className="footer-link" lang="en">{n.label}</Link></li>
+              <li key={n.path}><Link href={href(locale, n.path)} className="footer-link">{n.label}</Link></li>
             ))}
           </ul>
         </nav>
