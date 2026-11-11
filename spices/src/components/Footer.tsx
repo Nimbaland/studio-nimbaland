@@ -23,6 +23,7 @@ export function Footer({ locale }: { locale: Locale }) {
             {salesOpen && <li><Link href={href(locale, "/cart")}>{t("nav.cart")}</Link></li>}
           </ul></div>
           <div><h4>{t("f.more")}</h4><ul>
+            <li><Link href={href(locale, "/cooking-classes")}>{t("nav.classes")}</Link></li>
             <li><Link href={href(locale, "/recipes")}>{t("nav.recipes")}</Link></li>
             <li><Link href={href(locale, "/story")}>{t("nav.story")}</Link></li>
             <li><Link href={href(locale, "/faq")}>FAQ</Link></li>

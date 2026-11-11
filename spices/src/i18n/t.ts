@@ -1,13 +1,14 @@
 import { dictionaries, type Dictionary } from "./dictionaries";
 import { extraDe, extraEn } from "./dict-extra";
+import { kcDe, kcEn } from "./dict-kochkurse";
 import type { Locale } from "./config";
 
 type Base = { [K in keyof Dictionary]: Dictionary[K] extends string ? K : never }[keyof Dictionary];
-type StringKey = Base | keyof typeof extraDe;
+type StringKey = Base | keyof typeof extraDe | keyof typeof kcDe;
 
 const merged = {
-  de: { ...dictionaries.de, ...extraDe } as Record<string, unknown>,
-  en: { ...dictionaries.en, ...extraEn } as Record<string, unknown>,
+  de: { ...dictionaries.de, ...extraDe, ...kcDe } as Record<string, unknown>,
+  en: { ...dictionaries.en, ...extraEn, ...kcEn } as Record<string, unknown>,
 };
 
 /** Übersetzer für eine Sprache. Platzhalter wie {n} werden ersetzt. */

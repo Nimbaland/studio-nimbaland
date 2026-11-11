@@ -17,6 +17,7 @@ export function Header({ locale }: { locale: Locale }) {
   const [open, setOpen] = useState(false);
   const toggleRef = useRef<HTMLButtonElement>(null);
   const items = [
+    { path: "/cooking-classes", label: t("nav.classes") },
     { path: "/shop", label: t("nav.shop") },
     { path: "/recipes", label: t("nav.recipes") },
     { path: "/story", label: t("nav.story") },
