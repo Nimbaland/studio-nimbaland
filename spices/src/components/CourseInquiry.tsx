@@ -6,6 +6,7 @@ import { useSearchParams } from "next/navigation";
 import { href, type Locale } from "@/i18n/config";
 import { getT } from "@/i18n/t";
 import { asset } from "@/lib/base";
+import { phone, phoneHref, whatsappHref } from "@/lib/contact";
 
 type Format = "course" | "supper";
 type Field = "name" | "email" | "size" | "date" | "consent";
@@ -31,7 +32,7 @@ export function CourseInquiry({ locale, fallbackEmail }: { locale: Locale; fallb
   const [errors, setErrors] = useState<Partial<Record<Field, string>>>({});
   const [status, setStatus] = useState<Status>("idle");
   const [diet, setDiet] = useState("");
-  const [sent, setSent] = useState<{ name: string; mailto: string } | null>(null);
+  const [sent, setSent] = useState<{ name: string; mailto: string; waText: string } | null>(null);
   const started = useRef(Date.now());
   const summary = useRef<HTMLDivElement>(null);
   const result = useRef<HTMLDivElement>(null);
@@ -67,7 +68,8 @@ export function CourseInquiry({ locale, fallbackEmail }: { locale: Locale; fallb
     };
     const mailto = `mailto:${fallbackEmail}?subject=${encodeURIComponent(t("kc.mail.subject", { format: fmtName(format) }))}&body=${encodeURIComponent(
       t("kc.mail.body", { format: fmtInline(format), name: v.name, email: v.email, size: v.size, date: v.date, diet: v.diet || t("kc.mail.none") }).replace(/\{name\}/g, v.name))}`;
-    setSent({ name: v.name, mailto });
+    const waText = t("kc.mail.body", { format: fmtInline(format), name: v.name, email: v.email, size: v.size, date: v.date, diet: v.diet || t("kc.mail.none") }).replace(/\{name\}/g, v.name);
+    setSent({ name: v.name, mailto, waText });
     setStatus("sending");
     try {
       const r = await fetch(asset("/api/anfrage"), {
@@ -94,8 +96,11 @@ export function CourseInquiry({ locale, fallbackEmail }: { locale: Locale; fallb
       <div className="kc-result" ref={result} tabIndex={-1} role="status">
         <h3>{t("kc.form.offline.h")}</h3>
         <p>{t("kc.form.offline.p")}</p>
-        <div className="btnrow"><a className="btn primary" href={sent.mailto}>{t("kc.form.offline.cta")} <span className="arr" aria-hidden="true">→</span></a></div>
-        <p className="credit">{t("kc.form.offline.or")} <a href={`mailto:${fallbackEmail}`}>{fallbackEmail}</a></p>
+        <div className="btnrow">
+          <a className="btn primary" href={sent.mailto}>{t("kc.form.offline.cta")} <span className="arr" aria-hidden="true">→</span></a>
+          <a className="btn ghost" href={whatsappHref(sent.waText)} target="_blank" rel="noopener noreferrer">{t("kc.form.offline.wa")} ↗</a>
+        </div>
+        <p className="credit">{t("kc.form.offline.or")} <a href={`mailto:${fallbackEmail}`}>{fallbackEmail}</a> · <a href={phoneHref}>{phone}</a></p>
       </div>
     );
   }

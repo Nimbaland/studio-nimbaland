@@ -7,7 +7,7 @@ import { getT, type StringKey } from "@/i18n/t";
 import { Arrow, SecLabel } from "@/components/ui";
 import { CourseInquiry } from "@/components/CourseInquiry";
 import { asset } from "@/lib/base";
-import { controller } from "@/lib/legal";
+import { inquiryEmail, phone, phoneHref, whatsappHref } from "@/lib/contact";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -151,7 +151,15 @@ export default async function CookingClasses({ params }: { params: Promise<{ loc
       <section className="sec alt" id="anfrage">
         <div className="wrap kc-ask">
           <div className="sechead"><SecLabel n="06">{t("kc.form.label")}</SecLabel><h2>{t("kc.form.h2")}</h2><p className="lead measure">{t("kc.form.lead")}</p></div>
-          <Suspense fallback={null}><CourseInquiry locale={locale} fallbackEmail={controller.email} /></Suspense>
+          <Suspense fallback={null}><CourseInquiry locale={locale} fallbackEmail={inquiryEmail} /></Suspense>
+          <div className="kc-direct">
+            <div><h3>{t("kc.direct.h")}</h3><p>{t("kc.direct.p")}</p></div>
+            <ul>
+              <li><span className="label">{t("kc.direct.phone")}</span><a href={phoneHref}>{phone}</a></li>
+              <li><span className="label">WhatsApp</span><a href={whatsappHref(t("kc.wa.text"))} target="_blank" rel="noopener noreferrer">{t("kc.direct.wa")} ↗</a></li>
+              <li><span className="label">{t("kc.direct.mail")}</span><a href={`mailto:${inquiryEmail}`}>{inquiryEmail}</a></li>
+            </ul>
+          </div>
         </div>
       </section>
       <section className="sec">

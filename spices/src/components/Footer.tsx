@@ -4,6 +4,7 @@ import { getT } from "@/i18n/t";
 import { Logo } from "./BrandMark";
 import { asset } from "@/lib/base";
 import { salesOpen } from "@/lib/flags";
+import { inquiryEmail, phone, phoneHref, whatsappHref } from "@/lib/contact";
 
 export function Footer({ locale }: { locale: Locale }) {
   const t = getT(locale);
@@ -29,7 +30,12 @@ export function Footer({ locale }: { locale: Locale }) {
             <li><Link href={href(locale, "/faq")}>FAQ</Link></li>
             <li><Link href={href(locale, "/newsletter")}>{t("f.newsletter")}</Link></li>
           </ul></div>
-          <div><h4>{t("f.contact")}</h4><ul><li><a href={`/${locale}/contact`}>{locale === "de" ? "Kontaktformular" : "Contact form"}</a></li></ul></div>
+          <div><h4>{t("f.contact")}</h4><ul>
+            <li><a href={`mailto:${inquiryEmail}`}>{inquiryEmail}</a></li>
+            <li><a href={phoneHref}>{phone}</a></li>
+            <li><a href={whatsappHref()} target="_blank" rel="noopener noreferrer">{t("f.whatsapp")} ↗</a></li>
+            <li><a href={`/${locale}/contact`}>{locale === "de" ? "Kontaktformular" : "Contact form"}</a></li>
+          </ul></div>
           <div><h4>{t("f.legal")}</h4><ul>
             {/* Impressum: gleicher Anbieter und gleiche Domain wie nimbaland.studio (außerhalb des basePath, daher <a>). */}
             <li><a href={`/${locale}/impressum`}>{t("f.imprint")}</a></li>

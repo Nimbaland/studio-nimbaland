@@ -47,8 +47,9 @@ Arbeitshilfe, keine Rechtsberatung. Pflichtangaben und Rechtstexte bitte fachlic
 
 ## Kochkurse & Supper Club (Branch `spices-kochkurse`, Vorschau – noch nicht freigegeben)
 - [ ] Texte DE/EN gegenlesen und freigeben (Unterseite `/cooking-classes`, neuer Startseiten-Einstieg)
-- [ ] `CONTACT_WEBHOOK_URL` im Vercel-Projekt nimbaland-spices setzen (gleicher Endpunkt wie nimbaland.studio). Ohne Wert bietet das Formular eine vorbereitete E-Mail an nimalan@posteo.de an
-- [ ] Datenschutzerklärung um „Anfragen über das Formular“ ergänzen: Anbieter des Webhooks, Zweck, Speicherdauer, Einwilligung für Angaben zu Allergien (Gesundheitsdaten, Art. 9 DSGVO). Fachlich prüfen lassen
+- [ ] `CONTACT_WEBHOOK_URL` im Vercel-Projekt nimbaland-spices setzen (gleicher Endpunkt wie nimbaland.studio). Ohne Wert bietet das Formular eine vorbereitete E-Mail an nimba@nimbaland.com an (`src/lib/contact.ts`)
+- [x] Datenschutzerklärung: Abschnitt „Kontakt per E-Mail, Telefon, WhatsApp und Anfrageformular“ (inkl. Einwilligung für Allergie-Angaben, Art. 9 DSGVO), WhatsApp-Text wie nimbaland.studio
+- [ ] Sobald `CONTACT_WEBHOOK_URL` gesetzt ist: Anbieter des Webhooks (z. B. Formspree) in der Datenschutzerklärung nennen, AV-Vertrag abschließen. Fachlich prüfen lassen
 - [ ] Echtes Porträt von Nimba beim Kochen (für „Dein Gastgeber“, bisher Foto mit Oma 2013)
 - [ ] Optional: echte Fotos aus Kurs/Supper Club, Food-Fotos der Menügerichte. Bis dahin KI-Stimmungsbilder, als solche beschriftet
 - [ ] Ort, Preis, Dauer, Termine festlegen (Website sagt bisher „besprechen wir bei deiner Anfrage“)
