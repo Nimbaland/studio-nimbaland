@@ -47,7 +47,7 @@ export function Hero({ locale, dict, recent }: Props) {
           {site.portrait && (
             <span className="hero__portrait">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={site.portrait} alt="" width={120} height={177} decoding="async" />
+              <img src="/brand/portrait-hero.webp" alt="" width={120} height={177} decoding="async" fetchPriority="high" />
             </span>
           )}
           <span>{dict.hello}</span>

@@ -280,7 +280,7 @@ html.lenis, html.lenis body { height: auto; }
   .hero__top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-4); }
   .hero__actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-4) var(--space-6); margin-top: var(--space-6); }
   .hero__worklink { font-weight: 600; display: inline-flex; align-items: center; gap: 0.4em; }
-  .hero__title { max-width: 16ch; }
+  .hero__title { max-width: 11.6em; }
   @media (max-width: 379px) { .hero__lead { font-size: 1rem; line-height: 1.5; } .hero__actions { margin-top: var(--space-4); } }
   @media (min-width: 1024px) { .hero__title { font-size: clamp(4rem, 1.2rem + 4.6vw, 6.25rem); } }
   /* Persönliche Vorstellung über der Headline – mit kleinem Porträt */
@@ -291,7 +291,7 @@ html.lenis, html.lenis body { height: auto; }
   @media (min-width: 1024px) {
     .hero { grid-template-rows: auto auto auto; min-height: auto; padding-block: clamp(4rem, 9vh, 7.5rem) var(--space-8); }
     .hero__head { grid-template-columns: auto auto; justify-content: start; align-items: end; column-gap: clamp(2rem, 4vw, 4rem); }
-    .hero__head .hero__title { order: 1; max-width: 12.5ch; }
+    .hero__head .hero__title { order: 1; max-width: 7.3em; }
     .hero__head .hero__hello { order: 2; flex-direction: column; align-items: flex-start; gap: 1rem; padding-bottom: 0.6rem;
       font-size: clamp(1.9rem, 0.9rem + 1.7vw, 2.75rem); line-height: 1.1; max-width: 9ch; }
     .hero__hello .hero__portrait { width: clamp(6rem, 3rem + 4.5vw, 8.5rem); height: clamp(7.9rem, 4rem + 5.9vw, 11.2rem); border-radius: 0.6rem; }

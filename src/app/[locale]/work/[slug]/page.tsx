@@ -23,7 +23,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
   const p = getProject(slug);
   if (!p) return {};
-  return pageMetadata({ locale, path: `/work/${slug}`, title: p.title, description: t(p.summary, locale), noindex: !p.published });
+  const cats = t(p.category, locale).slice(0, 2).join(" & ");
+  const title = `${p.title} – ${cats}`.length <= 42 ? `${p.title} – ${cats}` : p.title;
+  return pageMetadata({ locale, path: `/work/${slug}`, title, description: t(p.summary, locale), noindex: !p.published });
 }
 
 /**
