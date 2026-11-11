@@ -1,4 +1,4 @@
-import { site } from "@/content/site";
+import { site, contactFormEnabled } from "@/content/site";
 
 /**
  * Impressum und Datenschutzerklärung (Entwurf, Stand 21.10.2026).
@@ -21,7 +21,7 @@ export const legalOpen = {
 
 const a = site.contact.address;
 
-export const updated = "Oktober 2026";
+export const updated = "November 2026";
 
 export function Impressum() {
   return (
@@ -39,7 +39,7 @@ export function Impressum() {
       <p>
         E-Mail: <a className="text-link" href={`mailto:${site.contact.email}`}>{site.contact.email}</a>
         {legalOpen.phone && (<><br />Telefon: {legalOpen.phone}</>)}
-        <br />Kontaktformular: siehe Seite „Kontakt“
+        {contactFormEnabled && (<><br />Kontaktformular: siehe Seite „Kontakt“</>)}
       </p>
 
       {legalOpen.vatStatus === "ustid" && legalOpen.vatId && (
@@ -89,11 +89,21 @@ export function Impressum() {
       <h2>Urheberrecht</h2>
       <p>
         Die auf dieser Website gezeigten Arbeiten, Texte, Grafiken und Mockups unterliegen dem deutschen
-        Urheberrecht. Die gezeigten Projekte sind im Auftrag der jeweiligen Kundinnen und Kunden entstanden;
-        Marken und Logos sind Eigentum der jeweiligen Inhaber. Die Darstellung erfolgt zu Referenzzwecken.
-        Vervielfältigung, Bearbeitung und Verbreitung außerhalb der Grenzen des Urheberrechts bedürfen der
-        schriftlichen Zustimmung. In einzelnen Arbeiten verwendete Fotos und Icons stammen teilweise aus
-        lizenzierten Bilddatenbanken.
+        Urheberrecht. Die gezeigten Projekte sind im Auftrag von Kundinnen und Kunden, im Rahmen früherer
+        Anstellungen, als Wettbewerbs- und Weiterbildungsarbeiten oder als eigene Projekte entstanden – die
+        jeweilige Einordnung steht auf der Projektseite. Marken, Logos und Firmennamen sind Eigentum der
+        jeweiligen Inhaber; ihre Nennung und Darstellung dient ausschließlich als Referenz. Vervielfältigung,
+        Bearbeitung und Verbreitung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen
+        Zustimmung. In einzelnen Arbeiten verwendete Fotos und Icons stammen teilweise aus lizenzierten
+        Bilddatenbanken.
+      </p>
+
+      <h2>Hinweis zu KI-generierten Inhalten</h2>
+      <p>
+        Einzelne Bilder, Videos und Tonspuren auf dieser Website wurden ganz oder teilweise mit generativer KI
+        erstellt. Sie sind am jeweiligen Inhalt mit „KI-generiert“ gekennzeichnet; auf der Projektseite steht,
+        welche Teile mit KI entstanden sind und welche von Hand. Abgebildete Personen in KI-generierten Motiven
+        sind fiktiv.
       </p>
     </>
   );
@@ -143,22 +153,19 @@ export function Datenschutz() {
 
       <h2>4. Cookies und Speicher im Browser</h2>
       <p>
-        Es werden keine Cookies gesetzt. Für die Dauer der Browsersitzung wird lediglich ein technischer
-        Hinweis im Sitzungsspeicher (sessionStorage) abgelegt, damit die Einstiegsanimation nicht bei jedem
-        Seitenwechsel erneut abgespielt wird. Dieser Eintrag enthält keine personenbezogenen Daten und wird
-        beim Schließen des Browsers automatisch gelöscht. Rechtsgrundlage ist § 25 Abs. 2 Nr. 2 TDDDG
-        (unbedingt erforderlich für den von Ihnen gewünschten Dienst).
+        Diese Website setzt keine Cookies und legt keine Daten im Speicher Ihres Browsers ab (kein
+        localStorage, kein sessionStorage). Ein Cookie-Banner ist deshalb nicht erforderlich.
       </p>
 
-      <h2>5. Kontakt per E-Mail und Kontaktformular</h2>
+      <h2>5. Kontakt per E-Mail{contactFormEnabled ? " und Kontaktformular" : ""}</h2>
       <p>
-        Wenn Sie mir eine E-Mail schreiben oder das Kontaktformular nutzen, verarbeite ich die von Ihnen
+        Wenn Sie mir eine E-Mail schreiben{contactFormEnabled ? " oder das Kontaktformular nutzen" : ""}, verarbeite ich die von Ihnen
         angegebenen Daten (Name, E-Mail-Adresse, optional Unternehmen und Projektart sowie Ihre Nachricht), um
         Ihre Anfrage zu beantworten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, wenn Ihre Anfrage auf einen
         Vertrag oder vorvertragliche Maßnahmen zielt, im Übrigen Art. 6 Abs. 1 lit. f DSGVO (berechtigtes
         Interesse an der Beantwortung von Anfragen).
       </p>
-      {fp ? (
+      {!contactFormEnabled ? null : fp ? (
         <p>
           Nachrichten aus dem Kontaktformular werden über den Dienst {fp.name}, {fp.address}, an mich
           weitergeleitet. Mit dem Anbieter besteht ein Vertrag zur Auftragsverarbeitung.
@@ -167,9 +174,9 @@ export function Datenschutz() {
           <a className="text-link" href={fp.privacyUrl} target="_blank" rel="noopener noreferrer">{fp.privacyUrl}</a>.
         </p>
       ) : (
-        <p data-placeholder="FORM_PROVIDER">
-          [Offen: Dienst, über den das Kontaktformular Nachrichten zustellt – wird ergänzt, sobald das Formular
-          angebunden ist.]
+        <p>
+          Nachrichten aus dem Kontaktformular werden über den Server dieser Website (Vercel, siehe Abschnitt 3)
+          an mein E-Mail-Postfach weitergeleitet.
         </p>
       )}
       <p>

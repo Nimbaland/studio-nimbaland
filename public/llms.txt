@@ -1,0 +1,43 @@
+# nimbaland.studio
+
+> Studio von Nimalan „Nimba“ Suntharalingam, Creative Director und Brand Designer in Düsseldorf. Markenauftritte, Websites und KI-gestützte Bildwelten für kleine Unternehmen, Praxen und Gastronomie. Zertifizierter AI Visual Engineer (IHK).
+
+Die Website ist zweisprachig (Deutsch unter /de, Englisch unter /en). Kontakt: nimba@nimbaland.com.
+
+## Seiten
+
+- [Startseite](https://studio.nimbaland.com/de): Wer, was, wo – und drei ausgewählte Projekte
+- [Leistungen](https://studio.nimbaland.com/de/services): KI-gestützte Bildwelten, Markenstrategie & Markenauftritt, Konzept & Art Direction, Websites & UX/UI – jeweils mit Projektbeispielen
+- [Projekte](https://studio.nimbaland.com/de/work): Alle Arbeiten, die neuesten zuerst
+- [Über mich](https://studio.nimbaland.com/de/about): Werdegang, Ausbildung, Zertifikate
+- [Kontakt](https://studio.nimbaland.com/de/contact)
+
+## Projekte
+
+- [Aurum Herbs](https://studio.nimbaland.com/de/work/aurum-herbs): Branding für Aurum Herbs mit Standortvarianten für Wolfsburg, Gifhorn und Aue – und ein Designsystem für die Website mit Farben, Schrift und Größen.
+- [Bales Smart Home Services](https://studio.nimbaland.com/de/work/bales-smart-home): Eine Markenidentität für intelligente Wohnlösungen – klar, zeitgemäß und auf digitale Anwendungen ausgerichtet.
+- [Brick No 10](https://studio.nimbaland.com/de/work/brick-no-10): Ein 87-seitiges Pitchbuch für den Verkauf eines historischen Backstein-Kontorhauses im Hamburger Kontorhausviertel – mit eigener Objektmarke, Kapiteldramaturgie und maritimer Bildsprache.
+- [Circle Up](https://studio.nimbaland.com/de/work/circle-up): Logo, Konzeption und Investoren-Pitch-Deck für Circle Up – eine App, die Menschen mit gleichen Trainingsgewohnheiten und Zielen verbindet: für mehr gemeinsame Motivation, Flexibilität und echte Community.
+- [Das Lebensbuch](https://studio.nimbaland.com/de/work/das-lebensbuch): Verpackung für „Lebensbuch – Dein lebenslanges Erinnerungsbuch“: Buchschachtel mit Stanzform, Seidenpapier, Sticker und Magnetlesezeichen.
+- [Emmler Lofts](https://studio.nimbaland.com/de/work/emmler-lofts): Verkaufspreiseinschätzung für die Emmler Lofts am Kottbusser Damm in Berlin – eine 62-seitige Präsentation von Executive Summary über Markt, Lage und Objekt bis zu Vergleichstransaktionen und Honorarvorschlag.
+- [FlaminGo Swift](https://studio.nimbaland.com/de/work/flamingo-swift): App-Konzept für einen Wettbewerb zu Industrie, Innovation und Infrastruktur (SDG 9): Carsharing und Lieferdienst in einer App, getragen von freiwilligen Fahrerinnen und Fahrern – für weniger Leerfahrten, weniger Verkehr und mehr Gemeinschaft.
+- [Frauen-Zimmer Wolfsburg](https://studio.nimbaland.com/de/work/frauenzimmer-wolfsburg): Redesign der Website und des Logos für das Frauen-Zimmer in Wolfsburg – eine kostenlose, niedrigschwellige Anlaufstelle für Frauen jeden Alters und aller Kulturen, seit 1979 in der Goethestraße 12.
+- [Herzhaft](https://studio.nimbaland.com/de/work/herzhaft): Logo, Designsystem und alle Medien für ein Café in Opladen – Speisekarte, Außenschilder, Kundenstopper, Gutschein, Treuekarte und Fensterbeklebung – ein Auftritt, der vom Gehweg bis zum Tisch dieselbe Sprache spricht.
+- [Lächeln geht mit.](https://studio.nimbaland.com/de/work/laecheln-geht-mit): Fiktive Sommerkampagne für eine Stofftasche mit Smiley-Print – Konzept, Kampagnenbilder im 4:5-Format, ein 25-Sekunden-Werbeclip für TikTok und ein Node-Workflow, der als Content-Maschine weitere Motive mit und ohne Person erzeugt.
+- [Logo Design](https://studio.nimbaland.com/de/work/logo-design): Eine Auswahl von Logos und Marken aus den letzten Jahren – vom Interior Designer über den Barbershop bis zum Social Club. Jedes Zeichen beginnt mit der Frage, wofür eine Marke steht, bevor man sie sieht.
+- [LUMIQ](https://studio.nimbaland.com/de/work/lumiq): Eine komplette Supplement-Marke in 12 Stunden – von Name und Markenstory über Logo und Verpackung bis zu Kampagnenbildern und Reel, entwickelt mit KI-Werkzeugen und von Hand verfeinert.
+- [MKG Köln West](https://studio.nimbaland.com/de/work/mkg-koeln-west): Markenidentität und Außenauftritt für eine Praxis für Mund-, Kiefer- und Gesichtschirurgie in Köln – vom Logo über die Geschäftsausstattung bis zur Schaufensterwerbung und Website.
+- [Physiofit-Mobil](https://studio.nimbaland.com/de/work/physiofit-mobil): Logo und Printauftritt für eine mobile Physiotherapeutin – vom Markenzeichen bis zu Flyer und Preisliste.
+- [Solitaire](https://studio.nimbaland.com/de/work/solitaire): Investment-Präsentation für ein Bürohochhaus in Toplage – 42 Folien von den Investment Highlights über Markt und Wettbewerb bis zum Vermarktungskonzept mit Website, App und Film.
+- [Tervica](https://studio.nimbaland.com/de/work/tervica): Die gestalterische und strategische Auseinandersetzung mit einer neuen Markenidentität und ihrer visuellen Sprache.
+- [The Grid Bar](https://studio.nimbaland.com/de/work/the-grid-bar): Barkarte, Flying-Buffet-Karte, Silvester-Einladung und Karneval-Special für eine Cocktailbar in Köln – ein quadratisches Printsystem, das Drinks wie kleine Geschichten erzählt.
+- [Tina Sood Ergotherapie](https://studio.nimbaland.com/de/work/tina-sood): Markenauftritt und Website für eine Praxis für ganzheitliche Ergotherapie in Düsseldorf – vom Logo über die Geschäftsausstattung bis zur fertigen Website.
+- [Variari Food Boutique](https://studio.nimbaland.com/de/work/variari): Rebranding des Logos und Creative Direction für die Website-Fotografie eines Catering- und Food-Konzepts, dazu eine Flyer-Serie – dunkel, warm und mit goldenen Akzenten, damit die Gerichte selbst die Hauptrolle spielen.
+- [Welcome to Nimbaland](https://studio.nimbaland.com/de/work/welcome-to-nimbaland): Song und Musikvideo aus einer Hand: Lyrics selbst geschrieben, Beat in Ableton produziert, Vocals mit Suno Pro – und dazu ein Video, in dem tamilische Tempelkultur auf elektronische Nacht trifft, Bild für Bild mit generativer KI entwickelt.
+
+## English
+
+- [Home](https://studio.nimbaland.com/en)
+- [Services](https://studio.nimbaland.com/en/services)
+- [Work](https://studio.nimbaland.com/en/work)
+- [About](https://studio.nimbaland.com/en/about)

@@ -10,7 +10,7 @@ export const site = {
   city: "Düsseldorf",
 
   /** Basis-URL – Domain vor Launch bestätigen (.env NEXT_PUBLIC_SITE_URL). */
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://studio.nimbaland.com",
 
   brand: {
     /**
@@ -88,6 +88,12 @@ export const site = {
     { slug: "tina-sood", de: "Menschen sollen dein Angebot auf einen Blick verstehen und dir vertrauen.", en: "People should understand your offer at a glance – and trust you." },
   ],
 };
+
+/**
+ * Kontaktformular nur zeigen, wenn es Nachrichten wirklich zustellen kann (CONTACT_WEBHOOK_URL gesetzt).
+ * Sonst erscheint ein E-Mail-Block – so werden keine Daten erfasst, die nirgendwo ankommen.
+ */
+export const contactFormEnabled = Boolean(process.env.CONTACT_WEBHOOK_URL);
 
 export const showDrafts =
   process.env.NODE_ENV === "development" || process.env.NEXT_PUBLIC_SHOW_DRAFTS === "true";

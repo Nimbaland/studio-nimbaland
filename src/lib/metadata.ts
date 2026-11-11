@@ -9,7 +9,7 @@ type Args = { locale: Locale; path?: string; title?: string; description?: strin
 export function pageMetadata({ locale, path = "", title, description, noindex }: Args): Metadata {
   const dict = getDictionary(locale);
   const languages = Object.fromEntries(locales.map((l) => [l, `/${l}${path}`]));
-  const fullTitle = title ? `${title} — ${site.name}` : dict.meta.defaultTitle;
+  const fullTitle = title ? `${title} – ${site.name}` : dict.meta.defaultTitle;
   const desc = description ?? dict.meta.defaultDescription;
 
   return {
@@ -23,8 +23,9 @@ export function pageMetadata({ locale, path = "", title, description, noindex }:
       siteName: site.name,
       locale: locale === "de" ? "de_DE" : "en_US",
       type: "website",
-      // OG-Bild fehlt noch → /public/og/default.png (1200×630) ergänzen und hier eintragen.
+      images: [{ url: `/og/${locale}.png`, width: 1200, height: 630, alt: dict.meta.defaultTitle }],
     },
+    twitter: { card: "summary_large_image", title: fullTitle, description: desc, images: [`/og/${locale}.png`] },
     robots: noindex ? { index: false, follow: true } : undefined,
   };
 }

@@ -1,6 +1,7 @@
 import { href, t, type Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries/de";
-import { site } from "@/content/site";
+import { site, contactFormEnabled } from "@/content/site";
+import { MailFallback } from "@/components/contact/MailFallback";
 import { services } from "@/content/services";
 import { ContactForm } from "@/components/contact/ContactForm";
 
@@ -31,13 +32,17 @@ export function HomeContact({ locale, dict }: { locale: Locale; dict: Dictionary
           <p className="t-label t-muted mt-10">{c.availability}</p>
         </div>
         <div className="col-span-full lg:col-span-6 lg:col-start-7">
-          <ContactForm
-            dict={dict.contact}
-            serviceOptions={services.map((s) => t(s.title, locale))}
-            privacyHref={href(locale, "/datenschutz")}
-            fallbackEmail={site.contact.email}
-            idPrefix="home-"
-          />
+          {contactFormEnabled || !site.contact.email ? (
+            <ContactForm
+              dict={dict.contact}
+              serviceOptions={services.map((s) => t(s.title, locale))}
+              privacyHref={href(locale, "/datenschutz")}
+              fallbackEmail={site.contact.email}
+              idPrefix="home-"
+            />
+          ) : (
+            <MailFallback dict={dict.contact} email={site.contact.email} />
+          )}
         </div>
       </div>
     </section>

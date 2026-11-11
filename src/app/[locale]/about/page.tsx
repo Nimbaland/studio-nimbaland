@@ -13,7 +13,7 @@ type Props = { params: Promise<{ locale: Locale }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const d = getDictionary(locale);
-  return pageMetadata({ locale, path: "/about", title: locale === "de" ? "Über mich" : "About", description: d.about.intro });
+  return pageMetadata({ locale, path: "/about", title: locale === "de" ? "Über mich – Nimalan Suntharalingam" : "About – Nimalan Suntharalingam", description: d.about.intro });
 }
 
 export default async function AboutPage({ params }: Props) {

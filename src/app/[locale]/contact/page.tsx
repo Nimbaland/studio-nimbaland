@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { href, t, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { pageMetadata } from "@/lib/metadata";
-import { site } from "@/content/site";
+import { site, contactFormEnabled } from "@/content/site";
+import { MailFallback } from "@/components/contact/MailFallback";
 import { services } from "@/content/services";
 import { PageIntro } from "@/components/layout/PageIntro";
 import { ContactForm } from "@/components/contact/ContactForm";
@@ -13,7 +14,7 @@ type Props = { params: Promise<{ locale: Locale }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const d = getDictionary(locale);
-  return pageMetadata({ locale, path: "/contact", title: locale === "de" ? "Kontakt" : "Contact", description: d.contact.intro[0] });
+  return pageMetadata({ locale, path: "/contact", title: locale === "de" ? "Kontakt & Projektanfrage" : "Contact & Project Enquiry", description: d.contact.intro[0] });
 }
 
 export default async function ContactPage({ params }: Props) {
@@ -39,13 +40,19 @@ export default async function ContactPage({ params }: Props) {
       <section className="tone-dark section border-t border-line">
         <div className="container-site grid-site gap-y-16">
           <div className="col-span-full lg:col-span-7">
-            <h2 className="t-h2 mb-10">{c.formTitle}</h2>
+{contactFormEnabled || !site.contact.email ? (
+              <>
+              <h2 className="t-h2 mb-10">{c.formTitle}</h2>
             <ContactForm
               dict={c}
               serviceOptions={services.map((s) => t(s.title, locale))}
               privacyHref={href(locale, "/datenschutz")}
               fallbackEmail={site.contact.email}
             />
+              </>
+            ) : (
+              <MailFallback dict={c} email={site.contact.email} />
+            )}
           </div>
 
           <aside className="col-span-full flex flex-col gap-10 lg:col-span-4 lg:col-start-9 lg:pt-4">

@@ -8,6 +8,7 @@ import { Hero } from "@/components/sections/Hero";
 import { SelectedWork } from "@/components/sections/SelectedWork";
 import { HomeContact } from "@/components/sections/HomeContact";
 import { LogoTicker } from "@/components/sections/LogoTicker";
+import { JsonLd } from "@/components/seo/JsonLd";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
@@ -28,6 +29,7 @@ export default async function HomePage({ params }: Props) {
 
   return (
     <>
+      <JsonLd locale={locale} />
       <Hero locale={locale} dict={dict.hero} recent={getProject(site.recentWorkSlug) ?? projects[0]} />
       <SelectedWork locale={locale} dict={dict.work} projects={featured} total={projects.filter((p) => p.published).length} />
       <HomeContact locale={locale} dict={dict} />

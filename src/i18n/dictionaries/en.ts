@@ -7,9 +7,9 @@ import type { Dictionary } from "./de";
 const en: Dictionary = {
   meta: {
     siteName: "nimbaland.studio",
-    defaultTitle: "nimbaland.studio – Brand identities, websites and AI-powered visuals from Düsseldorf",
+    defaultTitle: "Branding & Web Design in Düsseldorf | nimbaland.studio",
     defaultDescription:
-      "I'm Nimba (Nimalan Suntharalingam), a creative director and designer with a studio in Düsseldorf. I create brand identities, websites and AI-powered visuals for small businesses, health practices and hospitality.",
+      "I’m Nimba, a designer with a studio in Düsseldorf: brand identities, websites and AI-powered visuals for small businesses, health practices and hospitality.",
   },
   a11y: {
     skipToContent: "Skip to content",
@@ -195,6 +195,10 @@ const en: Dictionary = {
     formTitle: "A good conversation is a good start.",
     meta: ["Studio in Düsseldorf", "Brand · Web · AI-powered visuals"],
     emailLabel: "Email",
+    mailTitle: "Just send me an email.",
+    mailBody: "A few sentences are enough: what it’s about, where you are right now, and whether there’s a timeline. I’ll reply personally.",
+    mailCta: "Write an email",
+    mailSubject: "Project enquiry via studio.nimbaland.com",
     socialTitle: "Profiles",
     form: {
       name: "Name",

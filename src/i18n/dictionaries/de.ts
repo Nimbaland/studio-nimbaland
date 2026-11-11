@@ -6,9 +6,9 @@
 const de = {
   meta: {
     siteName: "nimbaland.studio",
-    defaultTitle: "nimbaland.studio – Markenauftritte, Websites und KI-Bildwelten aus Düsseldorf",
+    defaultTitle: "Branding & Webdesign in Düsseldorf | nimbaland.studio",
     defaultDescription:
-      "Ich bin Nimba (Nimalan Suntharalingam), Creative Director und Designer mit Studio in Düsseldorf. Ich entwickle Markenauftritte, Websites und KI-gestützte Bildwelten für kleine Unternehmen, Praxen und Gastronomie.",
+      "Ich bin Nimba, Designer mit Studio in Düsseldorf: Markenauftritte, Websites und KI-gestützte Bildwelten für kleine Unternehmen, Praxen und Gastronomie.",
   },
   a11y: {
     skipToContent: "Zum Inhalt springen",
@@ -202,6 +202,10 @@ const de = {
     formTitle: "Ein gutes Gespräch ist ein guter Anfang.",
     meta: ["Studio in Düsseldorf", "Marke · Website · KI-Bildwelten"],
     emailLabel: "E-Mail",
+    mailTitle: "Schreib mir einfach eine E-Mail.",
+    mailBody: "Ein paar Sätze reichen: Worum geht es, wo stehst du gerade, und gibt es einen Zeitrahmen? Ich antworte persönlich.",
+    mailCta: "E-Mail schreiben",
+    mailSubject: "Projektanfrage über studio.nimbaland.com",
     socialTitle: "Profile",
     form: {
       name: "Name",

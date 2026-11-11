@@ -977,3 +977,8 @@ html.lenis, html.lenis body { height: auto; }
     .feature__media:hover img { transform: none; }
   }
 }
+
+@layer components {
+  /* Kontakt ohne Formular: E-Mail-Block */
+  .mail-fallback { border: 1px solid var(--border); border-radius: 0.75rem; padding: clamp(1.5rem, 1rem + 2vw, 2.75rem); }
+}

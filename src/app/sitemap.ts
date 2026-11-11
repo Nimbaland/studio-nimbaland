@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return paths.flatMap((path) =>
     locales.map((l) => ({
       url: `${site.url}/${l}${path}`,
+      lastModified: new Date(),
       alternates: { languages: Object.fromEntries(locales.map((x) => [x, `${site.url}/${x}${path}`])) },
     })),
   );

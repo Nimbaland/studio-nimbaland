@@ -15,7 +15,7 @@ type Props = { params: Promise<{ locale: Locale }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const d = getDictionary(locale);
-  return pageMetadata({ locale, path: "/work", title: locale === "de" ? "Projekte" : "Work", description: d.workPage.intro });
+  return pageMetadata({ locale, path: "/work", title: locale === "de" ? "Projekte & Referenzen" : "Work & Case Studies", description: d.workPage.intro });
 }
 
 /** Projektliste. Filter erst ergänzen, wenn genug Projekte veröffentlicht sind. */
