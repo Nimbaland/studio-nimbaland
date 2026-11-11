@@ -8,6 +8,7 @@ import { href, type Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries/de";
 import { BrandMark } from "./BrandMark";
 import { LanguageSwitch } from "./LanguageSwitch";
+import { site } from "@/content/site";
 
 type Props = { locale: Locale; dict: Pick<Dictionary, "nav" | "a11y"> };
 
@@ -142,6 +143,15 @@ export function Header({ locale, dict }: Props) {
           </nav>
           <div className="mobile-menu__foot">
             <LanguageSwitch current={locale} label={dict.a11y.languageSwitch} />
+            <ul className="mobile-menu__social">
+              {site.social.map((s) => (
+                <li key={s.url}>
+                  <a href={s.url} target="_blank" rel="noopener noreferrer">
+                    {s.label}<span className="sr-only"> ({dict.a11y.externalLink})</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>,
         document.body
