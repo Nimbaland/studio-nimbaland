@@ -33,6 +33,7 @@ export function JsonLd({ locale }: { locale: Locale }) {
         description: d.meta.defaultDescription,
         founder: { "@id": `${base}/#person` },
         email: site.contact.email ?? undefined,
+        telephone: site.contact.phone.replace(/ /g, ""),
         address: { "@type": "PostalAddress", streetAddress: a.street, postalCode, addressLocality: city.join(" "), addressCountry: "DE" },
         areaServed: [{ "@type": "City", name: "Düsseldorf" }, { "@type": "Country", name: "Deutschland" }],
         knowsAbout: services.map((s) => s.title[locale]),

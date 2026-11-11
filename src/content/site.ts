@@ -32,6 +32,10 @@ export const site = {
   contact: {
     /** Freigegebene Kontaktadresse (von Nimalan im Kontakttext angegeben, 20.10.2026). */
     email: "nimba@nimbaland.com" as string | null,
+    /** Telefon und WhatsApp Business – von Nimalan freigegeben (11.11.2026). */
+    phone: "+49 155 659 107 37",
+    phoneHref: "tel:+4915565910737",
+    whatsapp: "https://wa.me/4915565910737",
     /** Studio-Adresse, von Nimalan freigegeben (21.10.2026). */
     address: { name: "nimbaland.studio", street: "Lindenstraße 68", city: "40233 Düsseldorf", country: "Deutschland" },
   },
@@ -71,7 +75,6 @@ export const site = {
     { slug: "bales-smart-home", name: "Bales Smart Home", src: "/clients/bales-smart-home.png", w: 90, h: 38 },
     { slug: "the-grid-bar", name: "The Grid Bar", src: "/clients/the-grid-bar.png", w: 82, h: 41 },
     { slug: "physiofit-mobil", name: "Physiofit-Mobil", src: "/clients/physiofit-mobil.png", w: 48, h: 44 },
-    { slug: "variari", name: "Variari", src: "/clients/variari.png", w: 200, h: 23 },
     { slug: "flamingo-swift", name: "Flamingo Swift", src: "/clients/flamingo-swift.png", w: 106, h: 32 },
   ],
   /** Stehen in „Selected work“ ganz vorn, unabhängig vom Datum. */

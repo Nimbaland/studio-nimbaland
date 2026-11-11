@@ -11,7 +11,7 @@ import { site, contactFormEnabled } from "@/content/site";
 /** Angaben, die noch von Nimalan bestätigt werden müssen. null = Abschnitt wird ausgeblendet. */
 export const legalOpen = {
   /** z. B. "+49 211 …" – optional, E-Mail + Kontaktformular reichen als Kontaktwege. */
-  phone: null as string | null,
+  phone: site.contact.phone as string | null,
   /** Umsatzsteuer: "kleinunternehmer" | "ustid" | null (noch offen). */
   vatStatus: null as null | "kleinunternehmer" | "ustid",
   vatId: null as string | null,
@@ -38,7 +38,7 @@ export function Impressum() {
       <h2>Kontakt</h2>
       <p>
         E-Mail: <a className="text-link" href={`mailto:${site.contact.email}`}>{site.contact.email}</a>
-        {legalOpen.phone && (<><br />Telefon: {legalOpen.phone}</>)}
+        {legalOpen.phone && (<><br />Telefon: <a className="text-link" href={site.contact.phoneHref}>{legalOpen.phone}</a></>)}
         {contactFormEnabled && (<><br />Kontaktformular: siehe Seite „Kontakt“</>)}
       </p>
 
@@ -185,7 +185,25 @@ export function Datenschutz() {
         gesetzlichen Aufbewahrungspflichten (z. B. nach Handels- oder Steuerrecht) entgegenstehen.
       </p>
 
-      <h2>6. Links zu sozialen Netzwerken</h2>
+      <h2>6. Kontakt per Telefon und WhatsApp</h2>
+      <p>
+        Wenn Sie mich anrufen, verarbeite ich Ihre Telefonnummer und den Inhalt des Gesprächs zur Bearbeitung Ihres
+        Anliegens (Rechtsgrundlage wie in Abschnitt 5).
+      </p>
+      <p>
+        Für Nachrichten nutze ich zusätzlich WhatsApp Business. Auf dieser Website ist WhatsApp nur als einfacher
+        Link eingebunden; beim Besuch der Website werden keine Daten an WhatsApp übertragen. Erst wenn Sie den Link
+        anklicken und mir schreiben, verarbeitet WhatsApp Ireland Limited, Merrion Road, Dublin 4, D04 X2K5, Irland,
+        Ihre Telefonnummer, Ihren Profilnamen, Ihre Nachrichten und Metadaten. Dabei können Daten an die
+        Muttergesellschaft Meta Platforms, Inc. in den USA übermittelt werden; Meta ist nach dem EU-US Data Privacy
+        Framework zertifiziert (Art. 45 DSGVO). Die Nachrichten sind Ende-zu-Ende-verschlüsselt. Rechtsgrundlage ist
+        Art. 6 Abs. 1 lit. b DSGVO bzw. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer schnellen
+        Kommunikation auf dem von Ihnen gewählten Weg). Wenn Sie WhatsApp nicht nutzen möchten, erreichen Sie mich
+        jederzeit per E-Mail oder Telefon. Datenschutzhinweise von WhatsApp:{" "}
+        <a className="text-link" href="https://www.whatsapp.com/legal/privacy-policy-eea" target="_blank" rel="noopener noreferrer">whatsapp.com/legal/privacy-policy-eea</a>.
+      </p>
+
+      <h2>7. Links zu sozialen Netzwerken</h2>
       <p>
         Auf dieser Website befinden sich einfache Links zu meinen Profilen bei LinkedIn und Instagram. Es handelt
         sich nicht um Plugins: Beim Besuch dieser Website werden keine Daten an diese Netzwerke übertragen. Erst
@@ -193,20 +211,20 @@ export function Datenschutz() {
         Datenschutzbestimmungen.
       </p>
 
-      <h2>7. Schriften und Videos</h2>
+      <h2>8. Schriften und Videos</h2>
       <p>
         Alle Schriften sind lokal auf dem Server eingebunden; es wird keine Verbindung zu Google Fonts oder
         anderen Schriftanbietern hergestellt. Videos in den Projektbeispielen werden ebenfalls direkt von diesem
         Server geladen, nicht über YouTube oder Vimeo.
       </p>
 
-      <h2>8. SSL- bzw. TLS-Verschlüsselung</h2>
+      <h2>9. SSL- bzw. TLS-Verschlüsselung</h2>
       <p>
         Diese Website nutzt aus Sicherheitsgründen eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte
         Verbindung erkennen Sie am „https://“ und am Schloss-Symbol in der Adresszeile Ihres Browsers.
       </p>
 
-      <h2>9. Ihre Rechte</h2>
+      <h2>10. Ihre Rechte</h2>
       <p>Sie haben jederzeit das Recht auf</p>
       <ul className="list-disc pl-6">
         <li>Auskunft über Ihre gespeicherten Daten (Art. 15 DSGVO),</li>
@@ -227,7 +245,7 @@ export function Datenschutz() {
         <a className="text-link" href="https://www.ldi.nrw.de" target="_blank" rel="noopener noreferrer">www.ldi.nrw.de</a>.
       </p>
 
-      <h2>10. Änderungen</h2>
+      <h2>11. Änderungen</h2>
       <p>
         Ich passe diese Datenschutzerklärung an, wenn sich die Website oder die Rechtslage ändert.
         Stand: {updated}.

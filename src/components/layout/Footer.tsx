@@ -22,6 +22,12 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           {site.contact.email && (
             <a href={`mailto:${site.contact.email}`} className="text-link link-standalone font-display text-[clamp(1.5rem,1.2rem+1vw,2.25rem)]">{site.contact.email}</a>
           )}
+          <p className="mt-4 flex flex-wrap gap-x-6 gap-y-1">
+            <a href={site.contact.phoneHref} className="footer-link">{site.contact.phone}</a>
+            <a href={site.contact.whatsapp} target="_blank" rel="noopener noreferrer" className="footer-link">
+              {dict.contact.whatsappLabel}<span className="sr-only"> ({dict.a11y.externalLink})</span>
+            </a>
+          </p>
           <address className="mt-6 not-italic leading-relaxed">
             {site.contact.address.name}<br />
             {site.contact.address.street}<br />

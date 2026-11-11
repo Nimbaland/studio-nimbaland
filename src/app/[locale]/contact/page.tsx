@@ -64,6 +64,17 @@ export default async function ContactPage({ params }: Props) {
               {site.contact.address.street}<br />
               {site.contact.address.city}
             </address>
+            <div>
+              <p className="t-label t-muted">{c.phoneLabel} · {c.whatsappLabel}</p>
+              <ul className="mt-2">
+                <li><a href={site.contact.phoneHref} className="text-link link-standalone">{site.contact.phone}</a></li>
+                <li>
+                  <a href={site.contact.whatsapp} target="_blank" rel="noopener noreferrer" className="text-link link-standalone">
+                    {c.whatsappCta}<span className="sr-only"> ({d.a11y.externalLink})</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
             {site.social.length > 0 && (
               <div>
                 <p className="t-label t-muted">{c.socialTitle}</p>

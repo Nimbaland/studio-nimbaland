@@ -7,7 +7,6 @@ import tervica from "./tervica";
 import tinaSood from "./tina-sood";
 import mkg from "./mkg-koeln-west";
 import physiofit from "./physiofit-mobil";
-import variari from "./variari";
 import lebensbuch from "./das-lebensbuch";
 import waiturn from "./waiturn";
 import grid from "./the-grid-bar";
@@ -32,7 +31,7 @@ import laecheln from "./laecheln-geht-mit";
  *  3. Hier importieren und in `all` eintragen
  *  4. Nach Freigabe `published: true` setzen
  */
-const all: PortfolioProject[] = [mkg, tervica, kratzert, physiofit, tinaSood, circleUp, variari, bales, lebensbuch, waiturn, grid, flamingo, brick, solitaire, emmler, frauenzimmer, logos, aurum, lumiq, nimbalandVideo, herzhaft, laecheln];
+const all: PortfolioProject[] = [mkg, tervica, kratzert, physiofit, tinaSood, circleUp, bales, lebensbuch, waiturn, grid, flamingo, brick, solitaire, emmler, frauenzimmer, logos, aurum, lumiq, nimbalandVideo, herzhaft, laecheln];
 
 /** Jüngstes Jahr aus Angaben wie "2026" oder "2018–2019" (ohne Jahr: ganz hinten). */
 export function projectYear(p: PortfolioProject): number {

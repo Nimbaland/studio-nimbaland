@@ -44,7 +44,7 @@ export const services: Service[] = [
   },
   {
     id: "brand-strategy-identity",
-    proof: { "Brand Strategy": "tervica", "Visual Identity": "circle-up", "Rebranding": "variari", "Corporate Design": "mkg-koeln-west", "Design Systems": "aurum-herbs", "Brand Guidelines": "aurum-herbs" },
+    proof: { "Brand Strategy": "tervica", "Visual Identity": "circle-up", "Rebranding": "tervica", "Corporate Design": "mkg-koeln-west", "Design Systems": "aurum-herbs", "Brand Guidelines": "aurum-herbs" },
     homeTitle: { de: "Markenstrategie & Markenauftritt", en: "Brand Strategy & Identity" },
     title: { de: "Markenstrategie & Markenauftritt", en: "Brand Strategy & Identity" },
     homeSummary: {

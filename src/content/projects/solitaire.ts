@@ -1,7 +1,7 @@
 import type { PortfolioProject } from "./types";
 
 // Solitaire – Investment-Präsentation für ein Bürohochhaus (August 2019), Colliers International.
-// Quelle: "190821_Solitaire_Praesentation" (42 Folien). Team-Folien und Zahlen werden nicht gezeigt.
+// Anonymisiert (11.11.2026): Vergleichsobjekte und Makler-Logos unkenntlich, kein Blätter-Video aller Seiten.
 const project: PortfolioProject = {
   slug: "solitaire",
   title: "Solitaire",
@@ -13,8 +13,8 @@ const project: PortfolioProject = {
   role: { de: ["Art Direction", "Präsentationsdesign"], en: ["Art direction", "Presentation design"] },
   services: { de: ["Art Direction", "Präsentationsdesign", "Pitch-Design"], en: ["Art Direction", "Presentation Design", "Pitch Design"] },
   summary: {
-    de: "Investment-Präsentation für ein Bürohochhaus in Toplage – 42 Folien von den Investment Highlights über Markt und Wettbewerb bis zum Vermarktungskonzept mit Website, App und Film.",
-    en: "Investment presentation for a prime-location office tower — 42 slides from investment highlights through market and competition to a marketing concept with website, app and film.",
+    de: "Investment-Präsentation für ein Bürohochhaus – über 40 Folien von den Investment Highlights über Markt und Wettbewerb bis zum Vermarktungskonzept mit Website, App und Film. Vertrauliche Angaben sind unkenntlich gemacht.",
+    en: "Investment presentation for an office tower — more than 40 slides from investment highlights through market and competition to a marketing concept with website, app and film. Confidential details have been obscured.",
   },
   approach: {
     de: "Transparente Dreiecke in Rosé, Mint und Sand legen sich über die Fassade und werden zum Leitmotiv – leicht, präzise und wiedererkennbar auf jeder Kapitelfolie. Tabellen und Diagramme folgen derselben ruhigen Farbwelt, damit die Zahlen lesbar bleiben.",
@@ -22,10 +22,9 @@ const project: PortfolioProject = {
   },
   coverImage: { src: "/projects/solitaire/cover.webp", alt: { de: "Titelfolie Solitaire – Prime Location Office", en: "Title slide Solitaire — Prime Location Office" }, aspect: "16/9", width: 2400, height: 1350 },
   gallery: [
-    { src: "/projects/solitaire/pages-poster.webp", video: "/projects/solitaire/pages.mp4", span: "full", alt: { de: "Video: Alle 42 Seiten der Präsentation nacheinander durchgeblättert", en: "Video: All 42 pages of the presentation paged through one by one" }, caption: { de: "Alle 42 Seiten der Präsentation · Video", en: "All 42 pages of the presentation · video" }, aspect: "16/9", width: 1600, height: 900 },
     { src: "/projects/solitaire/gallery-01.webp", alt: { de: "Kapitelfolien The Asset und Location and Competition", en: "Chapter slides The Asset and Location and Competition" }, caption: { de: "Kapitelfolien", en: "Chapter slides" }, aspect: "16/9", width: 2400, height: 1350 },
     { src: "/projects/solitaire/gallery-02.webp", alt: { de: "Folie Marketing mit Website, App und Film auf Geräten", en: "Marketing slide with website, app and film on devices" }, caption: { de: "Vermarktungskonzept", en: "Marketing concept" }, aspect: "16/9", width: 2400, height: 1350 },
-    { src: "/projects/solitaire/gallery-03.webp", alt: { de: "Kapitelfolie Investment Highlights und Angebotsübersicht", en: "Investment highlights chapter slide and offer overview" }, caption: { de: "Investment Highlights", en: "Investment highlights" }, aspect: "16/9", width: 2400, height: 1350 },
+    { src: "/projects/solitaire/gallery-03.webp", alt: { de: "Kapitelfolie Investment Highlights und unkenntlich gemachte Angebotsübersicht", en: "Investment highlights chapter slide and obscured offer overview" }, caption: { de: "Investment Highlights", en: "Investment highlights" }, aspect: "16/9", width: 2400, height: 1350 },
   ],
   featured: false,
   published: true,
