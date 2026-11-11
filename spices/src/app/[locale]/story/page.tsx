@@ -58,6 +58,7 @@ export default async function Story({ params }: { params: Promise<{ locale: Loca
         <div className="btnrow">
           <Link className="btn primary" href={href(locale) + "#finder"}>{t("st.cta")} <Arrow /></Link>
           <Link className="btn ghost" href={href(locale, "/recipes")}>{t("st.cta2")}</Link>
+          <Link className="btn ghost" href={href(locale, "/cooking-classes")}>{t("kc.story.cta")}</Link>
         </div>
       </div>
     </>

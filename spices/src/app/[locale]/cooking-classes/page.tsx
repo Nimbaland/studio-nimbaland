@@ -12,7 +12,12 @@ import { inquiryEmail, phone, phoneHref, whatsappHref } from "@/lib/contact";
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = getT(locale);
-  return { title: t("kc.meta.title"), description: t("kc.meta.desc"), alternates: { languages: { de: asset("/de/cooking-classes"), en: asset("/en/cooking-classes") } } };
+  return {
+    title: t("kc.meta.title"),
+    description: t("kc.meta.desc"),
+    alternates: { canonical: asset(`/${locale}/cooking-classes`), languages: { de: asset("/de/cooking-classes"), en: asset("/en/cooking-classes"), "x-default": asset("/de/cooking-classes") } },
+    openGraph: { title: t("kc.meta.title"), description: t("kc.meta.desc"), type: "website", images: [{ url: asset("/img/kochkurse/einstieg.jpg"), width: 967, height: 1200, alt: t("kc.home.photo.alt") }] },
+  };
 }
 
 const IMG = "/img/kochkurse";
@@ -29,16 +34,21 @@ export default async function CookingClasses({ params }: { params: Promise<{ loc
   const k = (s: string) => s as StringKey;
   const ask = (format: "course" | "supper") => `${href(locale, "/cooking-classes")}?format=${format}#anfrage`;
 
+  // Strukturierte Daten: FAQ der Seite (gleiche Texte wie sichtbar). Kein Event-Markup, solange es keine Termine gibt.
+  const faqLd = {
+    "@context": "https://schema.org", "@type": "FAQPage", inLanguage: locale,
+    mainEntity: [1, 2, 3, 4, 5, 6].map((i) => ({ "@type": "Question", name: t(k(`kc.faq.q${i}`)), acceptedAnswer: { "@type": "Answer", text: t(k(`kc.faq.a${i}`)) } })),
+  };
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd).replace(/</g, "\\u003c") }} />
       {/* Kopf */}
       <section className="hero kc-hero">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img className="mandala" src={asset("/img/mandala-orange.svg")} alt="" aria-hidden="true" />
         <div className="wrap">
           <div className="copy">
-            <span className="label">{t("kc.label")}</span>
-            <h1>{t("kc.h1")}</h1>
+            <h1><span className="label kc-kicker">{t("kc.h1.kicker")}</span> {t("kc.h1")}</h1>
             <p className="lead">{t("kc.lead")}</p>
             <div className="btnrow">
               <Link className="btn primary" href={ask("course")}>{t("kc.course.cta")} <Arrow /></Link>
